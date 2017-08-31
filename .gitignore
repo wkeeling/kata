@@ -1,0 +1,7 @@
+*.pid
+*.pyc
+*.swp
+.idea
+.sass-cache
+__pycache__
+
