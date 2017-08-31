@@ -3,7 +3,8 @@
 from statistics import mean
 from unittest import TestCase
 
-from pythoncookbook.code.chapter1 import World
+from pythoncookbook.code.chapter1 import (search,
+                                          World)
 
 
 class UnpackingSequenceTest(TestCase):
@@ -45,7 +46,7 @@ class UnpackingSequenceTest(TestCase):
         self.assertEquals(e, 'd')
 
 
-class UnpackElementsFromIterablesArbitraryLengthTest(TestCase):
+class UnpackingElementsFromIterablesArbitraryLengthTest(TestCase):
 
     def test_drop_first_last(self):
         grades = [56, 77, 75, 68, 53, 62, 44]
@@ -72,3 +73,48 @@ class UnpackElementsFromIterablesArbitraryLengthTest(TestCase):
 
         self.assertEquals(mean(first_four), 4.25)
         self.assertEquals(last, 9)
+
+    def test_iterate_varying_length_tuples(self):
+        records = [
+            ('foo', 1, 2),
+            ('bar', 'hello'),
+            ('foo', 3, 4),
+        ]
+
+        def do_foo(x, y):
+            print('foo', x, y)
+
+        def do_bar(s):
+            print('bar', s)
+
+        self.fail('Iterate records calling appropriate function')
+
+    def test_unpack_split_string(self):
+        line = 'nobody:*:-2:-2:Unprivileged User:/var/empty:/usr/bin/false'
+
+        self.fail('Write a single line variable assignment')
+
+        self.assertEqual(uname, 'nobody')
+        self.assertEqual(homedir, '/var/empty')
+        self.assertEqual(sh, '/usr/bin/false')
+
+
+class KeepingTheLastNItemsTest(TestCase):
+
+    def test_find_lines_with_history(self):
+        """Hint: the search function can be implemented as a generator.
+        Think about the data structure used to keep track of the history.
+        """
+        found = {}
+        with open('data/find_lines_with_history.txt') as f:
+            for line, prevlines in search(f, 'python', history=5):
+                found[line] = prevlines
+                for pline in prevlines:
+                    print(pline)
+                print(line)
+
+        self.assertEqual(len(found), 2)
+        self.assertEqual(found['line8 python'],
+                         ['line3', 'line4', 'line5', 'line6', 'line7'])
+        self.assertEqual(found['line14 python'],
+                         ['line9', 'line10', 'line11', 'line12', 'line13'])
