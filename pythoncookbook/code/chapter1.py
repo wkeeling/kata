@@ -2,5 +2,5 @@ class World:
     pass
 
 
-def search():
+def search(f, search_string, history=10):
     pass
