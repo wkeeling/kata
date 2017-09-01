@@ -3,7 +3,8 @@
 from statistics import mean
 from unittest import TestCase
 
-from pythoncookbook.code.chapter1 import (search,
+from pythoncookbook.code.chapter1 import (PriorityQueue,
+                                          search,
                                           World)
 
 
@@ -123,7 +124,9 @@ class KeepingTheLastNItemsTest(TestCase):
 class FindingTheLargestOrSmallestNItemsTest(TestCase):
 
     def test_find_three_largest_items(self):
-        """Hint: do this without using slice syntax."""
+        """Hint: do this without using slice syntax and do not
+         sort the list.
+         """
         nums = [1, 8, 2, 23, 7, -4, 18, 23, 42, 37, 2]
 
         self.fail('Write a single line variable assignment')
@@ -153,3 +156,76 @@ class FindingTheLargestOrSmallestNItemsTest(TestCase):
         self.fail('Write a single line variable assignment')
 
         self.assertEqual(expensive, [200, 100, 75])
+
+
+class ImplementingAPriorityQueueTest(TestCase):
+
+    def test_should_get_items_with_highest_priority(self):
+        """Hint: PriorityQueue should negate the priority when it
+        pushes the item. The items are stored in a tuple in the queue."""
+        class Item:
+            def __init__(self, name):
+                self.name = name
+
+            def __repr__(self):
+                return 'Item({!r})'.format(self.name)
+
+        q = PriorityQueue()
+        q.push(Item('foo'), 1)
+        q.push(Item('bar'), 5)
+        q.push(Item('spam'), 4)
+        q.push(Item('grok'), 1)
+
+        self.assertEqual(q.pop().name, 'bar')
+        self.assertEqual(q.pop().name, 'spam')
+        self.assertEqual(q.pop().name, 'foo')
+        self.assertEqual(q.pop().name, 'grok')
+
+
+class MappingKeysToMutipleValuesDictionaryTest(TestCase):
+
+    def test_append_to_list_value(self):
+        self.fail('Write a single line variable assignment')
+
+        try:
+            d['a'].append(1)
+            d['a'].append(2)
+            d['b'].append(4)
+        except KeyError:
+            pass  # Should not raise
+
+
+class CalculatingWithDictionariesTest(TestCase):
+
+    def setUp(self):
+        self._prices = {
+            'ACME': 45.23,
+            'AAPL': 612.78,
+            'IBM': 205.55,
+            'HPQ': 37.20,
+            'FB': 10.75
+        }
+
+    def test_find_min_price(self):
+        self.fail('Write a single line variable assignment')
+
+        self.assertEqual(min_price, (10.75, 'FB'))
+
+    def test_find_max_price(self):
+        self.fail('Write a single line variable assignment')
+
+        self.assertEqual(max_price, (612.78, 'AAPL'))
+
+    def test_sort_prices(self):
+        self.fail('Write a single line variable assignment')
+
+        self.assertEqual(prices_sorted, [(10.75, 'FB'), (37.2, 'HPQ'),
+                                         (45.23, 'ACME'), (205.55, 'IBM'),
+                                         (612.78, 'AAPL')])
+
+    def test_raises_value_error(self):
+        self.fail('Write a single line variable assignment')
+
+        with self.assertRaises(ValueError):
+            min(prices_and_names)
+            max(prices_and_names)
