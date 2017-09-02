@@ -18,3 +18,6 @@ class PriorityQueue:
 def dedupe(seq, key=None):
     pass
 
+
+def group_by_date(rows):
+    pass
