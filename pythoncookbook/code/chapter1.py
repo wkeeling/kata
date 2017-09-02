@@ -13,3 +13,8 @@ class PriorityQueue:
 
     def pop(self):
         pass
+
+
+def dedupe(seq, key=None):
+    pass
+

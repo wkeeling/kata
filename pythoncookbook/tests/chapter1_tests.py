@@ -3,7 +3,8 @@
 from statistics import mean
 from unittest import TestCase
 
-from pythoncookbook.code.chapter1 import (PriorityQueue,
+from pythoncookbook.code.chapter1 import (dedupe,
+                                          PriorityQueue,
                                           search,
                                           World)
 
@@ -229,3 +230,75 @@ class CalculatingWithDictionariesTest(TestCase):
         with self.assertRaises(ValueError):
             min(prices_and_names)
             max(prices_and_names)
+
+
+class FindingCommonalitiesInTwoDictionariesTest(TestCase):
+
+    def setUp(self):
+        self._a = {
+            'x': 1,
+            'y': 2,
+            'z': 3
+        }
+        self._b = {
+            'w': 10,
+            'x': 11,
+            'y': 2
+        }
+
+    def test_find_keys_in_common(self):
+        self.fail('Write a single line variable assignment')
+
+        self.assertEqual(common_keys, {'x', 'y'})
+
+    def test_find_keys_in_a_not_b(self):
+        """Hint: think of it as removing b's keys from a."""
+        self.fail('Write a single line variable assignment')
+
+        self.assertEqual(keys, {'z'})
+
+    def test_find_key_value_pairs_in_common(self):
+        self.fail('Write a single line variable assignment')
+
+        self.assertEqual(common_pairs, {('y', 2)})
+
+
+class RemovingDuplicatesFromASequencePreservingOrderTest(TestCase):
+
+    def test_dedupe_sequence(self):
+        """Hint: dedupe() could also be used to de-dupe any type of iterable,
+        not just a list."""
+        a = [1, 5, 2, 1, 9, 1, 5, 10]
+
+        b = list(dedupe(a))
+
+        self.assertListEqual(b, [1, 5, 2, 9, 10])
+
+    def test_dedupe_sequence_hashable_items(self):
+        a = [{'x': 1, 'y': 2}, {'x': 1, 'y': 3}, {'x': 1, 'y': 2},
+             {'x': 2, 'y': 4}]
+
+        b = list(dedupe(a, key=lambda d: (d['x'], d['y'])))
+
+        self.assertListEqual(b, [{'x': 1, 'y': 2}, {'x': 1, 'y': 3},
+                                 {'x': 2, 'y': 4}])
+
+        b = list(dedupe(a, key=lambda d: d['x']))
+
+        self.assertListEqual(b, [{'x': 1, 'y': 2}, {'x': 2, 'y': 4}])
+
+
+class NamingASliceTest(TestCase):
+
+    def test_use_named_slice(self):
+        record = '....................100          .......513.25     ........'
+
+        self.fail('Retrive the information from the string')
+
+        self.assertEquals(shares, 100)
+        self.assertEqual(price, 513.25)
+
+
+class DeterminingMostFrequentlyOccurringItemsInASequenceTest(TestCase):
+
+    pass
