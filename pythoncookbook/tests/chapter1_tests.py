@@ -27,8 +27,8 @@ class UnpackingSequenceTest(TestCase):
         self.assertEquals(shares, 50)
         self.assertEquals(price, 91.1)
         self.assertEquals(year, 2012)
-        self.assertEquals(year, 12)
-        self.assertEquals(year, 21)
+        self.assertEquals(month, 12)
+        self.assertEquals(day, 21)
 
     def test_unpack_sequence_string(self):
         self.fail('Write a single line expression')
@@ -40,7 +40,8 @@ class UnpackingSequenceTest(TestCase):
         self.assertEquals(e, 'o')
 
     def test_unpack_sequence_object(self):
-        a, b, c, d, e = World
+        w = World('World')
+        a, b, c, d, e = w
 
         self.assertEquals(a, 'W')
         self.assertEquals(b, 'o')
@@ -157,7 +158,12 @@ class FindingTheLargestOrSmallestNItemsTest(TestCase):
 
         self.fail('Write a single line expression')
 
-        self.assertEqual(expensive, [200, 100, 75])
+        self.assertEqual(expensive, [{'name': 'FB', 'shares': 200,
+                                      'price': 21.09},
+                                     {'name': 'IBM', 'shares': 100,
+                                      'price': 91.1},
+                                     {'name': 'ACME', 'shares': 75,
+                                      'price': 115.65}])
 
 
 class ImplementingAPriorityQueueTest(TestCase):
