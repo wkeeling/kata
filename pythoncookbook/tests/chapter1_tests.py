@@ -202,6 +202,8 @@ class MappingKeysToMutipleValuesDictionaryTest(TestCase):
         except KeyError:
             pass  # Should not raise
 
+        self.assertEquals(d['a'], [1, 2])
+
 
 class CalculatingWithDictionariesTest(TestCase):
 
