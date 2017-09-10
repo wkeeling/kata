@@ -1,3 +1,5 @@
+"""Chapter 2: Strings and Text."""
+
 from unittest import TestCase
 
 
