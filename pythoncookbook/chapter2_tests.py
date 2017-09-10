@@ -143,3 +143,85 @@ class CombiningAndConcatenatingStringsTest(TestCase):
         self.fail('Write a single line expression')
 
         self.assertEqual(built, 'Is Chicago Not Chicago? 12345')
+
+
+class InterpolatingVariablesInStringsTest(TestCase):
+
+    def test_format_local_vars(self):
+        name = 'Guido'
+        n = 37
+
+        self.fail('Write a single line expression')
+
+        self.assertEqual(formatted, 'Guido has 37 messages.')
+
+    def test_format_vars_from_object(self):
+        class Info:
+            def __init__(self, name, n):
+                self.name = name
+                self.n = n
+
+        a = Info('Guido', 37)
+
+        self.fail('Write a single line expression')
+
+        self.assertEqual(formatted, 'Guido has 37 messages.')
+
+
+class HandlingHtmlAndXmlEntitiesInText(TestCase):
+
+    def test_escape_text(self):
+        s = 'Elements are written as "<tag>text</tag>".'
+
+        self.fail('Write a single line expression')
+
+        self.assertEqual(escaped, 'Elements are written as &quot;&lt;tag&gt;'
+                                  'text&lt;/tag&gt;&quot;.')
+
+    def test_escape_text_not_quotes(self):
+        s = 'Elements are written as "<tag>text</tag>".'
+
+        self.fail('Write a single line expression')
+
+        self.assertEqual(escaped, 'Elements are written as "&lt;tag&gt;text'
+                                  '&lt;/tag&gt;".')
+
+    def test_unescape_text(self):
+        """Hint: look to xml.sax"""
+        t = 'The prompt is &gt;&gt;&gt;'
+
+        self.fail('Write a single line expression')
+
+        self.assertEqual(unescaped, 'The prompt is >>>')
+
+
+class PerformingTextOperationsOnByteStrings(TestCase):
+
+    def test_slice_byte_string(self):
+        data = b'Hello World'
+
+        self.fail('Write a single line expression')
+
+        self.assertEqual(hello, b'Hello')
+
+    def test_slice_byte_array(self):
+        data = bytearray(b'Hello World')
+
+        self.fail('Write a single line expression')
+
+        self.assertEqual(hello, bytearray(b'Hello'))
+
+    def test_split_byte_array(self):
+        data = bytearray(b'Hello World')
+
+        self.fail('Write a single line expression')
+
+        self.assertEqual(parts, [bytearray(b'Hello'), bytearray(b'World')])
+
+    def test_index_byte_string(self):
+        """Index the first letter of the string."""
+        b = b'Hello World'
+
+        self.fail('Write a single line expression')
+
+        self.assertEqual(h, 72)
