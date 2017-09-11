@@ -468,10 +468,8 @@ class ExtractingASubsetOfADictionaryTest(TestCase):
         self.fail('Write a single line expression')
 
         self.assertEqual(prices_subset, {
-            'ACME': 45.23,
             'AAPL': 612.78,
             'IBM': 205.55,
-            'HPQ': 37.20,
         })
 
 
