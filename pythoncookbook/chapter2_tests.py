@@ -23,7 +23,7 @@ class MatchingTextAtStartAndEndOfStringTest(TestCase):
     def test_filter_filenames_with_multiple_extensions(self):
         """Hint: filter the list but don't use more than one conditional
         expression."""
-        filenames = ['asdf', 'fjdk', 'afed', 'fjek', 'asdf', 'foo']
+        filenames = ['Makefile', 'foo.c', 'bar.py', 'spam.c', 'spam.h']
 
         self.fail('Write a single line expression')
 
