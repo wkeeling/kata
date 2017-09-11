@@ -54,6 +54,7 @@ class MatchingStringsUsingShellWildcardPatterns(TestCase):
 
         self.assertListEqual(streets, ['5412 N CLARK ST', '1060 W ADDISON ST',
                                        '2122 N CLARK ST'])
+        
     def test_match_single_street(self):
         addresses = [
             '5412 N CLARK ST',
