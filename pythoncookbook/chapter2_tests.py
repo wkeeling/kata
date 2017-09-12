@@ -54,7 +54,7 @@ class MatchingStringsUsingShellWildcardPatterns(TestCase):
 
         self.assertListEqual(streets, ['5412 N CLARK ST', '1060 W ADDISON ST',
                                        '2122 N CLARK ST'])
-        
+
     def test_match_single_street(self):
         addresses = [
             '5412 N CLARK ST',
@@ -141,11 +141,10 @@ class CombiningAndConcatenatingStringsTest(TestCase):
             yield 'Chicago'
             yield 'Not'
             yield 'Chicago?'
-            yield 12345
 
         self.fail('Write a single line expression')
 
-        self.assertEqual(built, 'Is Chicago Not Chicago? 12345')
+        self.assertEqual(built, 'Is Chicago Not Chicago?')
 
 
 class InterpolatingVariablesInStringsTest(TestCase):
