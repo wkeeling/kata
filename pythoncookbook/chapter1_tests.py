@@ -386,6 +386,7 @@ class SortingObjectsWithoutNativeComparisonSupport(TestCase):
 class GroupingRecordsBasedOnAField(TestCase):
 
     def test_group_records_by_date(self):
+        """Hint: an important step needs to happen before the grouping."""
         rows = [
             {'address': '5412 N CLARK', 'date': '07/01/2012'},
             {'address': '5148 N CLARK', 'date': '07/04/2012'},
