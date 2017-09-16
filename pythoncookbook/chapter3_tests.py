@@ -1,8 +1,13 @@
 """Chapter 3: Numbers, Dates and Times."""
 
+from datetime import (datetime,
+                      timedelta)
 from fractions import Fraction
 import math
 from unittest import TestCase
+
+from pythoncookbook.chapter3 import (date_range,
+                                     get_month_range)
 
 
 class RoundingNumericalValuesTest(TestCase):
@@ -120,4 +125,159 @@ class CalculatingWithFractionsTest(TestCase):
 
 
 class PickingThingsAtRandomTest(TestCase):
-    pass
+
+    def test_pick_random_item_from_sequence(self):
+        values = [1, 2, 3, 4, 5, 6]
+
+        self.fail('Write a single line expression')
+
+        self.assertIn(val, values)
+
+    def test_pick_two_random_items_from_sequence(self):
+        values = [1, 2, 3, 4, 5, 6]
+
+        self.fail('Write a single line expression')
+
+        self.assertEqual(len(vals), 2)
+        for val in vals:
+            self.assertIn(val, values)
+
+    def test_shuffle_sequence(self):
+        values = [1, 2, 3, 4, 5, 6]
+
+        self.fail('Write a single line expression')
+
+        self.assertNotEqual(suffled, values)
+
+    def test_create_random_integer_between_1_and_10(self):
+        self.fail('Write a single line expression')
+
+        self.assertIn(i, range(1, 10))
+
+    def test_create_random_float_between_0_and_1(self):
+        self.fail('Write a single line expression')
+
+        self.assertGreaterEqual(i, 0)
+        self.assertLessEqual(i, 1)
+
+
+class ConvertingDaysToSecondsAndOtherBasicTimeConversions(TestCase):
+
+    def test_arithmetic_with_units_of_time(self):
+        self.fail('Define three variables, the third should be the'
+                  'sum of the first two')
+
+        self.assertEqual(a.days, 2)
+        self.assertEqual(a.hours, 6)
+        self.assertEqual(b.hours, 4.5)
+        self.assertEqual(c.hours, 2)
+        self.assertEqual(c.seconds, 37800)
+
+    def test_arithmetic_with_specific_dates(self):
+        a = datetime(2012, 9, 23)
+        b = datetime(2012, 12, 21)
+
+        self.fail('Write a single line expression')
+
+        self.assertEqual(c.days, 89)
+
+    def test_relative_time_between_two_dates(self):
+        """Hint: this uses a 3rd party package."""
+        a = datetime(2012, 9, 23)
+        b = datetime(2012, 12, 21)
+
+        self.fail('Write a single line expression')
+
+        self.assertEqual(d.months, 2)
+        self.assertEqual(d.days, 28)
+
+
+class DeterminingLastFridaysDate(TestCase):
+
+    def test_find_last_friday(self):
+        """Hint: this uses a 3rd party package."""
+        d = datetime(2017, 9, 16, 10, 0, 0, 0)
+
+        self.fail('Write a single line expression')
+
+        self.assertEqual(last_friday, datetime(2017, 9, 15, 10, 0, 0, 0))
+
+    def test_find_next_friday(self):
+        """Hint: this uses a 3rd party package."""
+        d = datetime(2017, 9, 16, 10, 0, 0, 0)
+
+        self.fail('Write a single line expression')
+
+        self.assertEqual(next_friday, datetime(2017, 9, 2, 10, 0, 0, 0))
+
+
+class FindingTheDateRangeForTheCurrentMonth(TestCase):
+
+    def test_iterate_days_in_month(self):
+        """Hint: use the calendar module to get the number of days in
+        the month.
+        """
+        first_day, last_day = get_month_range(datetime(2017, 9, 16, 0, 0, 0, 0))
+        days = []
+        a_day = timedelta(days=1)
+        while first_day < last_day:
+            days.append(first_day)
+            first_day += a_day
+
+        self.assertEqual(len(days), 30)
+        self.assertEqual(days[0], datetime(2017, 9, 1, 0, 0, 0, 0))
+        self.assertEqual(days[10], datetime(2017, 9, 11, 0, 0, 0, 0))
+        self.assertEqual(days[29], datetime(2017, 9, 30, 0, 0, 0, 0))
+
+    def test_iterate_date_range(self):
+        """Hint: don't return a list."""
+        days = []
+        start = datetime(2017, 9, 1, 0, 0, 0, 0)
+        stop = datetime(2017, 9, 3, 11, 0, 0, 0)
+        for d in date_range(start, stop, timedelta(hours=2)):
+            days.append(d)
+
+        self.assertEqual(days[0], start)
+        self.assertEqual(days[3], datetime(2017, 9, 1, 6, 0, 0, 0))
+        self.assertEqual(days[-1], datetime(2017, 9, 3, 11, 0, 0, 0))
+
+
+class ConvertingStringsIntoDatetimes(TestCase):
+
+    def test_parse_datetime(self):
+        text = '2017-09-20 13:09:23'
+
+        self.fail('Write a single line expression')
+
+        self.assertEqual(d.year, 2017)
+        self.assertEqual(d.month, 9)
+        self.assertEqual(d.day, 20)
+        self.assertEqual(d.hour, 13)
+        self.assertEqual(d.minute, 9)
+        self.assertEqual(d.second, 23)
+
+    def test_format_datetime(self):
+        d = datetime(2017, 9, 20, 13, 9, 23)
+
+        self.fail('Write a single line expression')
+
+        self.assertEqual(text, 'Wednesday September 20, 2017 13:09:23')
+
+
+class ManipulatingDatesUsingTimeZones(TestCase):
+
+    def test_convert_datetime_to_bangalore_time(self):
+        """Hint: use 3rd party package to localise the date first.
+        Once converted, you can convert it to Bangalore time.
+        The timezone for Bangalore is Asia/Kolkata
+        """
+        d = datetime(2017, 9, 10, 9, 30, 0)
+
+        self.fail('Do datetime conversion')
+
+        self.assertEqual(c.year, 2017)
+        self.assertEqual(c.month, 9)
+        self.assertEqual(c.day, 10)
+        self.assertEqual(c.hour, 21)
+        self.assertEqual(c.minute, 0)
+        self.assertEqual(c.second, 0)
