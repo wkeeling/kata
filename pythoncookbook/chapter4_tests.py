@@ -5,7 +5,8 @@ from unittest import TestCase
 from pythoncookbook.chapter4 import (Countdown,
                                      frange,
                                      LineHistory,
-                                     Node)
+                                     Node,
+                                     skip_initial_lines)
 
 
 class ManuallyConsumingAnIterator(TestCase):
@@ -92,3 +93,92 @@ class DefiningGeneratorsWithExtraState(TestCase):
                          ['line5', 'line6', 'line7'])
         self.assertEqual(found['line14 python'],
                          ['line11', 'line12', 'line13'])
+
+
+class TakingASliceOfAnIterator(TestCase):
+
+    def test_slice_generator(self):
+        def count():
+            for i in range(100):
+                yield i
+
+        self.fail('Write a single line expression')
+
+        self.assertListEqual(sliced, [5, 6, 7, 8, 9, 10])
+
+
+class SkippingTheFirstPartOfAnIterable(TestCase):
+
+    def test_skip_initial_lines_with_comments(self):
+        """Hint: assume you don't know how many initial comments there are
+        and the number of them might vary.
+        """
+        lines = skip_initial_lines('data/initial_comments.txt')
+
+        self.assertListEqual([
+            'nobody:*:-2:-2:Unprivileged User:/var/empty:/usr/bin/false',
+            'root:*:0:0:System Administrator:/var/root:/bin/sh',
+            '# Some other comment'
+        ])
+
+
+class IteratingOverAllPossibleCombinationsOrPermutations(TestCase):
+
+    def test_rearrange_into_permutations(self):
+        """Hint: shuffle the items of the list into all possible
+        combinations.
+        """
+        items = ['a', 'b', 'c']
+
+        self.fail('Create permutations of the list of items')
+
+        self.assertListEqual(permutations, [
+            ('a', 'b', 'c')
+            ('a', 'c', 'b')
+            ('b', 'a', 'c')
+            ('b', 'c', 'a')
+            ('c', 'a', 'b')
+            ('c', 'b', 'a')
+        ])
+
+    def test_rearrange_into_permutations_smaller_length(self):
+        items = ['a', 'b', 'c']
+
+        self.fail('Create permutations of the list of items')
+
+        self.assertListEqual(permutations, [
+            ('a', 'b')
+            ('a', 'c')
+            ('b', 'a')
+            ('b', 'c')
+            ('c', 'a')
+            ('c', 'b')
+        ])
+
+    def test_produce_combinations(self):
+        """Hint: with combinations, the order is not considered. That means
+        that (a, b) is the same as (b, a) which is not produced.
+        """
+        items = ['a', 'b', 'c']
+
+        self.fail('Produce combinations of items')
+
+        self.assertListEqual(combinations, [
+            ('a', 'b')
+            ('a', 'c')
+            ('b', 'c')
+        ])
+
+    def test_produce_combinations_using_duplicate_items(self):
+        items = ['a', 'b', 'c']
+
+        self.fail('Produce combinations of items')
+
+        self.assertListEqual(combinations, [
+            ('a', 'a')
+            ('a', 'b')
+            ('a', 'c')
+            ('b', 'b')
+            ('b', 'c')
+            ('c', 'c')
+        ])

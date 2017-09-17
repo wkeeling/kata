@@ -36,3 +36,6 @@ class Countdown:
 class LineHistory:
     pass
 
+
+def skip_initial_lines(f):
+    pass
