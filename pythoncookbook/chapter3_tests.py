@@ -7,7 +7,7 @@ import math
 from unittest import TestCase
 
 from pythoncookbook.chapter3 import (date_range,
-                                     get_month_range)
+                                     get_days_in_month)
 
 
 class RoundingNumericalValuesTest(TestCase):
@@ -159,9 +159,9 @@ class PickingThingsAtRandomTest(TestCase):
     def test_shuffle_sequence(self):
         values = [1, 2, 3, 4, 5, 6]
 
-        self.fail('Write a single line expression')
+        self.fail('Create a new list based on shuffling values')
 
-        self.assertNotEqual(suffled, values)
+        self.assertNotEqual(shuffled, values)
 
     def test_create_random_integer_between_1_and_10(self):
         self.fail('Write a single line expression')
@@ -178,14 +178,20 @@ class PickingThingsAtRandomTest(TestCase):
 class ConvertingDaysToSecondsAndOtherBasicTimeConversions(TestCase):
 
     def test_arithmetic_with_units_of_time(self):
-        self.fail('Define three variables, the third should be the'
+        self.fail('Define three variables, the third should be the '
                   'sum of the first two')
 
         self.assertEqual(a.days, 2)
-        self.assertEqual(a.hours, 6)
-        self.assertEqual(b.hours, 4.5)
-        self.assertEqual(c.hours, 2)
-        self.assertEqual(c.seconds, 37800)
+        self.assertEqual(b.days, 3)
+        self.assertEqual(c.days, 5)
+
+    def test_arithmetic_with_units_of_time_2(self):
+        self.fail('Define three variables, the third should be the '
+                  'result of dividing the first by the second.')
+
+        self.assertEqual(a.days, 4)
+        self.assertEqual(b.days, 2)
+        self.assertEqual(c, 2.0)
 
     def test_arithmetic_with_specific_dates(self):
         a = datetime(2012, 9, 23)
@@ -222,7 +228,7 @@ class DeterminingLastFridaysDate(TestCase):
 
         self.fail('Write a single line expression')
 
-        self.assertEqual(next_friday, datetime(2017, 9, 2, 10, 0, 0, 0))
+        self.assertEqual(next_friday, datetime(2017, 9, 22, 10, 0, 0, 0))
 
 
 class FindingTheDateRangeForTheCurrentMonth(TestCase):
@@ -231,12 +237,7 @@ class FindingTheDateRangeForTheCurrentMonth(TestCase):
         """Hint: use the calendar module to get the number of days in
         the month.
         """
-        first_day, last_day = get_month_range(datetime(2017, 9, 16, 0, 0, 0, 0))
-        days = []
-        a_day = timedelta(days=1)
-        while first_day < last_day:
-            days.append(first_day)
-            first_day += a_day
+        days = list(get_days_in_month(datetime(2017, 9, 16, 0, 0, 0, 0)))
 
         self.assertEqual(len(days), 30)
         self.assertEqual(days[0], datetime(2017, 9, 1, 0, 0, 0, 0))
