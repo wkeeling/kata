@@ -254,7 +254,7 @@ class FindingTheDateRangeForTheCurrentMonth(TestCase):
 
         self.assertEqual(days[0], start)
         self.assertEqual(days[3], datetime(2017, 9, 1, 6, 0, 0, 0))
-        self.assertEqual(days[-1], datetime(2017, 9, 3, 11, 0, 0, 0))
+        self.assertEqual(days[-1], datetime(2017, 9, 3, 10, 0, 0, 0))
 
 
 class ConvertingStringsIntoDatetimes(TestCase):
@@ -284,7 +284,8 @@ class ManipulatingDatesUsingTimeZones(TestCase):
     def test_convert_datetime_to_bangalore_time(self):
         """Hint: use 3rd party package to localise the date first.
         Once converted, you can convert it to Bangalore time.
-        The timezone for Bangalore is Asia/Kolkata
+        The timezone for Bangalore is Asia/Kolkata. The local
+        date should be Europe/London.
         """
         d = datetime(2017, 9, 10, 9, 30, 0)
 
@@ -293,6 +294,6 @@ class ManipulatingDatesUsingTimeZones(TestCase):
         self.assertEqual(c.year, 2017)
         self.assertEqual(c.month, 9)
         self.assertEqual(c.day, 10)
-        self.assertEqual(c.hour, 21)
+        self.assertEqual(c.hour, 14)
         self.assertEqual(c.minute, 0)
         self.assertEqual(c.second, 0)
