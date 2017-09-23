@@ -1,0 +1,7 @@
+Why is Python growing so fast? Python is used in a variety of purposes, ranging
+from web development to data science to DevOps, and it’s worth understanding what
+particular applications of Python have recently become more common. I’m a data
+scientist who uses R, so I’m certainly interested in how much of Python’s growth
+has been within my own field. In this post, I’ll take another look at Stack Overflow
+data to understand what kinds of Python development have been growing, and in what
+kinds of companies and organizations it’s most used.

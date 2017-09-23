@@ -1,5 +1,6 @@
 """Chapter 4: Iterators and Generators."""
 
+from collections import defaultdict
 from unittest import TestCase
 
 from pythoncookbook.chapter4 import (Countdown,
@@ -182,3 +183,83 @@ class IteratingOverAllPossibleCombinationsOrPermutations(TestCase):
             ('b', 'c')
             ('c', 'c')
         ])
+
+
+class IteratingOverTheIndexPairsOfASequence(TestCase):
+
+    def test_find_lines_words_occurred_on(self):
+        word_summary = defaultdict(list)
+
+        with open('words_on_lines.txt', 'r') as f:
+            lines = f.readlines()
+
+        self.fail('Populate the word_summary. The key should be the word, '
+                  'and the value should be a list of the line numbers '
+                  'that contain that word')
+
+        self.assertListEqual(word_summary['is'], [1, 4, 5, 6])
+
+    def test_iterate_sequence_of_tuples(self):
+        data = [(1, 2), (3, 4), (5, 6), (7, 8)]
+        output = {}
+
+        self.fail('Iterate the sequence of data and add to the output'
+                  'dictionary. The key should be the index of the '
+                  'tuple in the list, and the value the tuple itself.')
+
+        self.assertEqual(output, {
+            0: (1, 2),
+            1: (3, 4),
+            2: (5, 6),
+            3: (7, 8)
+        })
+
+
+class IteratingOverMultipleSequencesSimultaneously(TestCase):
+
+    def test_iterate_over_two_sequences(self):
+        xpts = [1, 5, 4, 2, 10, 7]
+        ypts = [101, 78, 37, 15, 62, 99]
+
+        self.fail('Write a single line expression')
+
+        self.assertListEqual(result, [(1, 100), (5, 78), (4, 37), (2, 15),
+                                      (10, 62), (7, 99)])
+
+    def test_iterate_two_sequences_different_lengths(self):
+        a = [1, 2, 3]
+        b = ['w', 'x', 'y', 'z']
+
+        self.fail('Write a single line expression')
+
+        self.assertListEqual(result, [(1, 'w'), (2, 'x'), (3, 'y'),
+                                      (None, 'z')])
+
+    def test_iterate_two_sequences_different_lengths_fill_blanks(self):
+        a = [1, 2, 3]
+        b = ['w', 'x', 'y', 'z']
+
+        self.fail('Write a single line expression')
+
+        self.assertListEqual(result, [(1, 'w'), (2, 'x'), (3, 'y'),
+                                      (0, 'z')])
+
+    def test_create_zip_from_two_sequences(self):
+        headers = ['name', 'shares', 'price']
+        values = ['ACME', 100, 490.1]
+
+        self.fail('Write a single line expression')
+
+        self.assertEqual(result, {
+            'name': 'ACME',
+            'shares': 100,
+            'price': 490.1
+        })
+
+    def test_create_output_from_two_sequences(self):
+        headers = ['name', 'shares', 'price']
+        values = ['ACME', 100, 490.1]
+
+        self.fail('Build the output to satisfy the assertion')
+
+        self.assertEqual(output, 'name=ACME, shares=100, price=490.1')
