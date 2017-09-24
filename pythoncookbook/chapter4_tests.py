@@ -263,3 +263,14 @@ class IteratingOverMultipleSequencesSimultaneously(TestCase):
         self.fail('Build the output to satisfy the assertion')
 
         self.assertEqual(output, 'name=ACME, shares=100, price=490.1')
+
+
+class IteratingOnItemsInSeparateContainersTest(TestCase):
+
+    def test_iterate_over_iterables(self):
+        a = [1, 2, 3, 4, 5]
+        b = {6, 7, 8, 9, 10}
+
+        self.fail('Iterate over the iterables in a single loop')
+
+        self.assertListEqual(result, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
