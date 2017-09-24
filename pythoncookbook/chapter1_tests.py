@@ -361,7 +361,7 @@ class SortingAListOfDictionariesByAComonKeyTest(TestCase):
                                'lname': 'Jones'}])
 
 
-class SortingObjectsWithoutNativeComparisonSupport(TestCase):
+class SortingObjectsWithoutNativeComparisonSupportTest(TestCase):
 
     def test_sort_by_user_id(self):
         """Hint: try to avoid using a lambda."""
@@ -383,7 +383,7 @@ class SortingObjectsWithoutNativeComparisonSupport(TestCase):
         self.assertListEqual(by_user_id, [user2, user1, user3])
 
 
-class GroupingRecordsBasedOnAField(TestCase):
+class GroupingRecordsBasedOnAFieldTest(TestCase):
 
     def test_group_records_by_date(self):
         """Hint: an important step needs to happen before the grouping."""
@@ -420,7 +420,7 @@ class GroupingRecordsBasedOnAField(TestCase):
                            'address': '1039 W GRANVILLE'}])
 
 
-class FilteringSequenceElements(TestCase):
+class FilteringSequenceElementsTest(TestCase):
 
     def test_filter_non_numeric_values(self):
         """Hint: don't use a list comprehension, generator expression for
@@ -474,7 +474,7 @@ class ExtractingASubsetOfADictionaryTest(TestCase):
         })
 
 
-class CombineMultipleMappingsInToSingleMapping(TestCase):
+class CombineMultipleMappingsInToSingleMappingTest(TestCase):
 
     def test_lookup_two_dicts(self):
         a = {'x': 1, 'z': 3}

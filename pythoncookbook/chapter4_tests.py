@@ -10,7 +10,7 @@ from pythoncookbook.chapter4 import (Countdown,
                                      skip_initial_lines)
 
 
-class ManuallyConsumingAnIterator(TestCase):
+class ManuallyConsumingAnIteratorTest(TestCase):
 
     def test_iterate_file_without_using_for_loop(self):
         """Hint: load the contents of data/file1.txt"""
@@ -25,7 +25,7 @@ class ManuallyConsumingAnIterator(TestCase):
         self.assertListEqual(lines, ['hello', 'world', 'foo', 'bar', 'baz'])
 
 
-class CreatingNewIterationPatternsWithGenerators(TestCase):
+class CreatingNewIterationPatternsWithGeneratorsTest(TestCase):
 
     def test_create_generator_that_returns_floating_point_numbers(self):
         floats = list(frange(0, 4, 0.5))
@@ -34,7 +34,7 @@ class CreatingNewIterationPatternsWithGenerators(TestCase):
                                       4.0])
 
 
-class ImplementingTheIteratorProtocol(TestCase):
+class ImplementingTheIteratorProtocolTest(TestCase):
 
     def test_iterate_nodes_depth_first(self):
         """Hint: this uses a custom object that implements the iterator
@@ -60,7 +60,7 @@ class ImplementingTheIteratorProtocol(TestCase):
                                      child5])
 
 
-class IteratingInReverse(TestCase):
+class IteratingInReverseTest(TestCase):
 
     def test_reverse_file_contents(self):
         self.fail('Reverse the contents of file2.txt')
@@ -75,7 +75,7 @@ class IteratingInReverse(TestCase):
         self.assertListEqual(r, [9, 8, 7, 6, 5, 4, 3, 2, 1])
 
 
-class DefiningGeneratorsWithExtraState(TestCase):
+class DefiningGeneratorsWithExtraStateTest(TestCase):
 
     def test_access_line_history(self):
         """Hint: similar to the find_lines_wth_history test in ch. 1
@@ -96,7 +96,7 @@ class DefiningGeneratorsWithExtraState(TestCase):
                          ['line11', 'line12', 'line13'])
 
 
-class TakingASliceOfAnIterator(TestCase):
+class TakingASliceOfAnIteratorTest(TestCase):
 
     def test_slice_generator(self):
         def count():
@@ -108,7 +108,7 @@ class TakingASliceOfAnIterator(TestCase):
         self.assertListEqual(sliced, [5, 6, 7, 8, 9, 10])
 
 
-class SkippingTheFirstPartOfAnIterable(TestCase):
+class SkippingTheFirstPartOfAnIterableTest(TestCase):
 
     def test_skip_initial_lines_with_comments(self):
         """Hint: assume you don't know how many initial comments there are
@@ -123,7 +123,7 @@ class SkippingTheFirstPartOfAnIterable(TestCase):
         ])
 
 
-class IteratingOverAllPossibleCombinationsOrPermutations(TestCase):
+class IteratingOverAllPossibleCombinationsOrPermutationsTest(TestCase):
 
     def test_rearrange_into_permutations(self):
         """Hint: shuffle the items of the list into all possible
@@ -185,7 +185,7 @@ class IteratingOverAllPossibleCombinationsOrPermutations(TestCase):
         ])
 
 
-class IteratingOverTheIndexPairsOfASequence(TestCase):
+class IteratingOverTheIndexPairsOfASequenceTest(TestCase):
 
     def test_find_lines_words_occurred_on(self):
         word_summary = defaultdict(list)
@@ -215,7 +215,7 @@ class IteratingOverTheIndexPairsOfASequence(TestCase):
         })
 
 
-class IteratingOverMultipleSequencesSimultaneously(TestCase):
+class IteratingOverMultipleSequencesSimultaneouslyTest(TestCase):
 
     def test_iterate_over_two_sequences(self):
         xpts = [1, 5, 4, 2, 10, 7]

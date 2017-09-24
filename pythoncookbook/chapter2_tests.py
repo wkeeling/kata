@@ -30,7 +30,7 @@ class MatchingTextAtStartAndEndOfStringTest(TestCase):
         self.assertListEqual(filtered, ['foo.c', 'spam.c', 'spam.h'])
 
 
-class MatchingStringsUsingShellWildcardPatterns(TestCase):
+class MatchingStringsUsingShellWildcardPatternsTest(TestCase):
 
     def test_match_filename_string(self):
         """Hint: use a wildcard for the match."""
@@ -170,7 +170,7 @@ class InterpolatingVariablesInStringsTest(TestCase):
         self.assertEqual(formatted, 'Guido has 37 messages.')
 
 
-class HandlingHtmlAndXmlEntitiesInText(TestCase):
+class HandlingHtmlAndXmlEntitiesInTextTest(TestCase):
 
     def test_escape_text(self):
         s = 'Elements are written as "<tag>text</tag>".'
@@ -197,7 +197,7 @@ class HandlingHtmlAndXmlEntitiesInText(TestCase):
         self.assertEqual(unescaped, 'The prompt is >>>')
 
 
-class PerformingTextOperationsOnByteStrings(TestCase):
+class PerformingTextOperationsOnByteStringsTest(TestCase):
 
     def test_slice_byte_string(self):
         data = b'Hello World'

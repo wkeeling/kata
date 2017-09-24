@@ -61,7 +61,7 @@ class RoundingNumericalValuesTest(TestCase):
         self.assertEqual(formatted, '1.23')
 
 
-class PerformingAccurateDecimalCalculations(TestCase):
+class PerformingAccurateDecimalCalculationsTest(TestCase):
 
     def test_perform_accurate_calculation(self):
         """Hint: add the variables together but note that adding
@@ -85,7 +85,7 @@ class PerformingAccurateDecimalCalculations(TestCase):
         self.assertEqual(c, '0.765')
 
 
-class FormattingNumbersForOutput(TestCase):
+class FormattingNumbersForOutputTest(TestCase):
 
     def setUp(self):
         self._x = 1234.56789
@@ -175,7 +175,7 @@ class PickingThingsAtRandomTest(TestCase):
         self.assertLessEqual(i, 1)
 
 
-class ConvertingDaysToSecondsAndOtherBasicTimeConversions(TestCase):
+class ConvertingDaysToSecondsAndOtherBasicTimeConversionsTest(TestCase):
 
     def test_arithmetic_with_units_of_time(self):
         self.fail('Define three variables, the third should be the '
@@ -212,7 +212,7 @@ class ConvertingDaysToSecondsAndOtherBasicTimeConversions(TestCase):
         self.assertEqual(d.days, 28)
 
 
-class DeterminingLastFridaysDate(TestCase):
+class DeterminingLastFridaysDateTest(TestCase):
 
     def test_find_last_friday(self):
         """Hint: this uses a 3rd party package."""
@@ -231,7 +231,7 @@ class DeterminingLastFridaysDate(TestCase):
         self.assertEqual(next_friday, datetime(2017, 9, 22, 10, 0, 0, 0))
 
 
-class FindingTheDateRangeForTheCurrentMonth(TestCase):
+class FindingTheDateRangeForTheCurrentMonthTest(TestCase):
 
     def test_iterate_days_in_month(self):
         """Hint: use the calendar module to get the number of days in
@@ -257,7 +257,7 @@ class FindingTheDateRangeForTheCurrentMonth(TestCase):
         self.assertEqual(days[-1], datetime(2017, 9, 3, 10, 0, 0, 0))
 
 
-class ConvertingStringsIntoDatetimes(TestCase):
+class ConvertingStringsIntoDatetimesTest(TestCase):
 
     def test_parse_datetime(self):
         text = '2017-09-20 13:09:23'
@@ -279,7 +279,7 @@ class ConvertingStringsIntoDatetimes(TestCase):
         self.assertEqual(text, 'Wednesday September 20, 2017 13:09:23')
 
 
-class ManipulatingDatesUsingTimeZones(TestCase):
+class ManipulatingDatesUsingTimeZonesTest(TestCase):
 
     def test_convert_datetime_to_bangalore_time(self):
         """Hint: use 3rd party package to localise the date first.
