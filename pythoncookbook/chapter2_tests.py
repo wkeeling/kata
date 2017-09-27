@@ -55,9 +55,11 @@ class MatchingStringsUsingShellWildcardPatternsTest(TestCase):
         self.assertListEqual(streets, ['5412 N CLARK ST', '1060 W ADDISON ST',
                                        '2122 N CLARK ST'])
 
-    def test_match_single_street(self):
+    def test_match_streets_2(self):
+        """Hint: only use one wildcard *"""
         addresses = [
             '5412 N CLARK ST',
+            '5423 N CLARK ST',
             '1060 W ADDISON ST',
             '1039 W GRANVILLE AVE',
             '2122 N CLARK ST',
@@ -66,7 +68,7 @@ class MatchingStringsUsingShellWildcardPatternsTest(TestCase):
 
         self.fail('Write a single line expression')
 
-        self.assertListEqual(street, ['5412 N CLARK ST'])
+        self.assertListEqual(streets, ['5412 N CLARK ST', '5423 N CLARK ST'])
 
 
 class SearchingAndReplacingTextTest(TestCase):
@@ -95,7 +97,8 @@ class StripUnwantedCharactersFromStringsTest(TestCase):
 class AligningTextStringsTest(TestCase):
 
     def test_align_string_left(self):
-        """Hint: two ways to do this. Try both."""
+        """Hint: two ways to do this. Try both.
+        Max width is 20 chars."""
         text = 'Hello World'
 
         self.fail('Write a single line expression')
