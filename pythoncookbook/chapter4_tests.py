@@ -4,6 +4,7 @@ from collections import defaultdict
 from unittest import TestCase
 
 from pythoncookbook.chapter4 import (Countdown,
+                                     flatten,
                                      frange,
                                      LineHistory,
                                      Node,
@@ -274,3 +275,76 @@ class IteratingOnItemsInSeparateContainersTest(TestCase):
         self.fail('Iterate over the iterables in a single loop')
 
         self.assertListEqual(result, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+
+    def test_iterate_over_iterables_combine(self):
+        """Hint: do this differently from above by combining the lists.
+        Note how combining wasn't possible in the last test due to the
+        differing types.
+        """
+        a = [1, 2, 3, 4, 5]
+        b = [6, 7, 8, 9, 10]
+
+        self.fail('Iterate over the iterables in a single loop')
+
+        self.assertListEqual(result, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+
+
+class CreatingDataProcessingPipelinesTest(TestCase):
+
+    def test_create_pipeline(self):
+        """Hint: create the generator functions/expressions below and stack
+        them together to form a processing pipeline.
+        One of the generators "yields from" one of the others.
+        """
+        gen_find = None
+        gen_opener = None
+        gen_concatenate = None
+        gen_grep = None
+
+        self.fail('Write the generator expressions and stack them.')
+
+        found = gen_grep('Chelsea', lines)
+
+        self.assertEqual(found, [
+            'pythoncookbook/data/file1.tsv:A Brazil  3       4       Defender        27      36      Chelsea         David Luiz      0',
+            'pythoncookbook/data/file1.tsv:A Brazil  3       11      Midfielder      22      31      Chelsea         Oscar   0',
+            'pythoncookbook/data/file1.tsv:A Brazil  3       16      Midfielder      27      42      Chelsea         Ramires 0',
+            'pythoncookbook/data/file1.tsv:A Brazil  3       19      Midfielder      25      7       Chelsea         Willian 0',
+            "pythoncookbook/data/file2.tsv:A Cameroon        56      9       Forward 33      117     Chelsea         Samuel Eto'o    c               0"
+        ])
+
+
+class FlatteningANestSequenceTest(TestCase):
+
+    def test_flatten_nested_list(self):
+        """Hint: achieve this by using only a single loop within
+        flatten().
+        """
+        items = [1, 2, [3, 4, [5, 6], 7], 8]
+
+        # Produces 1 2 3 4 5 6 7 8
+        self.assertEqual(list(flatten(items)), [1, 2, 3, 4, 5, 6, 7, 8])
+
+
+class IteratingInSortedOrderOverMergedSortedIterablesTest(TestCase):
+
+    def test_iterate_over_merged_sorted_sequences(self):
+        """Hint: do not sort the lists again."""
+        a = [1, 4, 7, 10]
+        b = [2, 5, 6, 11]
+
+        self.fail('Use a single for loop to iterate over the lists together.')
+
+        self.assertEqual(c, [1, 2, 4, 5, 6, 7, 10, 11])
+
+
+class ReplacingInfiniteWhileLoopsWithAnIteratorTest(TestCase):
+
+    def test_read_file_5_chars_at_a_time(self):
+        """Hint: don't use a while loop for this one. Use the
+        second form of iter().
+        """
+        self.fail("Write loop that reads file1.txt 5 chars at a time.")
+
+        self.assertEqual(result, 'hello\nworld\nfoo\nbar\nbaz')
+

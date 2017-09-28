@@ -39,3 +39,8 @@ class LineHistory:
 
 def skip_initial_lines(f):
     pass
+
+
+def flatten(seq):
+    pass
+
