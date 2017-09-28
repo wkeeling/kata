@@ -73,7 +73,7 @@ class PerformingAccurateDecimalCalculationsTest(TestCase):
 
         self.fail('Write a single line expression')
 
-        self.assertEqual(c, '6.3')
+        self.assertEqual(float(c), 6.3)
 
     def test_divide_a_by_b_and_round_to_3_decimal_places(self):
         """Hint: don't use floats, and don't use round()."""
@@ -82,7 +82,7 @@ class PerformingAccurateDecimalCalculationsTest(TestCase):
 
         self.fail('Do the calculation and round the result')
 
-        self.assertEqual(c, '0.765')
+        self.assertEqual(float(c), 0.765)
 
 
 class FormattingNumbersForOutputTest(TestCase):
