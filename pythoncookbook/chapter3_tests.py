@@ -103,7 +103,7 @@ class FormattingNumbersForOutputTest(TestCase):
     def test_format_left_justified_10_chars_three_decimal_places(self):
         self.fail('Write a single line expression')
 
-        self.assertEqual(formatted, '1234.678  ')
+        self.assertEqual(formatted, '1234.568  ')
 
     def test_format_center_justified_10_chars_one_decimal_place(self):
         self.fail('Write a single line expression')
