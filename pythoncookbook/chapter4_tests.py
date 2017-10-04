@@ -31,8 +31,7 @@ class CreatingNewIterationPatternsWithGeneratorsTest(TestCase):
     def test_create_generator_that_returns_floating_point_numbers(self):
         floats = list(frange(0, 4, 0.5))
 
-        self.assertListEqual(floats, [0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5,
-                                      4.0])
+        self.assertListEqual(floats, [0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5])
 
 
 class ImplementingTheIteratorProtocolTest(TestCase):
@@ -73,7 +72,7 @@ class IteratingInReverseTest(TestCase):
 
         r = list(reversed(c))
 
-        self.assertListEqual(r, [9, 8, 7, 6, 5, 4, 3, 2, 1])
+        self.assertListEqual(r, [1, 2, 3, 4, 5, 6, 7, 8, 9])
 
 
 class DefiningGeneratorsWithExtraStateTest(TestCase):
@@ -87,14 +86,13 @@ class DefiningGeneratorsWithExtraStateTest(TestCase):
             lines = LineHistory(f)
             for line in lines:
                 if 'python' in line:
-                    for lineno, hline in lines.history:
-                        print('{}:{}'.format(lineno, hline))
+                    found[line] = list(lines.history)
 
         self.assertEqual(len(found), 2)
         self.assertEqual(found['line8 python'],
-                         ['line5', 'line6', 'line7'])
+                         [(5, 'line5'), (6, 'line6'), (7, 'line7')])
         self.assertEqual(found['line14 python'],
-                         ['line11', 'line12', 'line13'])
+                         [(11, 'line11'), (12, 'line12'), (13, 'line13')])
 
 
 class TakingASliceOfAnIteratorTest(TestCase):
