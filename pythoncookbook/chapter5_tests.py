@@ -5,7 +5,8 @@
 from io import StringIO
 from unittest import TestCase
 
-from chapter5 import iter_records
+from .chapter5 import (iter_records,
+                       read_into_buffer)
 
 
 class ReadingAndWritingTextDataTest(TestCase):
@@ -100,3 +101,21 @@ class IteratingOverFixedSizeRecordsTest(TestCase):
         self.assertEqual(records[0], 'Strings ar')
         self.assertEqual(records[3], 'opular typ')
 
+
+class ReadingBinaryDataIntoAMutableBufferTest(TestCase):
+
+    def test_read_file_into_buffer(self):
+        with open('data/sample.bin', 'wb') as f:
+            f.write(b'Hello World')
+
+        buf = read_into_buffer('sample.bin')
+
+        self.assertEqual(buf, bytearray(b'Hello World'))
+
+    def test_manipulate_string_in_memory(self):
+        buf = bytearray(b'Hello World')
+
+        self.fail('Wrap and manipulate the string')
+
+        # Note: asserting the exact same variable. Don't reassign it.
+        self.assertEqual(buf, bytearray(b'Hello WORLD'))
