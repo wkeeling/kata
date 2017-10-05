@@ -2,7 +2,7 @@
 
 """Chapter 5: Files and I/O."""
 
-from io import StringIO
+from io import StringIO, TextIOWrapper
 from unittest import TestCase
 
 from .chapter5 import (iter_records,
@@ -119,3 +119,51 @@ class ReadingBinaryDataIntoAMutableBufferTest(TestCase):
 
         # Note: asserting the exact same variable. Don't reassign it.
         self.assertEqual(buf, bytearray(b'Hello WORLD'))
+
+
+class ManipulatingPathnamesTest(TestCase):
+
+    def test_split_file_extension(self):
+        path = '/some/file/path.txt'
+
+        self.fail('Write a single line expression')
+
+        self.assertEqual(split, ('/some/file/path', '.txt'))
+
+
+class TestingForExistenceOfAFileTest(TestCase):
+
+    def test_get_file_size(self):
+        file = 'data/file1.bin'
+
+        self.fail('Write a single line expression')
+
+        self.assertEqual(size, 11)
+
+    def test_get_modified_time(self):
+        file = 'data/file1.bin'
+
+        self.fail('Write a single line expression')
+
+        self.assertEqual(mtime, 1506886291.0)
+
+    def test_get_created_time(self):
+        file = 'data/file1.bin'
+
+        self.fail('Write a single line expression')
+
+        self.assertEqual(ctime, 1506886291.0)
+
+
+class AddingOrChangingTheEncodingOfAnAlreadyOpenFileTest(TestCase):
+
+    def test_change_encoding(self):
+        file = 'data/file1.bin'
+
+        try:
+            f = open(file, encoding='utf-8')
+            self.fail('Change the encoding of "f" to latin-1')
+
+            self.assertEqual(f.encoding, 'latin-1')
+        finally:
+            f.close()
