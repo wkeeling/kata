@@ -115,7 +115,7 @@ class SkippingTheFirstPartOfAnIterableTest(TestCase):
         """
         lines = skip_initial_lines('data/initial_comments.txt')
 
-        self.assertListEqual([
+        self.assertListEqual(lines, [
             'nobody:*:-2:-2:Unprivileged User:/var/empty:/usr/bin/false',
             'root:*:0:0:System Administrator:/var/root:/bin/sh',
             '# Some other comment'
@@ -132,12 +132,12 @@ class IteratingOverAllPossibleCombinationsOrPermutationsTest(TestCase):
 
         self.fail('Create permutations of the list of items')
 
-        self.assertListEqual(permutations, [
-            ('a', 'b', 'c')
-            ('a', 'c', 'b')
-            ('b', 'a', 'c')
-            ('b', 'c', 'a')
-            ('c', 'a', 'b')
+        self.assertListEqual(p, [
+            ('a', 'b', 'c'),
+            ('a', 'c', 'b'),
+            ('b', 'a', 'c'),
+            ('b', 'c', 'a'),
+            ('c', 'a', 'b'),
             ('c', 'b', 'a')
         ])
 
@@ -146,12 +146,12 @@ class IteratingOverAllPossibleCombinationsOrPermutationsTest(TestCase):
 
         self.fail('Create permutations of the list of items')
 
-        self.assertListEqual(permutations, [
-            ('a', 'b')
-            ('a', 'c')
-            ('b', 'a')
-            ('b', 'c')
-            ('c', 'a')
+        self.assertListEqual(p, [
+            ('a', 'b'),
+            ('a', 'c'),
+            ('b', 'a'),
+            ('b', 'c'),
+            ('c', 'a'),
             ('c', 'b')
         ])
 
@@ -163,9 +163,9 @@ class IteratingOverAllPossibleCombinationsOrPermutationsTest(TestCase):
 
         self.fail('Produce combinations of items')
 
-        self.assertListEqual(combinations, [
-            ('a', 'b')
-            ('a', 'c')
+        self.assertListEqual(c, [
+            ('a', 'b'),
+            ('a', 'c'),
             ('b', 'c')
         ])
 
@@ -174,12 +174,12 @@ class IteratingOverAllPossibleCombinationsOrPermutationsTest(TestCase):
 
         self.fail('Produce combinations of items')
 
-        self.assertListEqual(combinations, [
-            ('a', 'a')
-            ('a', 'b')
-            ('a', 'c')
-            ('b', 'b')
-            ('b', 'c')
+        self.assertListEqual(c, [
+            ('a', 'a'),
+            ('a', 'b'),
+            ('a', 'c'),
+            ('b', 'b'),
+            ('b', 'c'),
             ('c', 'c')
         ])
 
