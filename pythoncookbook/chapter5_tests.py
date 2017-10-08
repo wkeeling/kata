@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 
 """Chapter 5: Files and I/O."""
-
-from io import StringIO, TextIOWrapper
+from io import StringIO
+import os
 from unittest import TestCase
 
-from .chapter5 import (iter_records,
+from .chapter5 import (create_temp_file,
+                       iter_records,
                        read_into_buffer)
 
 
@@ -167,3 +168,72 @@ class AddingOrChangingTheEncodingOfAnAlreadyOpenFileTest(TestCase):
             self.assertEqual(f.encoding, 'latin-1')
         finally:
             f.close()
+
+
+class WritingBytesToATextFileTest(TestCase):
+
+    def test_write_bytes(self):
+        try:
+            with open('text.txt', 'wt') as text:
+                self.fail('Write a byte string to the text file')
+
+            with open('text.txt') as inp:
+                self.assertEqual(inp.read(), 'Hello World')
+        finally:
+            try:
+                os.remove('text.txt')
+            except OSError:
+                pass
+
+
+class WrappingAnExistingFileDescriptorAsAFileObjectTest(TestCase):
+
+    def test_write_to_file_descriptor(self):
+        """Hint: don't try and write directly. Need to wrap."""
+        try:
+            fd = os.open('somefile.txt', os.O_WRONLY | os.O_CREAT)
+
+            # self.fail('Write text to the file')
+
+            with open('somefile.txt') as inp:
+                self.assertEqual(inp.read(), 'Hello World')
+        finally:
+            try:
+                os.remove('somefile.txt')
+            except OSError:
+                pass
+
+
+class MakingTemporaryFilesAndDirectoriesTest(TestCase):
+
+    def test_make_temporary_file(self):
+        with create_temp_file() as f:
+            f.write('Hello World')
+            f.seek(0)
+            data = f.read()
+
+            self.assertEqual(data, 'Hello World')
+
+    def test_make_temporary_file_alternate(self):
+        self.fail('Make a temporary file')
+
+        f.write('Hello World')
+        f.seek(0)
+        data = f.read()
+
+        self.assertEqual(data, 'Hello World')
+        f.close()  # deletes the file
+
+    def test_make_named_temporary_file(self):
+        self.fail('Make a named temporary file')
+
+        self.assertTrue(hasattr(f, 'name'))
+        f.close()  # deletes the file
+
+    def test_make_named_temporary_file_prefix_suffix(self):
+        self.fail('Make a named temporary file')
+
+        self.assertTrue(f.name.startswith('foo'))
+        self.assertTrue(f.name.endswith('bar'))
+        f.close()  # deletes the file
+        
