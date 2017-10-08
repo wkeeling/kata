@@ -236,4 +236,32 @@ class MakingTemporaryFilesAndDirectoriesTest(TestCase):
         self.assertTrue(f.name.startswith('foo'))
         self.assertTrue(f.name.endswith('bar'))
         f.close()  # deletes the file
-        
+
+
+class SerializingPythonObjectsTest(TestCase):
+
+    def test_pickle_unpickle_object_to_from_file(self):
+        to_pickle = list('helloworld')
+
+        self.fail('Pickle then unpickle the object to/from a file')
+
+        self.assertEqual(unpickled, list('helloworld'))
+
+    def test_pickle_unpickle_object_to_from_string(self):
+        to_pickle = [1, 2, 3, 4, 5]
+
+        self.fail('Pickle then unpickle the object to/from a string')
+
+        self.assertEqual(unpickled, [1, 2, 3, 4, 5])
+
+    def test_unpickle_multiple_objects_same_file(self):
+        """Pay attention to the fact that a single file can contain
+        pickled objects of different types, and that the pickle mechanism
+        takes care of maintaining type information.
+        """
+        self.fail('Unpickle the objects from pickled.bin')
+
+        self.assertEqual(obj1, 'helloworld')
+        self.assertEqual(obj2, [1, 2, 3, 4, 5])
+        self.assertEqual(obj3, {'Apple', 'Pear', 'Banana'})
+
