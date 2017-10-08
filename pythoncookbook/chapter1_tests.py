@@ -3,11 +3,11 @@
 from statistics import mean
 from unittest import TestCase
 
-from pythoncookbook.chapter1 import (dedupe,
-                                     group_by_date,
-                                     PriorityQueue,
-                                     search,
-                                     World)
+from pythoncookbook.code.chapter1 import (dedupe,
+                                          group_by_date,
+                                          PriorityQueue,
+                                          search,
+                                          World)
 
 
 class UnpackingSequenceTest(TestCase):

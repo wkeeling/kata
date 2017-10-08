@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 
 """Chapter 5: Files and I/O."""
-from io import StringIO
 import os
+from io import StringIO
 from unittest import TestCase
 
-from .chapter5 import (create_temp_file,
-                       iter_records,
-                       read_into_buffer)
+from pythoncookbook.code.chapter5 import (create_temp_file,
+                                          iter_records,
+                                          read_into_buffer)
 
 
 class ReadingAndWritingTextDataTest(TestCase):

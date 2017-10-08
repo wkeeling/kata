@@ -3,12 +3,12 @@
 from collections import defaultdict
 from unittest import TestCase
 
-from pythoncookbook.chapter4 import (Countdown,
-                                     flatten,
-                                     frange,
-                                     LineHistory,
-                                     Node,
-                                     skip_initial_lines)
+from pythoncookbook.code.chapter4 import (Countdown,
+                                          flatten,
+                                          frange,
+                                          LineHistory,
+                                          Node,
+                                          skip_initial_lines)
 
 
 class ManuallyConsumingAnIteratorTest(TestCase):

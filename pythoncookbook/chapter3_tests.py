@@ -1,13 +1,13 @@
 """Chapter 3: Numbers, Dates and Times."""
 
+import math
 from datetime import (datetime,
                       timedelta)
 from fractions import Fraction
-import math
 from unittest import TestCase
 
-from pythoncookbook.chapter3 import (date_range,
-                                     get_days_in_month)
+from pythoncookbook.code.chapter3 import (date_range,
+                                          get_days_in_month)
 
 
 class RoundingNumericalValuesTest(TestCase):
