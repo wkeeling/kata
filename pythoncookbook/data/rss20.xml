@@ -1,0 +1,2243 @@
+
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<channel>
+	<title>Planet Python</title>
+	<link>http://planetpython.org/</link>
+	<language>en</language>
+	<description>Planet Python - http://planetpython.org/</description>
+
+<item>
+	<title>RMOTR: The 3 Python Books you need to get started. For Free.</title>
+	<guid>https://blog.rmotr.com/the-3-python-books-you-need-to-get-started-for-free-9b72a2c6fb17?source=rss----2e274f91448--python</guid>
+	<link>https://blog.rmotr.com/the-3-python-books-you-need-to-get-started-for-free-9b72a2c6fb17?source=rss----2e274f91448--python</link>
+	<description>&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/1024/1*SdTw2fUjKp2_7CxAdIijsQ.jpeg&quot; /&gt;(&lt;a href=&quot;https://unsplash.com/photos/9o8YdYGTT64&quot;&gt;https://unsplash.com/photos/9o8YdYGTT64&lt;/a&gt;)&lt;blockquote&gt;We’re building &lt;a href=&quot;https://learn.rmotr.com/python/introduction-to-programming-with-python&quot;&gt;our own resources&lt;/a&gt; including readings, videos and practice. In the meantime, these are the books we can recommend.&lt;/blockquote&gt;&lt;p&gt;We believe that today’s biggest problem in terms of learning Python is NOT the lack of resources, but quite the opposite, the excess of books, posts, tutorials and other resources that become available everyday. If you’re just getting started, getting “100 Free Python Books” will only distract and demoralize you. To get started, you need a curated list of 3 to 5 resources at most and a clear path to follow. These are actually the books (and the order) we recommend our students when they start our &lt;a href=&quot;https://rmotr.com/introduction-to-python-programming&quot;&gt;Introduction to Python course&lt;/a&gt;, so hopefully it can also help you.&lt;/p&gt;&lt;h4&gt;1. Start with Automate the Boring Stuff&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;https://automatetheboringstuff.com/&quot;&gt;Automate the Boring Stuff with Python&lt;/a&gt; is a free online book that will take you really slowly through the process of getting started with programming. It goes into a lot of details for many important concepts and we think it’s a great resource for beginners. It has clear explanations and examples intended for beginners.&lt;/p&gt;&lt;h4&gt;2. Think like a computer scientist&lt;/h4&gt;&lt;p&gt;Once you’ve done some practice with Python, it’s time to dig a little bit deeper and understand more fundamental programming concepts. For this we recommend &lt;a href=&quot;http://greenteapress.com/thinkpython/html/index.html&quot;&gt;Think Python: How to Think Like a Computer Scientist&lt;/a&gt;. At some stages you’ll find it as basic as Automate the Boring Stuff, but it’ll quickly build into more advanced topics like Functional programming and Object Oriented Programming.&lt;/p&gt;&lt;h4&gt;3. Advancing your skills. Diving in.&lt;/h4&gt;&lt;p&gt;Now it’s time to start with the more complicated concepts. For that, we recommend &lt;a href=&quot;http://www.diveintopython3.net/&quot;&gt;Dive into Python 3&lt;/a&gt;. This book has a strange structure, jumping to and from different concepts without a clear path. For example, List Comprehensions are introduced before Strings, and to do comprehensions the author starts iterating a Unix-like filesystem ¯\_(ツ)_/¯. It’s still a great book and we totally recommend it. Make sure you understand the basics before jumping to it.&lt;/p&gt;&lt;h4&gt;4. Bonus: Python Cookbook&lt;/h4&gt;&lt;p&gt;The &lt;a href=&quot;http://chimera.labs.oreilly.com/books/1230000000393&quot;&gt;Python Cookbook&lt;/a&gt; is a condensed book containing a lot of important (and advanced) concepts like Concurrency, Metaprogramming and Networking. The only problem it has is it’s odd HTML format. It’s free to read, but not pleasant at all to follow the web version. Pick it up when you feel really comfortable with Python and you want to dig deeper into the nuances of programming. It’ll not be the final resource you’ll use to learn about Networking, but it’ll give you a quick introduction to see if you like it and how to approach it.&lt;/p&gt;&lt;h4&gt;5. Bonus. Algorithms and Data Structures&lt;/h4&gt;&lt;p&gt;Pick up this book &lt;strong&gt;only&lt;/strong&gt; if you’re looking to learn Computer Science from a more traditional standpoint. The best book for that is &lt;a href=&quot;http://interactivepython.org/runestone/static/pythonds/index.html&quot;&gt;Problem Solving with Algorithms and Data Structures using Python&lt;/a&gt;. This book is a great introduction to the basics of Computer Science like sorting algorithms, complexity (Big-O Notation) and traditional data structures.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;IMPORTANT:&lt;/strong&gt; Don’t try to start with this book. I usually employ the analogy of learning how to drive. If you want to learn to drive you will not get a book about car mechanics and physics as your first step. You’ll try to &lt;strong&gt;use&lt;/strong&gt; the car, to &lt;strong&gt;operate it&lt;/strong&gt; and move around. Once you’re comfortable with it you might decide that you want to dig deeper and learn about the internals of it. There are great drivers that don’t know every detail of a car implementation. In the same way, there are great programmers that don’t know about all the sorting algorithms or data structures.&lt;/p&gt;&lt;p&gt;We know this is an opinionated list and might not suit everybody. We’re eager to hear your comments and suggestions, so don’t hesitate to reach out.&lt;/p&gt;&lt;p&gt;Happy coding 😁.&lt;/p&gt;&lt;img src=&quot;https://medium.com/_/stat?event=post.clientViewed&amp;referrerSource=full_rss&amp;postId=9b72a2c6fb17&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;&lt;hr /&gt;&lt;p&gt;&lt;a href=&quot;https://blog.rmotr.com/the-3-python-books-you-need-to-get-started-for-free-9b72a2c6fb17&quot;&gt;The 3 Python Books you need to get started. For Free.&lt;/a&gt; was originally published in &lt;a href=&quot;https://blog.rmotr.com&quot;&gt;rmotr.com&lt;/a&gt; on Medium, where people are continuing the conversation by highlighting and responding to this story.&lt;/p&gt;</description>
+	<pubDate>Sun, 08 Oct 2017 18:48:38 +0000</pubDate>
+</item>
+<item>
+	<title>Weekly Python StackOverflow Report: (xciv) stackoverflow python report</title>
+	<guid>http://python-weekly.blogspot.com/2017/10/xciv-stackoverflow-python-report.html</guid>
+	<link>http://python-weekly.blogspot.com/2017/10/xciv-stackoverflow-python-report.html</link>
+	<description>These are the ten most rated questions at &lt;a href=&quot;http://www.stackoverflow.com/&quot;&gt;Stack Overflow&lt;/a&gt; last week.&lt;br /&gt;Between brackets: [&lt;b&gt;question score&lt;/b&gt; / answers count]&lt;br /&gt;Build date: 2017-10-08 12:16:51 GMT&lt;br /&gt;&lt;hr /&gt;&lt;ol&gt;&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/46548669&quot; target=&quot;_blank&quot;&gt;How to create txt frequency counter with all letters (a-z) in python 3&lt;/a&gt; - [&lt;b&gt;7&lt;/b&gt;/6]&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/46540337&quot; target=&quot;_blank&quot;&gt;Python - &quot;xor&quot;ing each byte in &quot;bytes&quot; in the most efficient way&lt;/a&gt; - [&lt;b&gt;7&lt;/b&gt;/2]&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/46558114&quot; target=&quot;_blank&quot;&gt;How to conditionally combine two numpy arrays of the same shape&lt;/a&gt; - [&lt;b&gt;7&lt;/b&gt;/2]&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/46556109&quot; target=&quot;_blank&quot;&gt;Python: How to generate all combinations of lists of tuples without repeating contents of the tuple&lt;/a&gt; - [&lt;b&gt;6&lt;/b&gt;/2]&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/46562479&quot; target=&quot;_blank&quot;&gt;Python Pandas Data frame creation&lt;/a&gt; - [&lt;b&gt;6&lt;/b&gt;/2]&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/46553338&quot; target=&quot;_blank&quot;&gt;pyOpenSSL &quot;openssl verify -CAfile root.crt client.crt&quot; equivalent&lt;/a&gt; - [&lt;b&gt;6&lt;/b&gt;/1]&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/46547558&quot; target=&quot;_blank&quot;&gt;Why does conda create try to install weird packages?&lt;/a&gt; - [&lt;b&gt;6&lt;/b&gt;/0]&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/46519539&quot; target=&quot;_blank&quot;&gt;How to select all non-NaN columns and non-NaN last column using pandas?&lt;/a&gt; - [&lt;b&gt;5&lt;/b&gt;/5]&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/46554928&quot; target=&quot;_blank&quot;&gt;Regular expression - replace all spaces in beginning of line with periods&lt;/a&gt; - [&lt;b&gt;5&lt;/b&gt;/5]&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/46546872&quot; target=&quot;_blank&quot;&gt;What is the scenario of dict.get('..', None) or None?&lt;/a&gt; - [&lt;b&gt;5&lt;/b&gt;/3]&lt;/li&gt;&lt;/ol&gt;</description>
+	<pubDate>Sun, 08 Oct 2017 12:17:00 +0000</pubDate>
+</item>
+<item>
+	<title>Codementor: Learning to code but stuck at a problem</title>
+	<guid>https://www.codementor.io/kabilan/learning-to-code-but-stuck-at-a-problem-cnhgao7er</guid>
+	<link>https://www.codementor.io/kabilan/learning-to-code-but-stuck-at-a-problem-cnhgao7er</link>
+	<description>it's an assignment i'm doing online just to learn.</description>
+	<pubDate>Sat, 07 Oct 2017 15:51:47 +0000</pubDate>
+</item>
+<item>
+	<title>EuroPython: EuroPython 2017: Videos for Tuesday available online</title>
+	<guid>http://blog.europython.eu/post/166146037397</guid>
+	<link>http://blog.europython.eu/post/166146037397</link>
+	<description>&lt;p&gt;We are pleased to announce the second batch of cut videos for EuroPython 2017.&lt;/p&gt;&lt;p&gt;To see the new videos, please head over to our &lt;a href=&quot;https://www.tumblr.com/edit/europython.tv&quot; target=&quot;_blank&quot;&gt;EuroPython YouTube channel&lt;/a&gt; and select the &lt;a href=&quot;https://www.youtube.com/watch?v=XMcNFBKNWKg&amp;index=31&amp;list=PL8uoeex94UhG9QAoRICebFpeKK2M0Herh&quot; target=&quot;_blank&quot;&gt;“EuroPython 2017″ playlist&lt;/a&gt;. The new videos start at entry 31 in the playlist.&lt;/p&gt;&lt;p&gt;In the coming weeks, we will continue to release the other videos currently marked as “private”, in batches of one conference day per week. &lt;br /&gt;&lt;/p&gt;&lt;p&gt;Enjoy,&lt;br /&gt;–&lt;br /&gt;&lt;a href=&quot;https://ep2017.europython.eu/en/europython/team/&quot; target=&quot;_blank&quot;&gt;EuroPython 2017 Team&lt;/a&gt;&lt;br /&gt;&lt;a href=&quot;http://www.europython-society.org/&quot; target=&quot;_blank&quot;&gt;EuroPython Society&lt;/a&gt;&lt;br /&gt;&lt;a href=&quot;https://ep2017.europython.eu/&quot; target=&quot;_blank&quot;&gt;EuroPython 2017 Conference&lt;/a&gt; &lt;br /&gt;&lt;/p&gt;</description>
+	<pubDate>Sat, 07 Oct 2017 15:44:26 +0000</pubDate>
+</item>
+<item>
+	<title>Curtis Miller: Mad Libs and Python</title>
+	<guid></guid>
+	<link></link>
+	<description>In this post I share code for easy Mad Lib creation with Python.&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;https://pixel.wp.com/b.gif?host=ntguardian.wordpress.com&amp;blog=31302869&amp;post=3221&amp;subd=ntguardian&amp;ref=&amp;feed=1&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</description>
+	<pubDate>Fri, 06 Oct 2017 21:39:05 +0000</pubDate>
+</item>
+<item>
+	<title>Stack Abuse: scikit-learn: Save and Restore Models</title>
+	<guid>http://stackabuse.com/scikit-learn-save-and-restore-models/</guid>
+	<link>http://stackabuse.com/scikit-learn-save-and-restore-models/</link>
+	<description>&lt;p&gt;On many occasions, while working with the &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;http://scikit-learn.org/stable/&quot;&gt;scikit-learn&lt;/a&gt; library, you'll need to save your prediction models to file, and then restore them in order to reuse your previous work to: test your model on new data, compare multiple models, or anything else. This saving procedure is also known as object serialization - representing an object with a stream of bytes, in order to store it on disk, send it over a network or save to a database, while the restoring procedure is known as deserialization. In this article, we look at three possible ways to do this in Python and scikit-learn, each presented with its pros and cons. &lt;/p&gt;
+
+&lt;h3 id=&quot;toolstosaveandrestoremodels&quot;&gt;Tools to Save and Restore Models&lt;/h3&gt;
+
+&lt;p&gt;The first tool we describe is &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;https://docs.python.org/3/library/pickle.html&quot;&gt;Pickle&lt;/a&gt;, the standard Python tool for object (de)serialization. Afterwards, we look at the &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;https://pythonhosted.org/joblib/&quot;&gt;Joblib&lt;/a&gt; library which offers easy (de)serialization of objects containing large data arrays, and finally we present a manual approach for saving and restoring objects to/from &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/JSON&quot;&gt;JSON&lt;/a&gt; (JavaScript Object Notation). None of these approaches represents an optimal solution, but the right fit should be chosen according to the needs of your project.&lt;/p&gt;
+
+&lt;h4 id=&quot;modelinitializtion&quot;&gt;Model Initializtion&lt;/h4&gt;
+
+&lt;p&gt;Initially, let's create one scikit-learn model. In our example we'll use a &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Logistic_regression&quot;&gt;Logistic Regression&lt;/a&gt; model and the &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Iris_flower_data_set&quot;&gt;Iris dataset&lt;/a&gt;. Let's import the needed libraries, load the data, and split it in training and test sets.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;from sklearn.linear_model import LogisticRegression
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+
+# Load and split data
+data = load_iris()
+Xtrain, Xtest, Ytrain, Ytest = train_test_split(data.data, data.target, test_size=0.3, random_state=4)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now let's create the model with some non-default parameters and fit it to the training data. We assume that you have previously found the optimal parameters of the model, i.e. the ones which produce highest estimated accuracy.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;# Create a model
+model = LogisticRegression(C=0.1,
+                           max_iter=20,
+                           fit_intercept=True,
+                           n_jobs=3,
+                           solver='liblinear')
+model.fit(Xtrain, Ytrain)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And our resulting model:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;LogisticRegression(C=0.1, class_weight=None, dual=False, fit_intercept=True,
+    intercept_scaling=1, max_iter=20, multi_class='ovr', n_jobs=3,
+    penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+    verbose=0, warm_start=False)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Using the &lt;code&gt;fit&lt;/code&gt; method, the model has learned its coefficients which are stored in &lt;code&gt;model.coef_&lt;/code&gt;. The goal is to save the model's parameters and coefficients to file, so you don't need to repeat the model training and parameter optimization steps again on new data.&lt;/p&gt;
+
+&lt;h4 id=&quot;picklemodule&quot;&gt;Pickle Module&lt;/h4&gt;
+
+&lt;p&gt;In the following few lines of code, the model which we created in the previous step is saved to file, and then loaded as a new object called &lt;code&gt;pickled_model&lt;/code&gt;. The loaded model is then used to calculate the accuracy score and predict outcomes on new unseen (test) data.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;import pickle
+
+#
+# Create your model here (same as above)
+#
+
+# Save to file in the current working directory
+pkl_filename = &quot;pickle_model.pkl&quot;
+with open(pkl_filename, 'wb') as file:
+    pickle.dump(model, file)
+
+# Load from file
+with open(pkl_filename, 'rb') as file:
+    pickle_model = pickle.load(file)
+
+# Calculate the accuracy score and predict target values
+score = pickle_model.score(Xtest, Ytest)
+print(&quot;Test score: {0:.2f} %&quot;.format(100 * score))
+Ypredict = pickle_model.predict(Xtest)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Running this code should yield your score and save the model via Pickle:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ python save_model_pickle.py
+Test score: 91.11 %
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The great thing about using Pickle to save and restore our learning models is that it's quick - you can do it in two lines of code. It is useful if you have optimized the model's parameters on the training data, so you don't need to repeat this step again. Anyway, it doesn't save the test results or any data. Still you can do this by saving a tuple, or a list, of multiple objects (and remember which object goes where), as follows:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;tuple_objects = (model, Xtrain, Ytrain, score)
+
+# Save tuple
+pickle.dump(tuple_objects, open(&quot;tuple_model.pkl&quot;, 'wb'))
+
+# Restore tuple
+pickled_model, pickled_Xtrain, pickled_Ytrain, pickled_score = pickle.load(open(&quot;tuple_model.pkl&quot;, 'rb'))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;joblibmodule&quot;&gt;Joblib Module&lt;/h4&gt;
+
+&lt;p&gt;The Joblib library is intended to be a replacement for Pickle, for objects containing large data. We'll repeat the save and restore procedure as with Pickle.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;from sklearn.externals import joblib
+
+# Save to file in the current working directory
+joblib_file = &quot;joblib_model.pkl&quot;
+joblib.dump(model, joblib_file)
+
+# Load from file
+joblib_model = joblib.load(joblib_file)
+
+# Calculate the accuracy and predictions
+score = joblib_model.score(Xtest, Ytest)
+print(&quot;Test score: {0:.2f} %&quot;.format(100 * score))
+Ypredict = pickle_model.predict(Xtest)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ python save_model_joblib.py
+Test score: 91.11 %
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As seen from the example, the Joblib library offers a bit simpler workflow compared to Pickle. While Pickle requires a file object to be passed as an argument, Joblib works with both file objects and string filenames. In case your model contains large arrays of data, each array will be stored in a separate file, but the save and restore procedure will remain the same. Joblib also allows different compression methods, such as 'zlib', 'gzip', 'bz2', and different levels of compression.&lt;/p&gt;
+
+&lt;h4 id=&quot;manualsaveandrestoretojson&quot;&gt;Manual Save and Restore to JSON&lt;/h4&gt;
+
+&lt;p&gt;Depending on your project, many times you would find Pickle and Joblib as unsuitable solutions. Some of these reasons are discussed later in the &lt;a href=&quot;http://stackabuse.com/scikit-learn-save-and-restore-models/#compatibilityissues&quot;&gt;Compatibility Issues&lt;/a&gt; section. Anyway, whenever you want to have full control over the save and restore process, the best way is to build your own functions manually.&lt;/p&gt;
+
+&lt;p&gt;The following shows an example of manually saving and restoring objects using JSON. This approach allows us to select the data which needs to be saved, such as the model parameters, coefficients, training data, and anything else we need.&lt;/p&gt;
+
+&lt;p&gt;Since we want to save all of this data in a single object, one possible way to do it is to create a new class which inherits from the model class, which in our example is &lt;code&gt;LogisticRegression&lt;/code&gt;. The new class, called &lt;code&gt;MyLogReg&lt;/code&gt;, then implements the methods &lt;code&gt;save_json&lt;/code&gt; and &lt;code&gt;load_json&lt;/code&gt; for saving and restoring to/from a JSON file, respectively.&lt;/p&gt;
+
+&lt;p&gt;For simplicity, we'll save only three model parameters and the training data. Some additional data we could store with this approach is, for example, a cross-validation score on the training set, test data, accuracy score on the test data, etc.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;import json
+import numpy as np
+
+class MyLogReg(LogisticRegression):
+
+    # Override the class constructor
+    def __init__(self, C=1.0, solver='liblinear', max_iter=100, X_train=None, Y_train=None):
+        LogisticRegression.__init__(self, C=C, solver=solver, max_iter=max_iter)
+        self.X_train = X_train
+        self.Y_train = Y_train
+
+    # A method for saving object data to JSON file
+    def save_json(self, filepath):
+        dict_ = {}
+        dict_['C'] = self.C
+        dict_['max_iter'] = self.max_iter
+        dict_['solver'] = self.solver
+        dict_['X_train'] = self.X_train.tolist() if self.X_train is not None else 'None'
+        dict_['Y_train'] = self.Y_train.tolist() if self.Y_train is not None else 'None'
+
+        # Creat json and save to file
+        json_txt = json.dumps(dict_, indent=4)
+        with open(filepath, 'w') as file:
+            file.write(json_txt)
+
+    # A method for loading data from JSON file
+    def load_json(self, filepath):
+        with open(filepath, 'r') as file:
+            dict_ = json.load(file)
+
+        self.C = dict_['C']
+        self.max_iter = dict_['max_iter']
+        self.solver = dict_['solver']
+        self.X_train = np.asarray(dict_['X_train']) if dict_['X_train'] != 'None' else None
+        self.Y_train = np.asarray(dict_['Y_train']) if dict_['Y_train'] != 'None' else None
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now let's try the &lt;code&gt;MyLogReg&lt;/code&gt; class. First we create an object &lt;code&gt;mylogreg&lt;/code&gt;, pass the training data to it, and save it to file. Then we create a new object &lt;code&gt;json_mylogreg&lt;/code&gt; and call the &lt;code&gt;load_json&lt;/code&gt; method to load the data from file.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;filepath = &quot;mylogreg.json&quot;
+
+# Create a model and train it
+mylogreg = MyLogReg(X_train=Xtrain, Y_train=Ytrain)
+mylogreg.save_json(filepath)
+
+# Create a new object and load its data from JSON file
+json_mylogreg = MyLogReg()
+json_mylogreg.load_json(filepath)
+json_mylogreg
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Printing out the new object, we can see our parameters and training data as needed.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;MyLogReg(C=1.0,
+     X_train=array([[ 4.3,  3. ,  1.1,  0.1],
+       [ 5.7,  4.4,  1.5,  0.4],
+       ...,
+       [ 7.2,  3. ,  5.8,  1.6],
+       [ 7.7,  2.8,  6.7,  2. ]]),
+     Y_train=array([0, 0, ..., 2, 2]), class_weight=None, dual=False,
+     fit_intercept=True, intercept_scaling=1, max_iter=100,
+     multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+     solver='liblinear', tol=0.0001, verbose=0, warm_start=False)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Since the data serialization using JSON actually saves the object into a string format, rather than byte stream, the 'mylogreg.json' file could be opened and modified with a text editor. Although this approach would be convenient for the developer, it is less secure since an intruder can view and amend the content of the JSON file. Moreover, this approach is more suitable for objects with small number of instance variables, such as the scikit-learn models, because any addition of new variables requires changes in the save and restore methods.&lt;/p&gt;
+
+&lt;h3 id=&quot;compatibilityissues&quot;&gt;Compatibility Issues&lt;/h3&gt;
+
+&lt;p&gt;While some of the pros and cons of each tool were covered in the text so far, probably the biggest drawback of the Pickle and Joblib tools is its compatibility over different models and Python versions.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Python version compatibility&lt;/em&gt; - The documentation of both tools states that it is not recommended to (de)serialize objects across different Python versions, although it might work across minor version changes.  &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Model compatibility&lt;/em&gt; - One of the most frequent mistakes is saving your model with Pickle or Joblib, then changing the model before trying to restore from file. The internal structure of the model needs to stay unchanged between save and reload.&lt;/p&gt;
+
+&lt;p&gt;One last issue with both Pickle and Joblib is related to security. Both tools could contain malicious code, so it is not recommended to restore data from untrusted or unauthenticated sources.&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusions&quot;&gt;Conclusions&lt;/h3&gt;
+
+&lt;p&gt;In this post we described three tools for saving and restoring scikit-learn models. The Pickle and Joblib libraries are quick and easy to use, but have compatibility issues across different Python versions and changes in the learning model. On the other side, the manual approach is more difficult to implement and needs to be modified with any change in the model structure, but on the plus side it could easily be adapted to various needs, and does not have any compatibility issues.&lt;/p&gt;</description>
+	<pubDate>Fri, 06 Oct 2017 18:15:00 +0000</pubDate>
+</item>
+<item>
+	<title>Stack Abuse: Recursive Model Relationships in Django</title>
+	<guid>http://stackabuse.com/recursive-model-relationships-in-django/</guid>
+	<link>http://stackabuse.com/recursive-model-relationships-in-django/</link>
+	<description>&lt;h3 id=&quot;theneedforrecursiverelationships&quot;&gt;The Need for Recursive Relationships&lt;/h3&gt;
+
+&lt;p&gt;There arises many times in the development of modern web applications where the business requirements inherently describe relationships that are &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Recursion_(computer_science)&quot;&gt;recursive&lt;/a&gt;. One well known example of such a business rule is in the description of employees and their relationship to their managers, which are also employees. Notice the circular nature of that statement. This is exactly what is meant by a recursive relationship. In this article we will be developing a bare bones demo in Django of a human resources (HR) employee listing application with this recursive relationship between employees and managers.&lt;/p&gt;
+
+&lt;p&gt;The code for this article can be found in &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;https://github.com/amcquistan/django-recursive-relationship&quot;&gt;this GitHub repo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;settingupthedjangoprojectstructure&quot;&gt;Setting up the Django Project Structure&lt;/h3&gt;
+
+&lt;p&gt;To get going with a Django project you'll want to create a new python virtual environment (preferably Python3). If you are unfamiliar with virtual environments please see &lt;a href=&quot;http://stackabuse.com/python-virtual-environments-explained/&quot;&gt;this article&lt;/a&gt;. Once inside your activated virtual environment, pip install Django.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;(venv) $ pip install django
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;With Django installed you can utilize Django's admin utilities to generate the project boilerplate, which we'll call &quot;webapp&quot;. You can learn more about Django project setup in our article, &lt;a href=&quot;http://stackabuse.com/flask-vs-django/&quot;&gt;Flask vs Django&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;(venv) $ django-admin startproject webapp
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now &lt;code&gt;cd&lt;/code&gt; into the new webapp directory so we can further utilize another set of Django tools via the manage.py script. We use this to create our project's application, which we'll name &quot;hrmgmt&quot;. This creates another directory called &quot;hrmgmt&quot; which is where the code for this application will reside.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;(venv) $ cd webapp
+(venv) $ python manage.py startapp hrmgmt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The last part of project setup includes letting the project (webapp) know about the &quot;hrmgmt&quot; application. In &quot;webapp/settings.py&quot; find the section with a comment of &quot;Application definition&quot; above the list &lt;code&gt;INSTALLED_APPS&lt;/code&gt; and add an entry of &lt;code&gt;hrmgmt.apps.HrmgmtConfig&lt;/code&gt;, like so:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;# Application definition
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'hrmgmt.apps.HrmgmtConfig'
+]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;configuringtheroutes&quot;&gt;Configuring the Routes&lt;/h3&gt;
+
+&lt;p&gt;In Django the directory that matches the name of the project, &quot;webapp&quot; in our case, is where the major settings and entry point to the routes for the built in admin app and any additional custom applications reside. So in &quot;webapp/urls.py&quot; use the following code to direct all routes prefixed with &quot;/hr&quot; to the &quot;hrmgmt&quot; application.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;# webapp/urls.py
+from django.conf.urls import url, include
+from django.contrib import admin
+
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+    url(r'^hr/', include('hrmgmt.urls'))
+]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Over in the custom &quot;hrmgmt&quot; application create a new file named &quot;urls.py&quot; and place the following code. This specifies a view that will return a list of all employees. The below code uses a regular expression to indicate that when a route of &quot;/hr/&quot; is requested from our server then a view function named &lt;code&gt;index&lt;/code&gt; should handle the request and return a response.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;# hrmgmt/urls.py
+from django.conf.urls import url
+
+import views
+
+urlpatterns = [
+    # /hr/
+    url(r'^$', views.index, name='index')
+]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Next we will talk about what the index view function does.&lt;/p&gt;
+
+&lt;h3 id=&quot;stubbingtheindexviewfunction&quot;&gt;Stubbing the Index View Function&lt;/h3&gt;
+
+&lt;p&gt;Now let's implement the aforementioned &lt;code&gt;index&lt;/code&gt; view function to handle requests to the &quot;/hr/&quot; route and return a text response to let us know we have configured things correctly. Later we will come back and turn this into a more proper view function to list our employees.&lt;/p&gt;
+
+&lt;p&gt;In hrmgmt/views.py include the following code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;# hrmgmt/views.py
+from django.http import HttpResponse
+
+def index(request):
+    response = &quot;My List of Employees Goes Here&quot;
+    return HttpResponse(response)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Within the webapp directory, fire up the Django development server and test that we've configured our route and view function correctly:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;(venv) $ python manage.py runserver
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now go to your browser and enter &lt;a href=&quot;http://localhost:8000/hr/&quot;&gt;http://localhost:8000/hr/&lt;/a&gt; and you should see a text response of &quot;My List of Employees Goes Here&quot;&lt;/p&gt;
+
+&lt;h3 id=&quot;designingourmodelclasses&quot;&gt;Designing our Model Classes&lt;/h3&gt;
+
+&lt;p&gt;Finally we're getting to the good part! In this section we define our model classes which will translate into database tables, all done by writing Python code. Or using what the .NET folks have coined as a &quot;code first&quot; approach to database design.&lt;/p&gt;
+
+&lt;p&gt;In hrmgmt/models.py place in the following code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;# hrmgmt/models.py
+from django.db import models
+
+class Employee(models.Model):
+    STANDARD = 'STD'
+    MANAGER = 'MGR'
+    SR_MANAGER = 'SRMGR'
+    PRESIDENT = 'PRES'
+
+    EMPLOYEE_TYPES = (
+        (STANDARD, 'base employee'),
+        (MANAGER, 'manager'),
+        (SR_MANAGER, 'senior manager'),
+        (PRESIDENT, 'president')
+    )
+
+    role = models.CharField(max_length=25, choices=EMPLOYEE_TYPES)
+    first_name = models.CharField(max_length=100)
+    last_name = models.CharField(max_length=100)
+    manager = models.ForeignKey('self', null=True)
+
+    def __str__(self):
+        return &quot;&amp;lt;Employee: {} {}&amp;gt;&quot;.format(self.first_name, self.last_name)
+
+    def __repr__(self):
+        return self.__str__()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;There is quite a bit going in these few lines of code so let's break them down. The first thing to note is that a Python class named &lt;code&gt;Employee&lt;/code&gt; is being declared, which inherits from the &lt;code&gt;django.db.models.Model&lt;/code&gt; class. This inheritance gives the &lt;code&gt;Employee&lt;/code&gt; class the functionality to access the database through Django's ORM.&lt;/p&gt;
+
+&lt;p&gt;Next are the definitions of four class fields that are constants (STANDARD, MANAGER, SR_MANAGER, PRESIDENT) and their use to further define a tuple class field constant. These are sort of like enums which specify the different roles an employee can assume. In fact, the tuple of tuples constant is passed to the definition of the roles class field to signify what values the class should be allowed to accept.&lt;/p&gt;
+
+&lt;p&gt;Next the &lt;code&gt;first_name&lt;/code&gt; and &lt;code&gt;last_name&lt;/code&gt; class fields are defined as character fields with a max length of 100 characters.&lt;/p&gt;
+
+&lt;p&gt;The final field being defined is perhaps the most meaningful one, the &lt;code&gt;manager&lt;/code&gt; field. It is a foreign key that defines a recursive relationship between employees and their managers. This means that the implicit auto incrementing integer id column that Django makes on models that inherits from &lt;code&gt;django.db.models.Model&lt;/code&gt; will be available as a foreign key value for the same class (or table).&lt;/p&gt;
+
+&lt;p&gt;This will satisfy our use-case which could be stated as, &quot;an employee may only have one direct manager or no manager in the case of the president, but an employee may manage many different employees&quot;. By specifying &lt;code&gt;self&lt;/code&gt; as the first parameter of the &lt;code&gt;model.ForeignKey&lt;/code&gt; call, Django will set this up as a recursive relationship. Then by specifying &lt;code&gt;null=True&lt;/code&gt; the model will allow for an employee without a manger, which in our example is the one representing the president.&lt;/p&gt;
+
+&lt;p&gt;Below is a ERD diagram of the recursive relationship we have defined.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3.amazonaws.com/stackabuse/media/recursive-model-relationships-django-1.png&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;migratingourclassdefinitiontothedatabase&quot;&gt;Migrating our Class Definition to the Database&lt;/h3&gt;
+
+&lt;p&gt;In order to transform the code we used to define our Employee class into DDL SQL we will again make use of a Django utility accessed via the &quot;manage.py&quot; script and collectively known as migrations.&lt;/p&gt;
+
+&lt;p&gt;In the command line, within a our virtual environment of course, run the following to create the default tables which all Django apps utilize. By default, this database is a &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/SQLite&quot;&gt;sqlite&lt;/a&gt; database within the root project folder.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;(venv) $ python manage.py migrate
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Once complete, we can make a new migration that defines the table that will back our &lt;code&gt;Employee&lt;/code&gt; class. Do this by issuing the following commands and make sure you observe the output as shown below:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;(venv) $ python manage.py makemigrations
+(venv) $ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, hrmgmt, sessions
+Running migrations:
+  Applying hrmgmt.0001_initial... OK
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can view the actual DDL SQL that creates the table by running the below the command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;(venv) $ python manage.py sqlmigrate hrmgmt 0001
+
+BEGIN;
+--
+-- Create model Employee
+--
+CREATE TABLE &quot;hrmgmt_employee&quot; (&quot;id&quot; integer NOT NULL PRIMARY KEY AUTOINCREMENT, &quot;role&quot; varchar(25) NOT NULL, &quot;first_name&quot; varchar(100) NOT NULL, &quot;last_name&quot; varchar(100) NOT NULL, &quot;manager_id&quot; integer NULL REFERENCES &quot;hrmgmt_employee&quot; (&quot;id&quot;));
+CREATE INDEX &quot;hrmgmt_employee_manager_id_43028de6&quot; ON &quot;hrmgmt_employee&quot; (&quot;manager_id&quot;);
+COMMIT;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;exploringmodelswiththedjangoshell&quot;&gt;Exploring Models with the Django Shell&lt;/h3&gt;
+
+&lt;p&gt;At the command line enter the following command to get the interpreter up and running with our Django app's context preloaded into the REPL:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;(venv) $ python manage.py shell
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now that the Python interpreter is up and running enter the following commands:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;&amp;gt;&amp;gt;&amp;gt; from hrmgmt.models import Employee
+&amp;gt;&amp;gt;&amp;gt; janeD = Employee.objects.create(first_name='Jane', last_name='Doe', role=Employee.PRESIDENT)
+&amp;gt;&amp;gt;&amp;gt; johnD = Employee.objects.create(first_name='John', last_name='Doe', role=Employee.MANAGER, manager=janeD)
+&amp;gt;&amp;gt;&amp;gt; joeS = Employee.objects.create(first_name='Joe', last_name='Scho', role=Employee.STANDARD, manager=johnD)
+&amp;gt;&amp;gt;&amp;gt; johnB = Employee.objects.create(first_name='John', last_name='Brown', role=Employee.STANDARD, manager=johnD)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The above code creates four fictitious employees. Jane Doe is the president. Then John Doe has a manager role and is managed by his mother Jane Doe (yes, there is clearly some nepotism here). Under John Doe's supervision is Joe Schmo and John Brown who both have the roles of a standard or base employee.&lt;/p&gt;
+
+&lt;p&gt;We can test our relationship field of &lt;code&gt;employee&lt;/code&gt; by inspecting the output of calling &lt;code&gt;employee&lt;/code&gt; on our &lt;code&gt;johnD&lt;/code&gt; variable:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;&amp;gt;&amp;gt;&amp;gt; johnD.employee.all()
+&amp;lt;QuerySet [&amp;lt;Employee: Joe Scho&amp;gt;, &amp;lt;Employee: John Brown&amp;gt;]&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As well as with the &lt;code&gt;janeD&lt;/code&gt; variable:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;&amp;gt;&amp;gt;&amp;gt; janeD.employee.all()
+&amp;lt;QuerySet [&amp;lt;Employee: John Doe&amp;gt;]&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Similarly we will want to test our manager field to make sure it is performing as desired:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;&amp;gt;&amp;gt;&amp;gt; johnD.manager
+&amp;lt;Employee: Jane Doe&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Great! It looks like things are working as expected.&lt;/p&gt;
+
+&lt;h3 id=&quot;settingupourview&quot;&gt;Setting Up Our View&lt;/h3&gt;
+
+&lt;p&gt;In the same directory as our &quot;hrmgmt&quot; directory make another directory called &quot;templates&quot;. Then within the &quot;templates&quot; directory make yet another directory called &quot;hrmgmt&quot;. Finally within the &quot;hrmgmt/templates/hrmgmt&quot; directory make an HTML file called &quot;index.html&quot;. It is within this file that we will write the code to build out our listing of employees.&lt;/p&gt;
+
+&lt;p&gt;Copy and paste in the following code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;!-- hrmgmt/templates/hrmgmt/index.html --&amp;gt;
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html lang=&quot;en&quot;&amp;gt;
+    &amp;lt;head&amp;gt;
+        &amp;lt;title&amp;gt;Employee Listing&amp;lt;/title&amp;gt;
+        &amp;lt;meta charset=&quot;UTF-8&quot;&amp;gt;
+        &amp;lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&amp;gt;
+        &amp;lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css&quot; integrity=&quot;sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M&quot; crossorigin=&quot;anonymous&quot;&amp;gt;
+        &amp;lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js&quot; integrity=&quot;sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1&quot; crossorigin=&quot;anonymous&quot;&amp;gt;&amp;lt;/script&amp;gt;
+    &amp;lt;/head&amp;gt;
+    &amp;lt;body&amp;gt;
+        &amp;lt;div class=&quot;container&quot;&amp;gt;
+            &amp;lt;div class=&quot;row&quot;&amp;gt;
+                &amp;lt;div class=&quot;col-md-12&quot;&amp;gt;
+                    &amp;lt;h1&amp;gt;Employee Listing&amp;lt;/h1&amp;gt;
+                &amp;lt;/div&amp;gt;
+            &amp;lt;/div&amp;gt;
+            &amp;lt;div class=&quot;row&quot;&amp;gt;
+                &amp;lt;dov class=&quot;col-md-12&quot;&amp;gt;
+                    &amp;lt;table class=&quot;table table-striped&quot;&amp;gt;
+                        &amp;lt;thead class=&quot;thead-inverse&quot;&amp;gt;
+                            &amp;lt;tr&amp;gt;
+                                &amp;lt;th&amp;gt;Employee ID&amp;lt;/th&amp;gt;
+                                &amp;lt;th&amp;gt;First Name&amp;lt;/th&amp;gt;
+                                &amp;lt;th&amp;gt;Last Name&amp;lt;/th&amp;gt;
+                                &amp;lt;th&amp;gt;Role&amp;lt;/th&amp;gt;
+                                &amp;lt;th&amp;gt;Manager&amp;lt;/th&amp;gt;
+                            &amp;lt;/tr&amp;gt;
+                        &amp;lt;/thead&amp;gt;
+                        &amp;lt;tbody class='table-striped'&amp;gt;
+                            {% for employee in employees %}
+                            &amp;lt;tr&amp;gt;
+                                &amp;lt;td&amp;gt;{{ employee.id }}&amp;lt;/td&amp;gt;
+                                &amp;lt;td&amp;gt;{{ employee.first_name }}&amp;lt;/td&amp;gt;
+                                &amp;lt;td&amp;gt;{{ employee.last_name }}&amp;lt;/td&amp;gt;
+                                &amp;lt;td&amp;gt;{{ employee.get_role_display }}&amp;lt;/td&amp;gt;
+                                &amp;lt;td&amp;gt;{% if employee.manager %}{{ employee.manager.first_name }} {{ employee.manager.last_name }}{% endif %}&amp;lt;/td&amp;gt;
+                            &amp;lt;/tr&amp;gt;
+                            {% endfor %}
+                        &amp;lt;/tbody&amp;gt;
+                    &amp;lt;/table&amp;gt;
+                &amp;lt;/dov&amp;gt;
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+        &amp;lt;script src=&quot;https://code.jquery.com/jquery-3.2.1.slim.min.js&quot; integrity=&quot;sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN&quot; crossorigin=&quot;anonymous&quot;&amp;gt;&amp;lt;/script&amp;gt;
+        &amp;lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js&quot; integrity=&quot;sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4&quot; crossorigin=&quot;anonymous&quot;&amp;gt;&amp;lt;/script&amp;gt;
+    &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This file is known as a &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;https://docs.djangoproject.com/en/1.11/topics/templates/&quot;&gt;template&lt;/a&gt; in the Django web framework. Templates represent a blueprint for reproducible HTML that is dynamically generated based off the data that is passed to it. In our case the data being passed to our &quot;index&quot; template represents our list of employees.&lt;/p&gt;
+
+&lt;p&gt;In order to serve up our template we will need to make a couple of changes to our view function. Namely we need to import the &lt;code&gt;render&lt;/code&gt; helper function from Django shortcuts, then instead of returning &lt;code&gt;HttpResponse&lt;/code&gt; we will return a call to &lt;code&gt;render&lt;/code&gt;, passing in the &lt;code&gt;request&lt;/code&gt; object, the path to our template, and a dictionary containing the data to pass to our template.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;# hrmgmt/views.py
+from django.shortcuts import render
+
+from .models import Employee
+
+def index(request):
+    employees = Employee.objects.order_by('id').all()
+    context = {'employees': employees}
+    return render(request, 'hrmgmt/index.html', context)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Again, fire up our Django development server and in a browser type &lt;a href=&quot;http://localhost:8000/hr/&quot;&gt;http://localhost:8000/hr/&lt;/a&gt; into the URL field then press &quot;Enter&quot;. You should see the output similar to the following screenshot:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3.amazonaws.com/stackabuse/media/recursive-model-relationships-django-2.png&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can see in the resulting &quot;Manager&quot; column of the table that we've successfully linked an &lt;code&gt;Employee&lt;/code&gt; to an &lt;code&gt;Employee&lt;/code&gt; using Django models.&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;In this article we have gone over the use case for why we would implement a recursive relationship within a Django model. We walked through the code for defining such a recursive relationship as well as how to interact with the models to persist them to the database then how to retrieve them. Finally, we wrapped things up by seeing how to display the information in our database backed models in a Django template.&lt;/p&gt;
+
+&lt;p&gt;If you have made it this far I would like to thank you for reading my article. I hope that this article inspires you to further investigate web development with the Django web framework. As always I invite any and all comments, suggestions, or criticisms.&lt;/p&gt;</description>
+	<pubDate>Fri, 06 Oct 2017 13:00:00 +0000</pubDate>
+</item>
+<item>
+	<title>Reuven Lerner: Level up your Python, with three new courses</title>
+	<guid>https://blog.lerner.co.il/level-python-three-new-courses/</guid>
+	<link>https://blog.lerner.co.il/level-python-three-new-courses/</link>
+	<description>&lt;p&gt;Back in July, I gave three live, online courses: Object-oriented Python, functional Python, and Python decorators.  I have long found that all three subjects are misunderstood by many Python developers, and I wanted to help people to understand how and when to use each one.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m pleased to announce that recordings from all three courses are now available for sale.&lt;/p&gt;
+&lt;p&gt;These are the same courses that I give all over the world to engineers at such companies as Apple, Cisco, Ericsson, IBM, VMWare, and Western Digital.&lt;/p&gt;
+&lt;p&gt;If you have ever wanted to level up your understanding of these topics, I think that my courses will really help you out.  Not only do I explain what&amp;#8217;s going on, but I also ask you to do exercises to help cement these ideas in your mind. Of course, I go over every exercise as well, and provide the Jupyter notebooks and files that I created when doing so.&lt;/p&gt;
+&lt;p&gt;Want to buy learn more? Just click on the appropriate link for each one:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://lerner.co.il/downloads/course-functional-programming-python/?utm_source=drip&amp;utm_medium=email&amp;utm_campaign=Level+up+your+Python%21&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Functional Python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://lerner.co.il/downloads/course-object-oriented-programming-python/?utm_source=drip&amp;utm_medium=email&amp;utm_campaign=Level+up+your+Python%21&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Object-oriented Python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://lerner.co.il/downloads/course-python-decorators/?utm_source=drip&amp;utm_medium=email&amp;utm_campaign=Level+up+your+Python%21&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Python decorators&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://lerner.co.il/downloads/course-bundle-functional-python-oo-python-decorators/?utm_source=drip&amp;utm_medium=email&amp;utm_campaign=Level+up+your+Python%21&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Bundle: Buy all three courses, and get $50 off!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you&amp;#8217;re a student, then &lt;a href=&quot;mailto:reuven@lerner.co.il&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;e-mail me &lt;/a&gt;for a discount code good on any (or all!) of these courses.&lt;/p&gt;
+&lt;p&gt;If you have any questions about the courses, just reply to this e-mail, or contact me at &lt;a href=&quot;mailto:reuven@lerner.co.il&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;reuven@lerner.co.il&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ll be offering some more live courses later this month (October); I&amp;#8217;ll be posting dates and topics on Monday of next week, so stay tuned for even more Python goodness!&lt;/p&gt;
+&lt;p&gt;The post &lt;a rel=&quot;nofollow&quot; href=&quot;https://blog.lerner.co.il/level-python-three-new-courses/&quot;&gt;Level up your Python, with three new courses&lt;/a&gt; appeared first on &lt;a rel=&quot;nofollow&quot; href=&quot;https://blog.lerner.co.il&quot;&gt;Lerner Consulting Blog&lt;/a&gt;.&lt;/p&gt;</description>
+	<pubDate>Fri, 06 Oct 2017 11:18:21 +0000</pubDate>
+</item>
+<item>
+	<title>Tarek Ziade: Autosizing web services</title>
+	<guid>https://ziade.org/2017/10/06/autosizing-web-services/</guid>
+	<link>https://ziade.org/2017/10/06/autosizing-web-services/</link>
+	<description>&lt;p&gt;Molotov, the load testing tool I've developed, comes now with an &lt;strong&gt;autosizing&lt;/strong&gt;
+feature. When the &lt;strong&gt;--sizing&lt;/strong&gt; option is used, Molotov will slowly ramp-up the
+number of workers per process and will stop once there are too many failures
+per minute.&lt;/p&gt;
+&lt;p&gt;The default tolerance for failure is 5%, but this can be tweaked with the
+&lt;strong&gt;--sizing-tolerance&lt;/strong&gt; option.&lt;/p&gt;
+&lt;p&gt;Molotov will use 500 workers that are getting ramped up in 5 minutes, but you
+can set your own values with &lt;strong&gt;--workers&lt;/strong&gt; and &lt;strong&gt;--ramp-up&lt;/strong&gt; if you want to
+autosize at a different pace.&lt;/p&gt;
+&lt;p&gt;See all the options at &lt;a class=&quot;reference external&quot; href=&quot;http://molotov.readthedocs.io/en/stable/cli&quot;&gt;http://molotov.readthedocs.io/en/stable/cli&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This load testing technique is useful to determine what is the limiting
+resource for a given application: RAM, CPU, I/O or Network.&lt;/p&gt;
+&lt;p&gt;Running Molotov against a single node that way can help decide what is the best
+combination of RAM, CPU, Disk and Bandwidth per node to deploy a project. In
+AWS that would mean helping chosing the size of the VM.&lt;/p&gt;
+&lt;p&gt;To perform this test you need to deploy the app on a dedicated node. Since most
+of our web services projects at Mozilla are now available as Docker images, it
+becomes easy to automate that deployment when we want to test the service.&lt;/p&gt;
+&lt;p&gt;I have created a small script on the top of Molotov that does exactly that, by
+using Amazon SSM (Systems Manager). See
+&lt;a class=&quot;reference external&quot; href=&quot;http://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html&quot;&gt;http://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;amazon-ssm&quot;&gt;
+&lt;h2&gt;Amazon SSM&lt;/h2&gt;
+&lt;p&gt;SSM is a client-server tool that simplifies working with EC2 nodes. For
+instance, instead of writing a low-level script using Paramiko that drives EC2
+instances through SSH, you can send batch commands through SSM to any number of
+EC2 instances, and get back the results asynchronously.&lt;/p&gt;
+&lt;p&gt;SSM integrates with S3 so you can get back your commands results as artifacts
+once they are finished.&lt;/p&gt;
+&lt;p&gt;Building a client around SSM is quite easy with Boto3. The only tricky part is
+waiting for the results to be ready.&lt;/p&gt;
+&lt;p&gt;This is my SSM client:
+&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/tarekziade/sizer/blob/master/sizer/ssm.py&quot;&gt;https://github.com/tarekziade/sizer/blob/master/sizer/ssm.py&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;deploying-and-running&quot;&gt;
+&lt;h2&gt;Deploying and running&lt;/h2&gt;
+&lt;p&gt;Based on this SSM client, my script is doing the following operations on AWS:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Deploy (or reuse) an EC2 Instance that has an SSM agent and a Docker agent
+running&lt;/li&gt;
+&lt;li&gt;Run the Docker container of the service on that EC2 instance&lt;/li&gt;
+&lt;li&gt;Run a Docker container that runs &lt;strong&gt;Glances&lt;/strong&gt; (more on this later)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Once the EC2 instance has the service up and running, it's ready to be used via
+Molotov.&lt;/p&gt;
+&lt;p&gt;The script takes a github repo and run it, using &lt;strong&gt;moloslave&lt;/strong&gt;
+&lt;a class=&quot;reference external&quot; href=&quot;http://molotov.readthedocs.io/en/stable/slave&quot;&gt;http://molotov.readthedocs.io/en/stable/slave&lt;/a&gt; Once the test is over, metrics
+are grabbed via SSM and the results are presented in a fancy HTML 5 page where
+you can find out what is the bottleneck of your service&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;example-with-kinto&quot;&gt;
+&lt;h2&gt;Example with Kinto&lt;/h2&gt;
+&lt;p&gt;Kinto is a Python service that provides a rest-ish API to read write schemaless
+JSON documents. Running a load test on it using Molotov is pretty
+straightforward. The test script adds data, browses it and verifies that the
+Kinto service returns things correctly. And Kinto has a docker image published
+on Docker hub.&lt;/p&gt;
+&lt;p&gt;I've run the sizing script using that image on a t2.micro instance. Here are
+the results: &lt;a class=&quot;reference external&quot; href=&quot;https://ziade.org/sizer_tested.html&quot;&gt;https://ziade.org/sizer_tested.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can see that the memory is growing throughout the test, because the Docker
+image uses a memory database and the test keeps on adding data -- that is also
+why the I/O is sticking to 0.&lt;/p&gt;
+&lt;p&gt;If you double-click on the CPU metrics, you can see that the CPU reaches almost
+100% at the end of the test before things starts to break.&lt;/p&gt;
+&lt;p&gt;So, for a memory backend, the limiting factor for Kinto is the CPU, which makes
+sense. If we had had a bottleneck on I/O, that would have been an indication
+that something was wrong.&lt;/p&gt;
+&lt;p&gt;Another interesting test would be to run it against a Postgres RDS deployment
+instead of a memory database.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;collecting-metrics-with-glances&quot;&gt;
+&lt;h2&gt;Collecting Metrics with Glances&lt;/h2&gt;
+&lt;p&gt;The metrics are collected on the EC2 box using Glances
+(&lt;a class=&quot;reference external&quot; href=&quot;http://glances.readthedocs.io/&quot;&gt;http://glances.readthedocs.io/&lt;/a&gt;) which runs in its own Docker container and has
+the ability to measure &lt;strong&gt;other docker images&lt;/strong&gt; running on the same agent. see
+&lt;a class=&quot;reference external&quot; href=&quot;http://glances.readthedocs.io/en/stable/aoa/docker.html?highlight=docker&quot;&gt;http://glances.readthedocs.io/en/stable/aoa/docker.html?highlight=docker&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In other words, you can follow the resource usage &lt;em&gt;per docker container&lt;/em&gt;, and
+in our case that's useful to track the container that runs the actual service.&lt;/p&gt;
+&lt;p&gt;My Glances docker container uses this image:
+&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/tarekziade/sizer/blob/master/Dockerfile&quot;&gt;https://github.com/tarekziade/sizer/blob/master/Dockerfile&lt;/a&gt; which runs the tool
+and spits out the metrics in a CSV file I can collect via SSM once the test is
+over.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;vizualizing-results&quot;&gt;
+&lt;h2&gt;Vizualizing results&lt;/h2&gt;
+&lt;p&gt;I could have send the metrics to an Influxdb or Grafana system, but I wanted to
+create a simple static page that could work locally and be passed around as a
+test artifact.&lt;/p&gt;
+&lt;p&gt;That's where Plotly (&lt;a class=&quot;reference external&quot; href=&quot;https://plot.ly/&quot;&gt;https://plot.ly/&lt;/a&gt;) comes in handy. This tool can turn a CSV
+file produced by Glances into a nice looking HTML5 page where you can toggle
+between metrics and do other nice stuff.&lt;/p&gt;
+&lt;p&gt;I have used Pandas/Numpy to process the data, which is probably overkill given
+the amount of processed lines, but their API are a natural fit to work with
+Plotly.&lt;/p&gt;
+&lt;p&gt;See the small class I've built here:
+&lt;a class=&quot;reference external&quot; href=&quot;https://github.com/tarekziade/sizer/blob/master/sizer/chart.py&quot;&gt;https://github.com/tarekziade/sizer/blob/master/sizer/chart.py&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;The new Molotov sizing feature is pretty handy as long as you can automate the
+deployment of isolated nodes for the service you want to test -- and that's
+quite easy with Docker and AWS.&lt;/p&gt;
+&lt;p&gt;Autosizing can give you a hint on how an application behaves under stress and
+help you decide how you want to initially deploy it.&lt;/p&gt;
+&lt;p&gt;In an ideal world, each one of our services has a Molotov test already, and
+running an autosizing test can be done with minimal work.&lt;/p&gt;
+&lt;p&gt;In a super ideal world, everything I've described is part of the continuous
+deployement process :)&lt;/p&gt;
+&lt;/div&gt;</description>
+	<pubDate>Thu, 05 Oct 2017 22:00:00 +0000</pubDate>
+</item>
+<item>
+	<title>Django Weblog: Django bugfix release: 1.11.6</title>
+	<guid>https://www.djangoproject.com/weblog/2017/oct/05/bugfix-release/</guid>
+	<link>https://www.djangoproject.com/weblog/2017/oct/05/bugfix-release/</link>
+	<description>&lt;p&gt;Today we've issued the &lt;a class=&quot;reference external&quot; href=&quot;https://docs.djangoproject.com/en/stable/releases/1.11.6/&quot;&gt;1.11.6&lt;/a&gt;  bugfix release.&lt;/p&gt;
+&lt;p&gt;The release package and checksums are available from &lt;a class=&quot;reference external&quot; href=&quot;https://www.djangoproject.com/download/&quot;&gt;our downloads page&lt;/a&gt;, as well as from the Python Package Index. The PGP key ID used for this release is Tim Graham: 1E8ABDC773EDE252.&lt;/p&gt;</description>
+	<pubDate>Thu, 05 Oct 2017 20:01:58 +0000</pubDate>
+</item>
+<item>
+	<title>بايثون العربي: دورة مكثفة للغة البايثون :من الصفر الى البطولة  أماكن مجانية محدودة</title>
+	<guid>http://pyarab.com/2017/10/%d8%af%d9%88%d8%b1%d8%a9-%d9%85%d9%83%d8%ab%d9%81%d8%a9-%d9%84%d9%84%d8%ba%d8%a9-%d8%a7%d9%84%d8%a8%d8%a7%d9%8a%d8%ab%d9%88%d9%86-%d9%85%d9%86-%d8%a7%d9%84%d8%b5%d9%81%d8%b1-%d8%a7%d9%84%d9%89-%d8%a7.html</guid>
+	<link>http://pyarab.com/2017/10/%d8%af%d9%88%d8%b1%d8%a9-%d9%85%d9%83%d8%ab%d9%81%d8%a9-%d9%84%d9%84%d8%ba%d8%a9-%d8%a7%d9%84%d8%a8%d8%a7%d9%8a%d8%ab%d9%88%d9%86-%d9%85%d9%86-%d8%a7%d9%84%d8%b5%d9%81%d8%b1-%d8%a7%d9%84%d9%89-%d8%a7.html</link>
+	<description>&lt;p&gt;اجعل من نفسك مبرمج بلغة البايثون واكتسب أكثر المهارات المطلوبة من أصحاب العمل لعام 2017، إذا كنت قد برمجت من قبل بالبايثون، وتعرف بالفعل بناء الجمل الأساسية أو ترغب في معرفة المزيد عن الميزات المتقدمة عن البايثون، فهذا الكورس بالطبع موجه لك هذه الدورة سوف &lt;strong&gt;تعلمك كلاُ من الإصدارين (2 و3) من البايثون.&lt;/strong&gt;&lt;span id=&quot;more-908&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;حتى تتمكن من استخدام مهاراتك بسهولة في أي إصدار مع &lt;strong&gt;أكثر من 100، محاضرة وأكثر من 17 ساعة فيديو&lt;/strong&gt;، هذا الكورس الشامل لم يترك صغيرة أو كبيرة إلا وقد شرحها بأمثلة وببساطة. هذه الدورة التدريبية تتضمن اختبارات  &lt;strong&gt;Quizzes&lt;/strong&gt; , &lt;strong&gt;Tests , &lt;/strong&gt; فضلا عن &lt;strong&gt;الواجبات المنزلية &lt;/strong&gt;وايضاً &lt;strong&gt;3 &lt;/strong&gt;&lt;strong&gt;مشاريع &lt;/strong&gt;&lt;strong&gt;رئيسية&lt;/strong&gt; تؤهله لاكتساب خبرة لبيئة العمل الواقعية.&lt;/p&gt;
+&lt;p&gt;هذه الدورة بالطبع سوف تعلم البايثون بطريقة عملية، مع كل محاضرة يأتي الكود المستخدم بالأمثلة وحل المشاريع  والواجبات المنزلية .&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;سوف تحصل على مدى الحياة الوصول إلى أكثر من 100 محاضرات بالإضافة إلى دفتر الملاحظات الخاصة بكل محاضره.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;وتأتي هذه الدورة مع &lt;strong&gt;ضمان استعادة ما دفعت خلال 30 يوم&lt;/strong&gt;! إذا كنت غير راض بأي شكل من الأشكال فسوف تحصل على أموالك. ليس هذا فحسب ولكنك سوف تكون قادر على الاحتفاظ بدفتر الملاحظات والامتحانات على الرغم من استعادة اموالك وذلك كنوع من الشكر لك على محاولة اخذ الكورس.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;إذا ماذا تنتظر؟ تعلم البايثون بطريقة من شأنها أن تقدم حياتك المهنية وزيادة معرفتك بطريقة مسلية&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;من هو الجمهور المستهدف؟&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;المبتدئين الذين لم يسبق لهم البرمجة من قبل.&lt;/li&gt;
+&lt;li&gt;المبرمجين ذوا خلفيات من لغات أخرى غير البايثون.&lt;/li&gt;
+&lt;li&gt;مبرمجين بايثون ذو مستوى متوسط ويرغبون في الارتقاء بمستوى مهاراتهم إلى المستوى المتقدم&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;المتطلبات &lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li class=&quot;requirements__item&quot;&gt;المعرفة الأساسية في تشغيل جهاز الكمبيوتر و تثبيت البرامج&lt;/li&gt;
+&lt;li class=&quot;requirements__item&quot;&gt;الاتصال بالانترنت&lt;/li&gt;
+&lt;li class=&quot;requirements__item&quot;&gt;بعض من مبادئ اللغة الانجليزية لفهم المصطلحات&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;مالذي ستتعلمه من هذه الدورة &lt;a href=&quot;http://pyarab.com/wp-content/uploads/2017/10/Capture.png&quot;&gt;&lt;img class=&quot;aligncenter wp-image-909 size-full&quot; src=&quot;http://pyarab.com/wp-content/uploads/2017/10/Capture.png&quot; alt=&quot;&quot; width=&quot;745&quot; height=&quot;339&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;وللتسجيل في الدورة يرجي زيارة الرابط التالي :&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.udemy.com/python-arabic/?couponCode=PYTHON-ARABIC&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.udemy.com/python-arabic/?couponCode=&lt;/a&gt;&lt;a href=&quot;https://www.udemy.com/python-arabic/?couponCode=FREEPYARAB&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;FREEPYARAB&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Thu, 05 Oct 2017 18:44:40 +0000</pubDate>
+</item>
+<item>
+	<title>PyCharm: PyCharm 2017.3 EAP 4 Out now</title>
+	<guid>http://feedproxy.google.com/~r/Pycharm/~3/LJgsxaYCBj0/</guid>
+	<link>http://feedproxy.google.com/~r/Pycharm/~3/LJgsxaYCBj0/</link>
+	<description>&lt;p&gt;&lt;span&gt;The latest and greatest early access program (EAP) version of PyCharm is now available from our website:&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;&lt;a class=&quot;jb-download-button&quot; href=&quot;https://jetbrains.com/pycharm/nextversion&quot;&gt;Get PyCharm 2017.3 EAP 4&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;span&gt;New in this version&lt;/span&gt;&lt;/h2&gt;
+&lt;h3&gt;Faster setup for SSH interpreters [Pro only]&lt;/h3&gt;
+&lt;p&gt;If you&amp;#8217;ve ever configured an SSH interpreter in PyCharm before, you know it takes a while for PyCharm to synchronize its helpers to the remote machine. Furthermore, as PyCharm needs to download libraries from the remote machine altogether you&amp;#8217;d be waiting a while until you could start working. We&amp;#8217;ve made serious performance improvements in this release, see this video for an impression:&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://vimeo.com/236943110&quot;&gt;Watch video on Vimeo&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;span&gt;Further Improvements&lt;/span&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;When running a test from the context menu, it will now use the test runner you&amp;#8217;ve configured for your project&lt;/li&gt;
+&lt;li&gt;For TypeScript: extract interface, and more refactorings and quick fixes [Pro only]&lt;/li&gt;
+&lt;li&gt;If you work with PostgreSQL date/time columns with timezone, you&amp;#8217;ll be happy to learn that we&amp;#8217;ve improved the handling of showing timezones. If you set the timezone for your session with &lt;code&gt;SET TIMEZONE='europe/berlin';&lt;/code&gt; this will now work correctly. [Pro only]&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;And more, &lt;/span&gt;&lt;span&gt;&lt;a href=&quot;https://confluence.jetbrains.com/display/PYH/PyCharm+173.2941.3+Release+Notes&quot;&gt;have a look at the release notes for details&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span&gt;If these features sound interesting to you, try them yourself:&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;&lt;a class=&quot;jb-download-button&quot; href=&quot;https://jetbrains.com/pycharm/nextversion&quot;&gt;Get PyCharm 2017.3 EAP 4&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;As a reminder, PyCharm EAP versions:&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span&gt;Are free, including PyCharm Professional Edition EAP&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;Will work for 30 days after being built, you’ll need to update when the build expires&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span&gt;If you run into any issues with this version, or another version of PyCharm, please &lt;/span&gt;&lt;a href=&quot;https://youtrack.jetbrains.com/issues/PY&quot;&gt;&lt;span&gt;let us know on our YouTrack&lt;/span&gt;&lt;/a&gt;&lt;span&gt;. If you have other suggestions or remarks, you can &lt;/span&gt;&lt;a href=&quot;https://twitter.com/pycharm&quot;&gt;&lt;span&gt;reach us on Twitter&lt;/span&gt;&lt;/a&gt;&lt;span&gt;, or by commenting on the blog.&lt;/span&gt;&lt;/p&gt;
+&lt;img src=&quot;http://feeds.feedburner.com/~r/Pycharm/~4/LJgsxaYCBj0&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot; /&gt;</description>
+	<pubDate>Thu, 05 Oct 2017 17:18:25 +0000</pubDate>
+</item>
+<item>
+	<title>NumFOCUS: Matplotlib Lead Developer Explains Why He Can’t Fix the Docs—But You Can</title>
+	<guid>https://www.numfocus.org/blog/matplotlib-lead-developer-explains-why-he-cant-fix-the-docs-but-you-can/</guid>
+	<link>https://www.numfocus.org/blog/matplotlib-lead-developer-explains-why-he-cant-fix-the-docs-but-you-can/</link>
+	<pubDate>Thu, 05 Oct 2017 17:00:58 +0000</pubDate>
+</item>
+<item>
+	<title>PyPy Development: PyPy v5.9 Released, Now Supports Pandas, NumPy</title>
+	<guid>http://feedproxy.google.com/~r/PyPyStatusBlog/~3/yHNUauwmco8/pypy-v59-released-now-supports-pandas.html</guid>
+	<link>http://feedproxy.google.com/~r/PyPyStatusBlog/~3/yHNUauwmco8/pypy-v59-released-now-supports-pandas.html</link>
+	<description>&lt;div dir=&quot;ltr&quot;&gt;
+The PyPy team is proud to release both PyPy3.5 v5.9 (a beta-quality interpreter for Python
+3.5 syntax) and PyPy2.7 v5.9 (an interpreter supporting
+Python 2.7 syntax). &lt;br /&gt;
+
+&lt;br /&gt;
+&lt;ul&gt;
+&lt;li&gt;NumPy and Pandas now work on PyPy2.7 (together with Cython 0.27.1). Many other modules
+based on C-API extensions work on PyPy as well.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br /&gt;
+&lt;ul&gt;
+&lt;li&gt;Cython 0.27.1 (released very recently) supports more projects with PyPy, both
+on PyPy2.7 and PyPy3.5 beta. Note version &lt;strong&gt;0.27.1&lt;/strong&gt; is now the minimum
+version that supports this version of PyPy, due to some interactions with
+updated C-API interface code.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;We optimized the JSON parser for recurring string keys, which should decrease
+memory use by up to 50% and increase parsing speed by up to 15% for large JSON files
+with many repeating dictionary keys (which is quite common).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br /&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://cffi.readthedocs.io/en/latest/whatsnew.html&quot;&gt;CFFI&lt;/a&gt;, which is part of the PyPy release, has been updated to 1.11.1,
+improving an already great package for interfacing with C. CFFI now supports
+complex arguments in API mode, as well as &lt;code class=&quot;docutils literal&quot;&gt;&lt;span class=&quot;pre&quot;&gt;char16_t&lt;/span&gt;&lt;/code&gt; and &lt;code class=&quot;docutils literal&quot;&gt;&lt;span class=&quot;pre&quot;&gt;char32_t&lt;/span&gt;&lt;/code&gt; and has
+improved support for callbacks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br /&gt;
+&lt;ul&gt;
+&lt;li&gt;Issues in the C-API compatibility layer that appeared as excessive memory
+use were cleared up and other incompatibilities were resolved. The C-API
+compatibility layer does slow down code which crosses the python-c interface
+often. Some fixes are in the pipelines for some of the performance issues, and we still recommend
+using pure python on PyPy or interfacing via &lt;a class=&quot;reference external&quot; href=&quot;https://cffi.readthedocs.io/en/latest/whatsnew.html&quot;&gt;CFFI&lt;/a&gt;.&amp;nbsp; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;br /&gt;
+Please let us know if your use case is slow, we have ideas how to make things
+faster but need real-world examples (not micro-benchmarks) of problematic code.&lt;br /&gt;
+
+&lt;br /&gt;
+Work sponsored by a Mozilla &lt;a class=&quot;reference external&quot; href=&quot;https://morepypy.blogspot.com/2016/08/pypy-gets-funding-from-mozilla-for.html&quot;&gt;grant&lt;/a&gt; continues on PyPy3.5; we continue on the path to the goal of a complete python 3.5 implementation. Of course the bug fixes and performance enhancements
+mentioned above are part of both PyPy2.7 and PyPy3.5 beta.&lt;br /&gt;
+
+&lt;br /&gt;
+As always, this release fixed many other issues and bugs raised by the
+growing community of PyPy users. We strongly recommend updating.&lt;br /&gt;
+
+&lt;br /&gt;
+You can download the v5.9 releases here (note that we provide PyPy3.5 binaries for only Linux 64bit for now):&lt;br /&gt;
+&lt;br /&gt;
+&lt;blockquote&gt;
+&lt;div&gt;
+&lt;a class=&quot;reference external&quot; href=&quot;http://pypy.org/download.html&quot;&gt;http://pypy.org/download.html&lt;/a&gt;&lt;/div&gt;
+&lt;/blockquote&gt;
+We would like to thank our donors and contributors, and
+encourage new people to join the project. PyPy has many
+layers and we need help with all of them: &lt;a class=&quot;reference external&quot; href=&quot;http://doc.pypy.org/en/latest/index.html&quot;&gt;PyPy&lt;/a&gt; and &lt;a class=&quot;reference external&quot; href=&quot;https://rpython.readthedocs.org/&quot;&gt;RPython&lt;/a&gt; documentation
+improvements, tweaking popular &lt;a class=&quot;reference external&quot; href=&quot;http://doc.pypy.org/en/latest/project-ideas.html#make-more-python-modules-pypy-friendly&quot;&gt;modules&lt;/a&gt; to run on PyPy, or general &lt;a class=&quot;reference external&quot; href=&quot;http://doc.pypy.org/en/latest/project-ideas.html&quot;&gt;help&lt;/a&gt;
+with making RPython’s JIT even better.&lt;br /&gt;
+&lt;br /&gt;
+&lt;h2&gt;
+What is PyPy?&lt;/h2&gt;
+PyPy is a very compliant Python interpreter, almost a drop-in replacement for CPython 2.7 (stdlib version 2.7.13), and CPython 3.5 (stdlib version 3.5.3). It’s fast (&lt;a class=&quot;reference external&quot; href=&quot;http://speed.pypy.org/&quot;&gt;PyPy and CPython 2.7.x&lt;/a&gt; performance comparison) due to its integrated tracing JIT compiler.&lt;br /&gt;
+&lt;br /&gt;
+We also welcome developers of other &lt;a class=&quot;reference external&quot; href=&quot;http://rpython.readthedocs.io/en/latest/examples.html&quot;&gt;dynamic languages&lt;/a&gt; to see what RPython can do for them.&lt;br /&gt;
+&lt;br /&gt;
+The PyPy 2.7 release supports:&lt;br /&gt;
+&lt;blockquote&gt;
+&lt;div&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;b&gt;x86&lt;/b&gt; machines on most common operating systems (Linux 32/64 bits, Mac OS X 64 bits, Windows 32 bits, OpenBSD, FreeBSD)&lt;/li&gt;
+&lt;li&gt;newer &lt;b&gt;ARM&lt;/b&gt; hardware (ARMv6 or ARMv7, with VFPv3) running Linux,&lt;/li&gt;
+&lt;li&gt;big- and little-endian variants of &lt;b&gt;PPC64&lt;/b&gt; running Linux,&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;s390x&lt;/b&gt; running Linux &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;
+What else is new?&lt;/h2&gt;
+&lt;div&gt;
+PyPy 5.8 was released in June, 2017.&lt;/div&gt;
+&lt;div&gt;
+There are many incremental improvements to RPython and PyPy, the complete listing is &lt;a href=&quot;http://pypy.readthedocs.io/en/latest/release-v5.9.0.html&quot;&gt;here&lt;/a&gt;.&lt;/div&gt;
+&lt;div&gt;
+&amp;nbsp; &lt;/div&gt;
+Please update, and continue to help us make PyPy better.&lt;br /&gt;
+&lt;br /&gt;
+Cheers, The PyPy team&lt;/div&gt;
+&lt;img src=&quot;http://feeds.feedburner.com/~r/PyPyStatusBlog/~4/yHNUauwmco8&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot; /&gt;</description>
+	<pubDate>Thu, 05 Oct 2017 15:19:30 +0000</pubDate>
+</item>
+<item>
+	<title>Stack Abuse: Serving Static Files with Flask</title>
+	<guid>http://stackabuse.com/serving-static-files-with-flask/</guid>
+	<link>http://stackabuse.com/serving-static-files-with-flask/</link>
+	<description>&lt;h3 id=&quot;settingupflask&quot;&gt;Setting Up Flask&lt;/h3&gt;
+
+&lt;img src=&quot;http://stackabuse.com/content/images/2017/10/serving-static-files-flask.png&quot; alt=&quot;Serving Static Files with Flask&quot; /&gt;&lt;p&gt;&lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;http://flask.pocoo.org/&quot;&gt;Flask&lt;/a&gt; is a great choice for building web applications in a modular way using Python. Unlike Django and other analogues like Ruby on Rails, Flask is a micro-framework. This means it includes only what is necessary to do core web development, leaving the bulk of choices beyond that minimal subset to you. &lt;/p&gt;
+
+&lt;p&gt;This approach has a huge advantage in keeping your code and workflow simple, particularly on smaller projects. Here we will show you how to serve static files such as JS, CSS, and images using Flask.&lt;/p&gt;
+
+&lt;p&gt;Make sure you have Python 3 installed. You can use &lt;strong&gt;pyenv&lt;/strong&gt; for this, which helps you select Python versions. Follow &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;https://www.froehlichundfrei.de/blog/2014-11-30-my-transition-to-python3-and-pyenv-goodby-virtualenvwrapper/&quot;&gt;this guide&lt;/a&gt; to set up Python 3 using &lt;strong&gt;pyenv&lt;/strong&gt;. If you prefer &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;http://docs.python-guide.org/en/latest/dev/virtualenvs/#lower-level-virtualenv&quot;&gt;virtualenv&lt;/a&gt; instead, be sure to check out the documentation, but just make sure you have a Python 3 environment active.&lt;/p&gt;
+
+&lt;p&gt;Before we can start serving static files with Flask, we need to install it and get a simple app going. To do this, install Flask using the command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ pip install flask
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now we'll create a basic Flask app that serves a landing page on which we will display the classic text, &quot;Hello World&quot;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ mkdir serving_static
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In this new directory, create a new file which creates the Flask application and runs it. In this file, we create a Flask route where we will display a welcome message using a Flask template.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;# serve.py
+
+from flask import Flask
+from flask import render_template
+
+# creates a Flask application, named app
+app = Flask(__name__)
+
+# a route where we will display a welcome message via an HTML template
+@app.route(&quot;/&quot;)
+def hello():
+    message = &quot;Hello, World&quot;
+    return render_template('index.html', message=message)
+
+# run the application
+if __name__ == &quot;__main__&quot;:
+    app.run(debug=True)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now let's create the template to display our message. Create an HTML file in the location &quot;serving_static/templates/index.html&quot; with the following HTML code. Note the &lt;code&gt;message&lt;/code&gt; Python variable passed in from the &lt;code&gt;serve.py&lt;/code&gt; file above.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;!-- templates/index.html --&amp;gt;
+&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;Flask Shop&amp;lt;/title&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;h1&amp;gt;{{message}}&amp;lt;/h1&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We are now ready to run the application. Back in the &quot;serving_static&quot; root directory, run the application using the command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ python serve.py
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If the server started up correctly, you will get a message that it started and a URL to view the application. Open up this URL in your browser, and you should now see our &quot;Hello, World&quot; message displayed in the browser.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3.amazonaws.com/stackabuse/media/serving-static-files-flask-1.png &quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Flask creates application routes using decorators such as the one seen in &lt;strong&gt;serve.py&lt;/strong&gt; above. A decorator such as &lt;code&gt;@app.route(&quot;/&quot;)&lt;/code&gt; creates a new route at the provided path. The function definition below it contains the application logic that will run when a request is received at that URL.&lt;/p&gt;
+
+&lt;h3 id=&quot;servingstaticfilesusingastaticdirectory&quot;&gt;Serving Static Files Using a Static Directory&lt;/h3&gt;
+
+&lt;p&gt;The most common static files you will want to serve in a web application are your application's CSS files for styling the application, as well as JavaScript files that add dynamic behavior to the page. In this section we will see how to serve both CSS and JavaScript files by adding them to the simple application we created above.&lt;/p&gt;
+
+&lt;p&gt;Static files in Flask have a special route. All application URLs that begin with &quot;/static&quot;, by convention, are served from a folder located at &quot;/static&quot; inside your application's root folder.&lt;/p&gt;
+
+&lt;p&gt;This means if we create a &quot;/static&quot; folder inside our main &quot;serving_static&quot; folder, we will be able to serve static files such as CSS, JS, images, and other assets by simply placing them inside that &quot;/static&quot; folder.&lt;/p&gt;
+
+&lt;p&gt;Now let's change the welcome message in our application's index page to introduce &quot;The Flask Shop&quot;, a fictional shop where visitors can buy Flask books.&lt;/p&gt;
+
+&lt;p&gt;First, we want the index page template to show the visitor the name of the shop, as well as a list of books that are on sale. Update your HTML template at &quot;serving&lt;em&gt;static&lt;/em&gt;/templates/index.html&quot; with these changes to look as follows.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;!-- templates/index.html --&amp;gt;
+&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;Flask Shop&amp;lt;/title&amp;gt;
+    &amp;lt;link rel=&quot;stylesheet&quot; href=&quot;/static/style.css&quot;&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;h1&amp;gt;{{message}}&amp;lt;/h1&amp;gt;
+
+    &amp;lt;h3&amp;gt;On sale this week alone:&amp;lt;/h3&amp;gt;
+    &amp;lt;ol&amp;gt;
+      &amp;lt;li&amp;gt;Flask By Example&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Uncluttered Flask&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Flask From First Principles&amp;lt;/li&amp;gt;
+    &amp;lt;/ol&amp;gt;
+
+    &amp;lt;script src=&quot;/static/scripts.js&quot; charset=&quot;utf-8&quot;&amp;gt;&amp;lt;/script&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You will notice that the title of the page is now &quot;Flask Shop&quot;, and we have included a list of Flask books for sale. The visitor should be able to see on the page this list of books when they visit the home page of our shop application.&lt;/p&gt;
+
+&lt;p&gt;Take a look at the head section of the HTML template again. You will notice that now we are linking to a new file, specifically a CSS stylesheet named &quot;style.css&quot;. The path, &quot;/static/style.css&quot; shows that this file is located in our &quot;/static&quot; folder.&lt;/p&gt;
+
+&lt;p&gt;Remember that Flask serves files placed in &quot;/static&quot; automatically as static files, instead of trying to run these files as Python source files.&lt;/p&gt;
+
+&lt;p&gt;Let us now create a static folder at &quot;serving_static/static&quot; to contain all our static files.&lt;/p&gt;
+
+&lt;p&gt;Inside this static folder, let's create the new file &quot;style.css&quot;, and add the following CSS rules to add some style to our shop front application.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-css&quot;&gt;/* static/style.css */
+
+h1 {
+    color: navajowhite;
+    font-variant-caps: all-small-caps;
+    font-size: 46px;
+}
+
+h3 {
+  color: white;
+  font-size: 36px;
+}
+
+li {
+  color: red;
+  font-size: 50px;
+}
+
+body {
+    background: firebrick;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;With these style rules defined, our application will shed the plain white background we saw in our &quot;Hello, World&quot; example for a more colorful &quot;firebrick&quot; red background. We are also defining distinctive white styling for the text on the page.&lt;/p&gt;
+
+&lt;p&gt;Now let us actually update the message we are displaying on the page. Go back into &quot;serving_static/serve.py&quot; and update the &lt;code&gt;message&lt;/code&gt; variable to be the name of the shop. Find the &lt;code&gt;hello()&lt;/code&gt; function and update the &lt;code&gt;message&lt;/code&gt; variable as follows:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;# serve.py
+
+...
+
+# a route where we will display a welcome message via an HTML template
+@app.route(&quot;/&quot;)
+def hello():
+    message = &quot;The Flask Shop&quot;
+    return render_template('index.html', message=message)
+
+...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, restart your server, and run &lt;code&gt;python serve.py&lt;/code&gt; again. Then visit the application URL at &lt;strong&gt;localhost:5000&lt;/strong&gt; and you should see our list of Flask books.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3.amazonaws.com/stackabuse/media/serving-static-files-flask-2.png &quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Notice that the style of the application is now being picked up from our CSS file which is being served from the &quot;/static&quot; directory by our Flask app.&lt;/p&gt;
+
+&lt;p&gt;If you look again at our &quot;serving_static/templates/index.html&quot; template, before the closing &lt;code&gt;&amp;lt;/body&amp;gt;&lt;/code&gt; tag, we are inserting a JavaScript script tag.&lt;/p&gt;
+
+&lt;p&gt;The URL of this script is &quot;/static/scripts.js&quot;. This is another static file that will be served by Flask from our &quot;/static&quot; folder.&lt;/p&gt;
+
+&lt;p&gt;Let us now create this JavaScript file at &quot;serving_static/static/scripts.js&quot;. The contents will be some JavaScript code to dynamically change the background color of our shop application every second. This creates a dramatic effect to draw attention to the limited time sale in our fictional Flask shop.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;// scripts.js
+
+// a couple of different backgrounds to style the shop
+var background1 = 'black';
+var background2 = 'firebrick';
+
+// this lets us toggle the background state
+var color = true;
+
+// every 1 second, switch the background color, alternating between the two styles
+setInterval(function () {
+  document.body.style.backgroundColor = (color ? background1 : background2)
+  color = !color;
+}, 1000);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, stop your server and re-run &lt;code&gt;python serve.py&lt;/code&gt; once again. When you visit our application in the browser, the page background should flash and change every 1 second from a shade of red, this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3.amazonaws.com/stackabuse/media/serving-static-files-flask-3.png &quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;to a shade of black, like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3.amazonaws.com/stackabuse/media/serving-static-files-flask-4.png &quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;setInterval&lt;/code&gt; function in our JavaScript code changes the background every second in a continuous time loop.&lt;/p&gt;
+
+&lt;p&gt;We are now serving JavaScript and CSS files from our &quot;/static&quot; folder to style and enhance the behavior of our application. &lt;/p&gt;
+
+&lt;p&gt;If you have additional CSS or JavaScript files, you can add them to the &quot;/static&quot; folder in the same way and reference them as we have done above.&lt;/p&gt;
+
+&lt;h3 id=&quot;servingjavascriptfiles&quot;&gt;Serving JavaScript Files&lt;/h3&gt;
+
+&lt;p&gt;Another common use case when it comes to serving static files in web apps is serving third party libraries such as Backbone.js, Vue.js, Bootstrap or React.&lt;/p&gt;
+
+&lt;p&gt;Any kind of library you want to include can be served in almost the same way that we saw above from our &quot;/static&quot; directory.&lt;/p&gt;
+
+&lt;p&gt;As an example, let us see how to include the Backbone.js JavaScript library in our application.&lt;/p&gt;
+
+&lt;p&gt;A good idea when serving third party libraries is to locate them inside a special &lt;strong&gt;lib&lt;/strong&gt; or &lt;strong&gt;vendor&lt;/strong&gt; directory inside the &quot;/static&quot; folder. You can name this third-party folder whatever you like.&lt;/p&gt;
+
+&lt;p&gt;The key, however, is to put external libraries in their own folder where you can easily upgrade versions or do other management separate from your own application code.&lt;/p&gt;
+
+&lt;p&gt;With this in mind, create a new folder at &quot;serving_static/static/lib&quot;. Since we are including &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;http://backbonejs.org/&quot;&gt;Backbone.js&lt;/a&gt;, download the single-file version of &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;http://backbonejs.org/backbone-min.js&quot;&gt;Backbone.js here&lt;/a&gt;, and then place it inside the new &lt;code&gt;lib&lt;/code&gt; folder inside of our &quot;/static&quot; folder.&lt;/p&gt;
+
+&lt;p&gt;Backbone.js has a hard dependency on &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;http://underscorejs.org/&quot;&gt;Underscore.js&lt;/a&gt;, another JavaScript library, which provides many essential utilities. So download &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;http://underscorejs.org/underscore-min.js&quot;&gt;the latest version of Underscore.js here&lt;/a&gt; and place it next to Backbone.js in your &quot;/static/lib&quot; folder.&lt;/p&gt;
+
+&lt;p&gt;Now we can make use of Backbone.js by including it in our page template and calling its functions.&lt;/p&gt;
+
+&lt;p&gt;Back in your template, in the file &quot;serving_static/templates/index.html&quot;, find the &lt;code&gt;&amp;lt;/ol&amp;gt;&lt;/code&gt; closing tag. After it, on a new line, create a new heading element which we will manipulate with Backbone.js.&lt;/p&gt;
+
+&lt;p&gt;In addition, add new script tags before the closing &lt;code&gt;&amp;lt;/body&amp;gt;&lt;/code&gt; tag. In these tags, we include Underscore.js and Backbone.js, as well as write some code to update the DOM using Backbone code.&lt;/p&gt;
+
+&lt;p&gt;The updated part of the &lt;code&gt;index.html&lt;/code&gt; template should look as follows.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;!-- templates/index.html --&amp;gt;
+
+...
+&amp;lt;ol&amp;gt;
+      &amp;lt;li&amp;gt;Flask By Example&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Uncluttered Flask&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Flask From First Principles&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+
+    &amp;lt;h4 id=&quot;version&quot; style=&quot;color:white;&quot;&amp;gt;Backbone&amp;lt;/h4&amp;gt;
+
+    &amp;lt;script src=&quot;/static/scripts.js&quot; charset=&quot;utf-8&quot;&amp;gt;&amp;lt;/script&amp;gt;
+    &amp;lt;script src=&quot;/static/lib/underscore.js&quot; charset=&quot;utf-8&quot;&amp;gt;&amp;lt;/script&amp;gt;
+    &amp;lt;script src=&quot;/static/lib/backbone.js&quot; charset=&quot;utf-8&quot;&amp;gt;&amp;lt;/script&amp;gt;
+    &amp;lt;script type=&quot;text/javascript&quot;&amp;gt;
+      document.getElementById('version').innerHTML = &quot;Proudly built with Backbone.js version &quot; + Backbone.VERSION;
+    &amp;lt;/script&amp;gt;
+  &amp;lt;/body&amp;gt;
+  ...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Our last &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt; tag above is making use of Backbone.js. If you restart the server now, you should see that the text on the page at the bottom shows the correct Backbone.js version which we are using. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3.amazonaws.com/stackabuse/media/serving-static-files-flask-5.png &quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If we were using Vue.js, React, or any other library, we could add it and serve its static files in the same way, making it available to our application.&lt;/p&gt;
+
+&lt;h3 id=&quot;servingimagesandotherfiletypes&quot;&gt;Serving Images and Other File Types&lt;/h3&gt;
+
+&lt;p&gt;Other file types, such as images and even &lt;strong&gt;.txt&lt;/strong&gt; and &lt;strong&gt;.pdf&lt;/strong&gt; files can be served similarly to the JS and CSS files we showed earlier. Just place them in &quot;/static&quot; and link to them.&lt;/p&gt;
+
+&lt;p&gt;Let's see a code example of serving images. Here are two images of related books: &lt;a href=&quot;https://s3.amazonaws.com/stackabuse/media/serving-static-files-flask-7.png&quot;&gt;book1&lt;/a&gt; and &lt;a href=&quot;https://s3.amazonaws.com/stackabuse/media/serving-static-files-flask-8.jpg&quot;&gt;book2&lt;/a&gt;. Download them and place them in a new folder at &quot;serving_static/static/images&quot;.&lt;/p&gt;
+
+&lt;p&gt;Now we can add a &quot;Related&quot; books section to our index template, where we will display the images of these books.&lt;/p&gt;
+
+&lt;p&gt;Update your &lt;code&gt;index.html&lt;/code&gt; template with the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;!-- templates/index.html --&amp;gt;
+
+...
+
+&amp;lt;h4 id=&quot;version&quot; style=&quot;color:white;&quot;&amp;gt;Backbone&amp;lt;/h4&amp;gt;
+
+&amp;lt;h3&amp;gt;Related&amp;lt;/h3&amp;gt;
+&amp;lt;img src=&quot;/static/images/book1.png&quot; alt=&quot;Related Book 1&quot; width=&quot;20%&quot; height=&quot;auto&quot;&amp;gt;
+&amp;lt;img src=&quot;/static/images/book2.jpg&quot; alt=&quot;Related Book 2&quot; width=&quot;20%&quot; height=&quot;auto&quot;&amp;gt;
+
+...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now when you restart the server and visit the application in the browser, you will see images of the related books.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3.amazonaws.com/stackabuse/media/serving-static-files-flask-6.png&quot; alt=&quot;Serving Static Files with Flask&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;preparingstaticfileswithabuildsystem&quot;&gt;Preparing Static Files with a Build System&lt;/h3&gt;
+
+&lt;p&gt;One of the biggest things missing from our setup right now is minification of static assets, concatenation of JavaScript, CSS, as well as other optimizations to make the application faster. In addition, using preprocessors and compilers such as Sass, Coffeescript and Babel needs to be handled manually in our current setup.&lt;/p&gt;
+
+&lt;p&gt;Using a build system such as &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;https://webpack.js.org/&quot;&gt;Webpack&lt;/a&gt;, &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;https://gulpjs.com/&quot;&gt;Gulp&lt;/a&gt;, &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;http://brunch.io/&quot;&gt;Brunch&lt;/a&gt;, or &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;http://browserify.org/&quot;&gt;Browserify&lt;/a&gt; helps you automate this process.&lt;/p&gt;
+
+&lt;p&gt;If you're interested in going exploring this, here is the &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;https://github.com/brunch/brunch-guide/blob/master/content/en/chapter04-starting-from-scratch.md&quot;&gt;Brunch guide&lt;/a&gt; to add Brunch as a build system for your project. &lt;/p&gt;
+
+&lt;p&gt;Or you can go through the documentation of your preferred build system to get acquainted with how to set it up and integrate it into your Flask application. &lt;/p&gt;
+
+&lt;h3 id=&quot;servingstaticfilesinproduction&quot;&gt;Serving Static Files in Production&lt;/h3&gt;
+
+&lt;p&gt;Running your code in production is a bit different from a development environment. In production, depending on your application, you may encounter much higher volumes of traffic, which can take a toll on your server.&lt;/p&gt;
+
+&lt;p&gt;In production, it is recommended to serve static files with a server such as &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;https://www.nginx.com/&quot;&gt;nginx&lt;/a&gt; to keep the load on your Python web server as light as possible. If you serve a large number of files then this will speed up your application.&lt;/p&gt;
+
+&lt;p&gt;In addition, you will want to use a production grade Python web server rather than the built in Flask server. Some good options are &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;http://gunicorn.org/&quot;&gt;Gunicorn&lt;/a&gt;, &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;http://www.gevent.org/&quot;&gt;Gevent&lt;/a&gt; and Apache with &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;https://modwsgi.readthedocs.io/en/develop/&quot;&gt;mod_wsgi&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;In this article we saw how you can easily serve static assets using Flask. You can serve JavaScript, CSS, images as well as other static files. This can be done in a variety of ways, with the simplest being to use the &quot;/static&quot; directory, which Flask will use to serve files to the client.&lt;/p&gt;</description>
+	<pubDate>Thu, 05 Oct 2017 13:00:00 +0000</pubDate>
+</item>
+<item>
+	<title>Mike Driscoll: How to Rotate / Mirror Photos with Python</title>
+	<guid>http://www.blog.pythonlibrary.org/2017/10/05/how-to-rotate-mirror-photos-with-python/</guid>
+	<link>http://www.blog.pythonlibrary.org/2017/10/05/how-to-rotate-mirror-photos-with-python/</link>
+	<description>&lt;div class=&quot;pf-content&quot;&gt;&lt;p&gt;In our last &lt;a href=&quot;http://www.blog.pythonlibrary.org/2017/10/03/how-to-crop-a-photo-with-python/&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;article&lt;/a&gt;, we learned how to crop images with the Pillow package. For this article, we will learn how to rotate and mirror our images. &lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3&gt;Rotating an Image&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.blog.pythonlibrary.org/wp-content/uploads/2017/10/mantis-300x147.png&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;147&quot; class=&quot;aligncenter size-medium wp-image-6704&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Rotating an image with Python and Pillow is quite simple. Let&amp;#8217;s take a look at some code:&lt;span id=&quot;more-6688&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;pre class=&quot;python&quot;&gt;&lt;span&gt;from&lt;/span&gt; PIL &lt;span&gt;import&lt;/span&gt; Image
+&amp;nbsp;
+&lt;span&gt;def&lt;/span&gt; rotate&lt;span&gt;&amp;#40;&lt;/span&gt;image_path, degrees_to_rotate, saved_location&lt;span&gt;&amp;#41;&lt;/span&gt;:
+    &lt;span&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span&gt;&amp;quot;
+    Rotate the given photo the amount of given degreesk, show it and save it
+&amp;nbsp;
+    @param image_path: The path to the image to edit
+    @param degrees_to_rotate: The number of degrees to rotate the image
+    @param saved_location: Path to save the cropped image
+    &amp;quot;&lt;/span&gt;&lt;span&gt;&amp;quot;&amp;quot;&lt;/span&gt;
+    image_obj = Image.&lt;span&gt;open&lt;/span&gt;&lt;span&gt;&amp;#40;&lt;/span&gt;image_path&lt;span&gt;&amp;#41;&lt;/span&gt;
+    rotated_image = image_obj.&lt;span&gt;rotate&lt;/span&gt;&lt;span&gt;&amp;#40;&lt;/span&gt;degrees_to_rotate&lt;span&gt;&amp;#41;&lt;/span&gt;
+    rotated_image.&lt;span&gt;save&lt;/span&gt;&lt;span&gt;&amp;#40;&lt;/span&gt;saved_location&lt;span&gt;&amp;#41;&lt;/span&gt;
+    rotated_image.&lt;span&gt;show&lt;/span&gt;&lt;span&gt;&amp;#40;&lt;/span&gt;&lt;span&gt;&amp;#41;&lt;/span&gt;
+&amp;nbsp;
+&lt;span&gt;if&lt;/span&gt; __name__ == &lt;span&gt;'__main__'&lt;/span&gt;:
+    image = &lt;span&gt;'mantis.png'&lt;/span&gt;
+    rotate&lt;span&gt;&amp;#40;&lt;/span&gt;image, &lt;span&gt;90&lt;/span&gt;, &lt;span&gt;'rotated_mantis.jpg'&lt;/span&gt;&lt;span&gt;&amp;#41;&lt;/span&gt;&lt;/pre&gt;
+&lt;p&gt;Here we just import the &lt;strong&gt;Image&lt;/strong&gt; module from &lt;strong&gt;PIL&lt;/strong&gt; and create a &lt;strong&gt;rotate()&lt;/strong&gt; function. Our custom rotate function takes the following parameters: the image path that we will be rotating, the degrees we want to rotate and where we want to save the result. The actual code is quite straight-forward. All we do is open the image and then call the image object&amp;#8217;s &lt;strong&gt;rotate()&lt;/strong&gt; method while passing it the number of degrees to rotate it counter-clockwise. Then we save the result and call the image object&amp;#8217;s show() method to see the result:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.blog.pythonlibrary.org/wp-content/uploads/2017/10/rotated_mantis_view-300x156.png&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;156&quot; class=&quot;aligncenter size-medium wp-image-6705&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;In the example above, we rotated the praying mantis 90 degrees counter-clockwise.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3&gt;Mirroring an Image&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.blog.pythonlibrary.org/wp-content/uploads/2017/10/flipped_mantis_view-300x156.png&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;156&quot; class=&quot;aligncenter size-medium wp-image-6709&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Now let&amp;#8217;s try to flip or mirror our mantis image. Here&amp;#8217;s an example that mirrors the image from left to right:&lt;/p&gt;
+&lt;pre class=&quot;python&quot;&gt;&lt;span&gt;from&lt;/span&gt; PIL &lt;span&gt;import&lt;/span&gt; Image
+&amp;nbsp;
+&lt;span&gt;def&lt;/span&gt; flip_image&lt;span&gt;&amp;#40;&lt;/span&gt;image_path, saved_location&lt;span&gt;&amp;#41;&lt;/span&gt;:
+    &lt;span&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span&gt;&amp;quot;
+    Flip or mirror the image
+&amp;nbsp;
+    @param image_path: The path to the image to edit
+    @param saved_location: Path to save the cropped image
+    &amp;quot;&lt;/span&gt;&lt;span&gt;&amp;quot;&amp;quot;&lt;/span&gt;
+    image_obj = Image.&lt;span&gt;open&lt;/span&gt;&lt;span&gt;&amp;#40;&lt;/span&gt;image_path&lt;span&gt;&amp;#41;&lt;/span&gt;
+    rotated_image = image_obj.&lt;span&gt;transpose&lt;/span&gt;&lt;span&gt;&amp;#40;&lt;/span&gt;Image.&lt;span&gt;FLIP_LEFT_RIGHT&lt;/span&gt;&lt;span&gt;&amp;#41;&lt;/span&gt;
+    rotated_image.&lt;span&gt;save&lt;/span&gt;&lt;span&gt;&amp;#40;&lt;/span&gt;saved_location&lt;span&gt;&amp;#41;&lt;/span&gt;
+    rotated_image.&lt;span&gt;show&lt;/span&gt;&lt;span&gt;&amp;#40;&lt;/span&gt;&lt;span&gt;&amp;#41;&lt;/span&gt;
+&amp;nbsp;
+&lt;span&gt;if&lt;/span&gt; __name__ == &lt;span&gt;'__main__'&lt;/span&gt;:
+    image = &lt;span&gt;'mantis.png'&lt;/span&gt;
+    flip_image&lt;span&gt;&amp;#40;&lt;/span&gt;image, &lt;span&gt;'flipped_mantis.jpg'&lt;/span&gt;&lt;span&gt;&amp;#41;&lt;/span&gt;&lt;/pre&gt;
+&lt;p&gt;This code is very similar to the previous example. The meat of this code is that we are using the image object&amp;#8217;s &lt;strong&gt;transpose()&lt;/strong&gt; method which takes one of the following constants:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PIL.Image.FLIP_LEFT_RIGHT&lt;/li&gt;
+&lt;li&gt;PIL.Image.FLIP_TOP_BOTTOM&lt;/li&gt;
+&lt;li&gt;PIL.Image.TRANSPOSE&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can also use one of Pillow&amp;#8217;s ROTATE constants here too, but we&amp;#8217;re focusing just on the mirroring aspect of the transpose() method. Try swapping in one of these other constants into the code above to see what happens.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3&gt;Wrapping Up&lt;/h3&gt;
+&lt;p&gt;Now you know how to use the Pillow package to rotate and flip / mirror your images. Python makes this sort of thing quite trivial to do. You should give it a try and be sure to check out Pillow&amp;#8217;s documentation to find out what else you can do!&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3&gt;Related Reading&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Pillow documentation on the &lt;a href=&quot;https://pillow.readthedocs.io/en/4.2.x/reference/Image.html#image-module&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Image module&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;How to &lt;a href=&quot;http://www.blog.pythonlibrary.org/2017/10/03/how-to-crop-a-photo-with-python/&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Crop an Image in Python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;An Intro to the &lt;a href=&quot;https://www.blog.pythonlibrary.org/2016/10/07/an-intro-to-the-python-imaging-library-pillow/&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Python Imaging Library / Pillow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a class=&quot;a2a_button_facebook&quot; href=&quot;https://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.blog.pythonlibrary.org%2F2017%2F10%2F05%2Fhow-to-rotate-mirror-photos-with-python%2F&amp;linkname=How%20to%20Rotate%20%2F%20Mirror%20Photos%20with%20Python&quot; title=&quot;Facebook&quot; rel=&quot;nofollow noopener&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;&lt;a class=&quot;a2a_button_twitter&quot; href=&quot;https://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.blog.pythonlibrary.org%2F2017%2F10%2F05%2Fhow-to-rotate-mirror-photos-with-python%2F&amp;linkname=How%20to%20Rotate%20%2F%20Mirror%20Photos%20with%20Python&quot; title=&quot;Twitter&quot; rel=&quot;nofollow noopener&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;&lt;a class=&quot;a2a_button_google_plus&quot; href=&quot;https://www.addtoany.com/add_to/google_plus?linkurl=http%3A%2F%2Fwww.blog.pythonlibrary.org%2F2017%2F10%2F05%2Fhow-to-rotate-mirror-photos-with-python%2F&amp;linkname=How%20to%20Rotate%20%2F%20Mirror%20Photos%20with%20Python&quot; title=&quot;Google+&quot; rel=&quot;nofollow noopener&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;&lt;a class=&quot;a2a_dd addtoany_share_save&quot; href=&quot;https://www.addtoany.com/share#url=http%3A%2F%2Fwww.blog.pythonlibrary.org%2F2017%2F10%2F05%2Fhow-to-rotate-mirror-photos-with-python%2F&amp;title=How%20to%20Rotate%20%2F%20Mirror%20Photos%20with%20Python&quot;&gt;&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Thu, 05 Oct 2017 12:30:43 +0000</pubDate>
+</item>
+<item>
+	<title>Python Bytes: #46 Spicy lecture notes and unicorn console spinners</title>
+	<guid>https://pythonbytes.fm/episodes/show/46/spicy-lecture-notes-and-unicorn-console-spinners</guid>
+	<link>https://pythonbytes.fm/episodes/show/46/spicy-lecture-notes-and-unicorn-console-spinners</link>
+	<pubDate>Thu, 05 Oct 2017 08:00:00 +0000</pubDate>
+</item>
+<item>
+	<title>The Three of Wands: attrs III: Frozen Classes</title>
+	<guid>https://threeofwands.com/attrs-iii-frozen-classes/</guid>
+	<link>https://threeofwands.com/attrs-iii-frozen-classes/</link>
+	<description>&lt;p&gt;This is the third post in my series on the inner workings of attrs. Here are the others:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://threeofwands.com/attrs-i-the-basics/&quot;&gt;attrs I: The Basics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://threeofwands.com/attrs-ii-slots/&quot;&gt;attrs II: Slots&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;whatarefrozenclasses&quot;&gt;What are Frozen Classes&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Frozen&lt;/em&gt;, in this context, is a synonym for &lt;em&gt;immutable&lt;/em&gt;. The term &lt;em&gt;frozen&lt;/em&gt; was chosen because there's precedent in the standard library - &lt;em&gt;frozensets&lt;/em&gt; are immutable sets.&lt;/p&gt;
+
+&lt;p&gt;Frozen classes are, then, classes that can't be modified after they've been created. In order to have a fully frozen class, all attributes of the class should hold immutable values too.&lt;/p&gt;
+
+&lt;p&gt;Attrs supports frozen classes (all examples are Python 3):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python3&quot;&gt;import attr
+
+@attr.s(frozen=True)
+class C:
+    a = attr.ib()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python3&quot;&gt;&amp;gt;&amp;gt;&amp;gt; i = C(1)
+&amp;gt;&amp;gt;&amp;gt; i
+C(a=1)
+&amp;gt;&amp;gt;&amp;gt; i.a = 2
+Traceback (most recent call last):
+  File &quot;&amp;lt;stdin&amp;gt;&quot;, line 1, in &amp;lt;module&amp;gt;
+  File &quot;/home/tin/pg/attrs/src/attr/_make.py&quot;, line 240, in _frozen_setattrs
+    raise FrozenInstanceError()
+attr.exceptions.FrozenInstanceError
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;whatstheuse&quot;&gt;What's the Use&lt;/h2&gt;
+
+&lt;p&gt;Fully frozen classes are generally easier to reason about - they can be treated as simple values, like integers. Once you have obtained an integer somehow, you don't have to care about what happens to it when you pass it to a function as an argument or cache it somewhere, because you know exactly what will happen to it - nothing. &lt;/p&gt;
+
+&lt;p&gt;When you write a function that takes an immutable object as an argument there are no questions of ownership (it doesn't matter) or whether it's safe to change the object (you can't). &lt;/p&gt;
+
+&lt;p&gt;If your class has internal state and you have to share it somehow, you'll often think whether to share the data directly or return a copy. If you expose frozen data, you don't have to consider this any more - it's safe to share. You wouldn't think twice about returning a string you're holding a reference to, so why think twice about other types?&lt;/p&gt;
+
+&lt;p&gt;All of this removes a cognitive burden.&lt;/p&gt;
+
+&lt;p&gt;In some languages immutable objects are also useful for thread safety reasons; in Python this is less so because of the GIL. Still, sharing immutable data is always preferable to sharing mutable data.&lt;/p&gt;
+
+&lt;p&gt;Your class also needs be fully frozen if you want to use instances of it in sets or as keys in dictionaries. Technically, your class should just have a well-defined &lt;code&gt;__hash__&lt;/code&gt; method, but this method should depend on the values of the attributes, and the value returned from it shouldn't change once you've put your instance in a set or dictionary. If it does the set or dictionary will malfunction, and silently. Observe:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python3&quot;&gt;# Don't do this at home.
+@attr.s(frozen=False, hash=True)
+class W:                # 'W' for wrong.
+    a = attr.ib()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python3&quot;&gt;&amp;gt;&amp;gt;&amp;gt; i = W(1)
+&amp;gt;&amp;gt;&amp;gt; d = {i: 1}
+&amp;gt;&amp;gt;&amp;gt; i in d
+True
+&amp;gt;&amp;gt;&amp;gt; i.a = 2
+&amp;gt;&amp;gt;&amp;gt; i in d
+False
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This means it doesn't really make sense to implement &lt;code&gt;__hash__&lt;/code&gt; without the class being frozen, since &lt;code&gt;__hash__&lt;/code&gt; is almost exclusively used for dictionaries and sets.&lt;/p&gt;
+
+&lt;p&gt;There are several drawbacks to using frozen classes though.&lt;/p&gt;
+
+&lt;p&gt;When you want to change a frozen instance, you need to make a copy. Creating a new instance is obviously less efficient than changing the attribute of an existing instance. Additionally, attrs frozen classes incur a small penalty to the speed of their &lt;code&gt;__init__&lt;/code&gt; compared to non-frozen classes; more on this later. My personal experience is that frozen classes are worth it in the vast majority of cases. If you're unsure whether the speed penalty is prohibitive, chances are very good it's not.&lt;/p&gt;
+
+&lt;p&gt;Creating a new instance is usually more awkward to express in code. Attrs happens to come with &lt;code&gt;attr.evolve&lt;/code&gt; to help with this. Just give &lt;code&gt;evolve&lt;/code&gt; the instance you want to change, and tell it which attributes to change.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python3&quot;&gt;&amp;gt;&amp;gt;&amp;gt; i = C(1)
+&amp;gt;&amp;gt;&amp;gt; i
+C(a=1)
+&amp;gt;&amp;gt;&amp;gt; attr.evolve(i, a=2)
+C(a=2)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If your class contains dictionaries, you'll have a bad time. Lists can be replaced with tuples and sets with frozensets, but for some reason Python still lacks a frozendict. There was once talk of adding a frozendict to Python - the rejected &lt;a href=&quot;https://www.python.org/dev/peps/pep-0416/&quot;&gt;PEP416&lt;/a&gt;. The PEP itself lists the reasons of its rejection, none of which are especially convincing to me.&lt;/p&gt;
+
+&lt;p&gt;Python 3 contains an immutable dict wrapper, &lt;code&gt;types.MappingProxyType&lt;/code&gt;. Alas, while &lt;code&gt;MappingProxyType&lt;/code&gt; will indeed wrap a dictionary and effectively make it immutable, it won't make it hashable. Therefore your only recourse if your class needs a dictionary attribute is to exempt the attribute from &lt;code&gt;__hash__&lt;/code&gt; (which could lead to subtle bugs) or use a far more awkward data structure, like a tuple of key/value tuples. Sorry.&lt;/p&gt;
+
+&lt;h2 id=&quot;howattrscreatesfrozenclasses&quot;&gt;How attrs Creates Frozen Classes&lt;/h2&gt;
+
+&lt;p&gt;Note: at the time of writing, the most recent attrs release is &lt;strong&gt;v17.2.0&lt;/strong&gt;. &lt;/p&gt;
+
+&lt;p&gt;Attrs sticks two additional methods onto your class to make it frozen (example simplified for brevity):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python3&quot;&gt;def _frozen_setattrs(self, name, value):
+    raise FrozenInstanceError()
+
+C.__setattr__ = _frozen_setattrs
+C.__delattr__ = _frozen_setattrs
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will make your class raise an exception if you try modifying it in a straightforward way.&lt;/p&gt;
+
+&lt;p&gt;Very few things are 100% immutable if you're willing to hack at them, in Python or any other language. For example, if your class is a &lt;em&gt;dict&lt;/em&gt; class, you can modify the underlying instance dictionary easily.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python3&quot;&gt;&amp;gt;&amp;gt;&amp;gt; i = C(1)
+&amp;gt;&amp;gt;&amp;gt; i.a = 2
+Traceback (most recent call last):
+  File &quot;&amp;lt;stdin&amp;gt;&quot;, line 1, in &amp;lt;module&amp;gt;
+  File &quot;/home/tin/pg/attrs/src/attr/_make.py&quot;, line 240, in _frozen_setattrs
+    raise FrozenInstanceError()
+attr.exceptions.FrozenInstanceError
+&amp;gt;&amp;gt;&amp;gt; i.__dict__['a'] = 2
+&amp;gt;&amp;gt;&amp;gt; i
+C(a=2)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Another way to bypass &lt;code&gt;__setattr__&lt;/code&gt;, which works for both &lt;em&gt;slot&lt;/em&gt; and &lt;em&gt;dict&lt;/em&gt; classes, is to use &lt;code&gt;object.__setattr__&lt;/code&gt; directly. This is the approach attrs itself uses in &lt;code&gt;__init__&lt;/code&gt; if the class is frozen. The generated &lt;code&gt;__init__&lt;/code&gt; is equivalent to:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python3&quot;&gt;class C:
+    def __init__(self, a):
+        object.__setattr__(self, 'a', a)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We currently have an open issue dealing with the post-init hook, &lt;code&gt;__attrs_post_init__&lt;/code&gt;, in frozen classes; until we figure out an elegant solution just use the &lt;code&gt;object.__setattr__&lt;/code&gt; trick I demonstrated.&lt;/p&gt;
+
+&lt;p&gt;This approach carries with it a small speed penalty. Let's compare using the perf library (&lt;code&gt;pip install perf&lt;/code&gt;).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ pyperf timeit -g --rigorous --duplicate 5 -s &quot;import attr; C = attr.make_class('C', ['a'])&quot; &quot;C(1)&quot;
+.........................................
+487 ns:  4 ###################
+491 ns:  2 #########
+494 ns:  5 #######################
+497 ns:  8 #####################################
+500 ns: 12 ########################################################
+503 ns:  9 ##########################################
+506 ns: 11 ###################################################
+509 ns: 17 ###############################################################################
+512 ns:  6 ############################
+515 ns:  7 #################################
+518 ns:  8 #####################################
+522 ns:  3 ##############
+525 ns:  6 ############################
+528 ns: 13 ############################################################
+531 ns:  5 #######################
+534 ns:  1 #####
+537 ns:  0 |
+540 ns:  2 #########
+543 ns:  0 |
+546 ns:  0 |
+549 ns:  1 #####
+
+Mean +- std dev: 513 ns +- 13 ns
+
+$ pyperf timeit -g --rigorous --duplicate 5 -s &quot;import attr; C = attr.make_class('C', ['a'], frozen=True)&quot; &quot;C(1)&quot;
+.........................................
+829 ns:  1 #####
+835 ns:  2 #########
+840 ns:  7 #################################
+846 ns:  6 ############################
+851 ns:  9 ##########################################
+857 ns: 11 ###################################################
+862 ns:  9 ##########################################
+868 ns: 17 ###############################################################################
+873 ns: 15 ######################################################################
+879 ns: 16 ##########################################################################
+884 ns:  7 #################################
+890 ns:  3 ##############
+895 ns:  7 #################################
+901 ns:  3 ##############
+906 ns:  1 #####
+912 ns:  3 ##############
+917 ns:  1 #####
+923 ns:  0 |
+929 ns:  1 #####
+934 ns:  0 |
+940 ns:  1 #####
+
+Mean +- std dev: 873 ns +- 20 ns
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;__init__&lt;/code&gt; is 70% slower. Note two things, however: we're dealing with nanoseconds, and this is a trivial example. If the class has six attributes instead of one, and all the attributes have a very simple converter and validator, the calculation changes to just 12% slower.&lt;/p&gt;
+
+&lt;p&gt;Still, we can do better, and we plan to.&lt;/p&gt;
+
+&lt;p&gt;For example, we could make frozen &lt;em&gt;dict&lt;/em&gt; classes use the instance &lt;code&gt;__dict__&lt;/code&gt; directly in their &lt;code&gt;__init__&lt;/code&gt;s; this eliminates the speed penalty completely. But what about &lt;em&gt;slot&lt;/em&gt; classes?&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/python-attrs/attrs/issues/133&quot;&gt;Issue #133&lt;/a&gt; is about individual frozen attributes. This is an interesting proposal, but not really at the top of my priority list. While brainstorming a solution, however, I figured out a way to make a fast, Cython-based wrapper for slot descriptors that makes attributes read-only. Since slot classes don't support extra attributes anyway, we could make slot classes frozen in the following way:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Recognize a slot class with every attribute individually frozen is equivalent to a frozen class.&lt;/li&gt;
+&lt;li&gt;Replace the ordinary, read/write slot descriptors with the read-only wrappers. That way, there is no overhead for reading, and modifying will throw exceptions.&lt;/li&gt;
+&lt;li&gt;Stash the ordinary, read/write descriptors under a private, &quot;secret&quot; name, like &lt;code&gt;C.__a_frozen&lt;/code&gt;. These descriptors become effectively private setters for the public, read-only wrappers. Use these private descriptors in &lt;code&gt;__init__&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python3&quot;&gt;class C:
+    def __init__(self, a):
+        self.__a_frozen = a
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;There, essentially zero-overhead frozen classes. The only problem is the fact we will require Cython to be fast, which introduces additional complexity. Having Cython available also opens other doors, so it's probably worth it. This is something I'm planning to tackle after attrs v17.3.0 is out. The initial effort can be seen over at &lt;a href=&quot;https://github.com/python-attrs/attrs/pull/172&quot;&gt;PR #172&lt;/a&gt;, but work on it is paused at the moment.&lt;/p&gt;</description>
+	<pubDate>Wed, 04 Oct 2017 21:17:58 +0000</pubDate>
+</item>
+<item>
+	<title>NumFOCUS: Spotlight on Sustainability at the 2017 NumFOCUS Summit</title>
+	<guid>https://www.numfocus.org/blog/spotlight-on-sustainability-at-the-2017-numfocus-summit/</guid>
+	<link>https://www.numfocus.org/blog/spotlight-on-sustainability-at-the-2017-numfocus-summit/</link>
+	<pubDate>Wed, 04 Oct 2017 18:19:45 +0000</pubDate>
+</item>
+<item>
+	<title>Eli Bendersky: Concurrent Servers: Part 2 - Threads</title>
+	<guid>https://eli.thegreenplace.net/2017/concurrent-servers-part-2-threads/</guid>
+	<link>https://eli.thegreenplace.net/2017/concurrent-servers-part-2-threads/</link>
+	<description>&lt;p&gt;This is part 2 of a series on writing concurrent network servers. &lt;a class=&quot;reference external&quot; href=&quot;http://eli.thegreenplace.net/2017/concurrent-servers-part-1-introduction/&quot;&gt;Part 1&lt;/a&gt;
+presented the protocol implemented by the server, as well as the code for a
+simple sequential server, as a baseline for the series.&lt;/p&gt;
+&lt;p&gt;In this part, we're going to look at multi-threading as one approach to
+concurrency, with a bare-bones threaded server implementation in C, as well as a
+thread pool based implementation in Python.&lt;/p&gt;
+&lt;p&gt;All posts in the series:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;http://eli.thegreenplace.net/2017/concurrent-servers-part-1-introduction/&quot;&gt;Part 1 - Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;http://eli.thegreenplace.net/2017/concurrent-servers-part-2-threads/&quot;&gt;Part 2 - Threads&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;reference external&quot; href=&quot;http://eli.thegreenplace.net/2017/concurrent-servers-part-3-event-driven/&quot;&gt;Part 3 - Event-driven&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;section&quot; id=&quot;the-multi-threaded-approach-to-concurrent-server-design&quot;&gt;
+&lt;h2&gt;The multi-threaded approach to concurrent server design&lt;/h2&gt;
+&lt;p&gt;When discussing the performance of the sequential server in part 1, it was
+immediately obvious that a lot of compute resources are wasted while the server
+processes a client connection. Even assuming a client that sends messages
+immediately and doesn't do any waiting, network communication is still involved;
+networks tend to be millions (or more) times slower than a modern CPU, so the
+CPU running the sequential server will spend the vast majority of time in
+gloriuos boredom waiting for new socket traffic to arrive.&lt;/p&gt;
+&lt;p&gt;Here's a chart showing how sequential client processing happens over time:&lt;/p&gt;
+&lt;img alt=&quot;Sequential client-handling flow&quot; class=&quot;align-center&quot; src=&quot;https://eli.thegreenplace.net/images/2017/sequential-flow.png&quot; /&gt;
+&lt;p&gt;The diagrams shows 3 clients. The diamond shapes denote the client's &amp;quot;arrival
+time&amp;quot; (the time at which the client attempted to connect to the server). The
+black lines denote &amp;quot;wait time&amp;quot; (the time clients spent waiting for the server to
+actually accept their connection), and the colored bars denote actual
+&amp;quot;processing time&amp;quot; (the time server and client are interacting using the
+protocol). At the end of the colored bar, the client disconnects.&lt;/p&gt;
+&lt;p&gt;In the diagram above, even though the green and orange clients arrived shortly
+after the blue one, they have to wait for a while until the server is done with
+the blue client. At this point the green client is accepted, while the orange
+one has to wait even longer.&lt;/p&gt;
+&lt;p&gt;A multi-threaded server would launch multiple control threads, letting the OS
+manage concurrency on the CPU (and across multiple CPU cores). When a client
+connects, a thread is created to serve it, while the server is ready to accept
+more clients in the main thread. The time chart for this mode looks like the
+following:&lt;/p&gt;
+&lt;img alt=&quot;Concurrent client-handling flow&quot; class=&quot;align-center&quot; src=&quot;https://eli.thegreenplace.net/images/2017/concurrent-flow.png&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;one-thread-per-client-in-c-using-pthreads&quot;&gt;
+&lt;h2&gt;One thread per client, in C using pthreads&lt;/h2&gt;
+&lt;p&gt;Our &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/eliben/code-for-blog/blob/master/2017/async-socket-server/threaded-server.c&quot;&gt;first code sample&lt;/a&gt;
+in this post is a simple &amp;quot;one thread per client&amp;quot; server, written in C using the
+foundational &lt;a class=&quot;reference external&quot; href=&quot;http://eli.thegreenplace.net/2010/04/05/pthreads-as-a-case-study-of-good-api-design&quot;&gt;pthreads API&lt;/a&gt;
+for multi-threading. Here's the main loop:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sockaddr_in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;peer_addr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;socklen_t&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;peer_addr_len&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;sizeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;peer_addr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newsockfd&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;accept&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sockfd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sockaddr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;peer_addr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;peer_addr_len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newsockfd&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;perror_die&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;ERROR on accept&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;n&quot;&gt;report_peer_connected&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;peer_addr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;peer_addr_len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;pthread_t&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the_thread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;kt&quot;&gt;thread_config_t&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;config&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;thread_config_t&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;malloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;sizeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;die&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;OOM&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sockfd&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newsockfd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;pthread_create&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;the_thread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;server_thread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+  &lt;span class=&quot;c1&quot;&gt;// Detach the thread - when it's done, its resources will be cleaned up.&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// Since the main thread lives forever, it will outlive the serving threads.&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;pthread_detach&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;the_thread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And this is the &lt;tt class=&quot;docutils literal&quot;&gt;server_thread&lt;/tt&gt; function:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;server_thread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;thread_config_t&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;config&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;thread_config_t&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sockfd&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sockfd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;free&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+  &lt;span class=&quot;c1&quot;&gt;// This cast will work for Linux, but in general casting pthread_id to an&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// integral type isn't portable.&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pthread_self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Thread %lu created to handle connection with socket %d&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+         &lt;span class=&quot;n&quot;&gt;sockfd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;serve_connection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sockfd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Thread %lu done&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The thread &amp;quot;configuration&amp;quot; is passed as a &lt;tt class=&quot;docutils literal&quot;&gt;thread_config_t&lt;/tt&gt; structure:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sockfd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;thread_config_t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The &lt;tt class=&quot;docutils literal&quot;&gt;pthread_create&lt;/tt&gt; call in the main loop launches a new thread that runs the
+&lt;tt class=&quot;docutils literal&quot;&gt;server_thread&lt;/tt&gt; function. This thread terminates when &lt;tt class=&quot;docutils literal&quot;&gt;server_thread&lt;/tt&gt;
+returns. In turn, &lt;tt class=&quot;docutils literal&quot;&gt;server_thread&lt;/tt&gt; returns when &lt;tt class=&quot;docutils literal&quot;&gt;serve_connection&lt;/tt&gt; returns.
+&lt;tt class=&quot;docutils literal&quot;&gt;serve_connection&lt;/tt&gt; is exactly the same function from part 1.&lt;/p&gt;
+&lt;p&gt;In part 1 we used a script to launch multiple clients concurrently and observe
+how the server handles them. Let's do the same with the multithreaded server:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;$ python3.6 simple-client.py  -n 3 localhost 9090
+INFO:2017-09-20 06:31:56,632:conn1 connected...
+INFO:2017-09-20 06:31:56,632:conn2 connected...
+INFO:2017-09-20 06:31:56,632:conn0 connected...
+INFO:2017-09-20 06:31:56,632:conn1 sending b'^abc$de^abte$f'
+INFO:2017-09-20 06:31:56,632:conn2 sending b'^abc$de^abte$f'
+INFO:2017-09-20 06:31:56,632:conn0 sending b'^abc$de^abte$f'
+INFO:2017-09-20 06:31:56,633:conn1 received b'b'
+INFO:2017-09-20 06:31:56,633:conn2 received b'b'
+INFO:2017-09-20 06:31:56,633:conn0 received b'b'
+INFO:2017-09-20 06:31:56,670:conn1 received b'cdbcuf'
+INFO:2017-09-20 06:31:56,671:conn0 received b'cdbcuf'
+INFO:2017-09-20 06:31:56,671:conn2 received b'cdbcuf'
+INFO:2017-09-20 06:31:57,634:conn1 sending b'xyz^123'
+INFO:2017-09-20 06:31:57,634:conn2 sending b'xyz^123'
+INFO:2017-09-20 06:31:57,634:conn1 received b'234'
+INFO:2017-09-20 06:31:57,634:conn0 sending b'xyz^123'
+INFO:2017-09-20 06:31:57,634:conn2 received b'234'
+INFO:2017-09-20 06:31:57,634:conn0 received b'234'
+INFO:2017-09-20 06:31:58,635:conn1 sending b'25$^ab0000$abab'
+INFO:2017-09-20 06:31:58,635:conn2 sending b'25$^ab0000$abab'
+INFO:2017-09-20 06:31:58,636:conn1 received b'36bc1111'
+INFO:2017-09-20 06:31:58,636:conn2 received b'36bc1111'
+INFO:2017-09-20 06:31:58,637:conn0 sending b'25$^ab0000$abab'
+INFO:2017-09-20 06:31:58,637:conn0 received b'36bc1111'
+INFO:2017-09-20 06:31:58,836:conn2 disconnecting
+INFO:2017-09-20 06:31:58,836:conn1 disconnecting
+INFO:2017-09-20 06:31:58,837:conn0 disconnecting
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Indeed, all clients connected at the same time, and their communication with
+the server occurs concurrently.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;challenges-with-one-thread-per-client&quot;&gt;
+&lt;h2&gt;Challenges with one thread per client&lt;/h2&gt;
+&lt;p&gt;Even though threads are fairly efficient in terms of resource usage on modern
+OSes, the approach outlined in the previous section can still present challenges
+with some workloads.&lt;/p&gt;
+&lt;p&gt;Imagine a scenario where many clients are connecting simultaneously, and some
+of the sessions are long-lived. This means that many threads may be active at
+the same time in the server. Too many threads can consume a large amount of
+memory and CPU time just for the context switching &lt;a class=&quot;footnote-reference&quot; href=&quot;https://eli.thegreenplace.net/feeds/python.atom.xml#id3&quot; id=&quot;id1&quot;&gt;[1]&lt;/a&gt;. An alternative way to
+look at it is as a security problem: this design makes it the server an easy
+target for a &lt;a class=&quot;reference external&quot; href=&quot;https://en.wikipedia.org/wiki/Denial-of-service_attack&quot;&gt;DoS attack&lt;/a&gt; - connect a few
+100,000s of clients at the same time and let them all sit idle - this will
+likely kill the server due to excessive resource usage.&lt;/p&gt;
+&lt;p&gt;A larger problem occurs when there's a non-trivial amount of CPU-bound
+computation the server has to do for each client. In this case, swamping the
+server  is considerably easier - just a few dozen clients can bring a server to
+its knees.&lt;/p&gt;
+&lt;p&gt;For these reasons, it's prudent the do some &lt;em&gt;rate-limiting&lt;/em&gt; on the number of
+concurrent clients handled by a multi-threaded server. There's a number of ways
+to do this. The simplest that comes to mind is simply count the number of
+clients currently connected and restrict that number to some quantity (that was
+determined by careful benchmarking, hopefully). A variation on this approach
+that's very popular in concurrent application design is using a &lt;em&gt;thread pool&lt;/em&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;thread-pools&quot;&gt;
+&lt;h2&gt;Thread pools&lt;/h2&gt;
+&lt;p&gt;The idea of a &lt;a class=&quot;reference external&quot; href=&quot;https://en.wikipedia.org/wiki/Thread_pool&quot;&gt;thread pool&lt;/a&gt; is
+simple, yet powerful. The server creates a number of working threads that all
+expect to get tasks from some queue. This is the &amp;quot;pool&amp;quot;. Then, each client
+connection is dispatched as a task to the pool. As long as there's an idle
+thread in the pool, it's handed the task. If all the threads in the pool are
+currently busy, the server blocks until the pool accepts the task (which happens
+after one of the busy threads finished processing its current task and went back
+to an idle state).&lt;/p&gt;
+&lt;p&gt;Here's a diagram showing a pool of 4 threads, each processing a task. Tasks
+(client connections in our case) are waiting until one of the threads in the
+pool is ready to accept new tasks.&lt;/p&gt;
+
+Thread pool diagram
+&lt;p&gt;It should be fairly obvious that the thread pool approach provides a
+rate-limiting mechanism in its very definition. We can decide ahead of time how
+many threads we want our server to have. Then, this is the maximal number of
+clients processed concurrently - the rest are waiting until one of the threads
+becomes free. If we have 8 threads in the pool, 8 is the maximal number of
+concurrent clients the server handles - even if thousands are attempting to
+connect simultaneously.&lt;/p&gt;
+&lt;p&gt;How do we decide how many threads should be in the pool? By a careful analysis
+of the problem domain, benchmarking, experimentation and also by the HW we have.
+If we have a single-core cloud instance that's one answer, if we have a 100-core
+dual socket server available, the answer is different. Picking the
+thread pool size can also be done dynamically at runtime based on load - I'll
+touch upon this topic in future posts in this series.&lt;/p&gt;
+&lt;p&gt;Servers that use thread pools manifest &lt;em&gt;graceful degradation&lt;/em&gt; in the face of
+high load - clients are accepted at some steady rate, potentially slower than
+their rate of arrival for some periods of time; that said, no matter how many
+clients are trying to connect simultaneously, the server will remain responsive
+and will just churn through the backlog of clients to its best ability. Contrast
+this with the one-thread-per-client server which can merrily accept a large
+number of clients until it gets overloaded, at which point it's likely to either
+crash or start working very slowly for &lt;em&gt;all&lt;/em&gt; processed clients due to resource
+exhaustion (such as virtual memory thrashing).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;using-a-thread-pool-for-our-network-server&quot;&gt;
+&lt;h2&gt;Using a thread pool for our network server&lt;/h2&gt;
+&lt;p&gt;For &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/eliben/code-for-blog/blob/master/2017/async-socket-server/threadpool-server.py&quot;&gt;this variation of the server&lt;/a&gt;
+I've switched to Python, which comes with a robust implementation of a thread
+pool in the standard library (&lt;tt class=&quot;docutils literal&quot;&gt;ThreadPoolExecutor&lt;/tt&gt; from the
+&lt;tt class=&quot;docutils literal&quot;&gt;concurrent.futures&lt;/tt&gt; module) &lt;a class=&quot;footnote-reference&quot; href=&quot;https://eli.thegreenplace.net/feeds/python.atom.xml#id4&quot; id=&quot;id2&quot;&gt;[2]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This server creates a thread pool, then loops to accept new clients on the main
+listening socket. Each connected client is dispatched into the pool with
+&lt;tt class=&quot;docutils literal&quot;&gt;submit&lt;/tt&gt;:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;pool&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ThreadPoolExecutor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sockobj&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AF_INET&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SOCK_STREAM&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sockobj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setsockopt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SOL_SOCKET&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SO_REUSEADDR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sockobj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'localhost'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;port&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sockobj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;listen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;client_socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;client_address&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sockobj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;accept&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;pool&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;submit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;serve_connection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;client_socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;client_address&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;except&lt;/span&gt; &lt;span class=&quot;ne&quot;&gt;KeyboardInterrupt&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;sockobj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The &lt;tt class=&quot;docutils literal&quot;&gt;serve_connection&lt;/tt&gt; function is very similar to its C counterpart, serving
+a single client until the client disconnects, while following our protocol:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;ProcessingState&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Enum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'ProcessingState'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'WAIT_FOR_MSG IN_MSG'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;serve_connection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sockobj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;client_address&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'{0} connected'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;client_address&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;sockobj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sendall&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'*'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ProcessingState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;WAIT_FOR_MSG&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;buf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sockobj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;recv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1024&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;buf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;except&lt;/span&gt; &lt;span class=&quot;ne&quot;&gt;IOError&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;buf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ProcessingState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;WAIT_FOR_MSG&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;ord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'^'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+                    &lt;span class=&quot;n&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ProcessingState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IN_MSG&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ProcessingState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IN_MSG&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;ord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'$'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+                    &lt;span class=&quot;n&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ProcessingState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;WAIT_FOR_MSG&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                    &lt;span class=&quot;n&quot;&gt;sockobj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;bytes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]))&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;assert&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'{0} done'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;client_address&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stdout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;flush&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;sockobj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Let's see how the thread pool size affects the blocking behavior for multiple
+concurrent clients. For demonstration purposes, I'll run the threadpool server
+with a pool size of 2 (only two threads are created to service clients):&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;$ python3.6 threadpool-server.py -n 2
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And in a separate terminal, let's run the client simulator again, with 3
+concurrent clients:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;$ python3.6 simple-client.py  -n 3 localhost 9090
+INFO:2017-09-22 05:58:52,815:conn1 connected...
+INFO:2017-09-22 05:58:52,827:conn0 connected...
+INFO:2017-09-22 05:58:52,828:conn1 sending b'^abc$de^abte$f'
+INFO:2017-09-22 05:58:52,828:conn0 sending b'^abc$de^abte$f'
+INFO:2017-09-22 05:58:52,828:conn1 received b'b'
+INFO:2017-09-22 05:58:52,828:conn0 received b'b'
+INFO:2017-09-22 05:58:52,867:conn1 received b'cdbcuf'
+INFO:2017-09-22 05:58:52,867:conn0 received b'cdbcuf'
+INFO:2017-09-22 05:58:53,829:conn1 sending b'xyz^123'
+INFO:2017-09-22 05:58:53,829:conn0 sending b'xyz^123'
+INFO:2017-09-22 05:58:53,830:conn1 received b'234'
+INFO:2017-09-22 05:58:53,831:conn0 received b'2'
+INFO:2017-09-22 05:58:53,831:conn0 received b'34'
+INFO:2017-09-22 05:58:54,831:conn1 sending b'25$^ab0000$abab'
+INFO:2017-09-22 05:58:54,832:conn1 received b'36bc1111'
+INFO:2017-09-22 05:58:54,832:conn0 sending b'25$^ab0000$abab'
+INFO:2017-09-22 05:58:54,833:conn0 received b'36bc1111'
+INFO:2017-09-22 05:58:55,032:conn1 disconnecting
+INFO:2017-09-22 05:58:55,032:conn2 connected...
+INFO:2017-09-22 05:58:55,033:conn2 sending b'^abc$de^abte$f'
+INFO:2017-09-22 05:58:55,033:conn0 disconnecting
+INFO:2017-09-22 05:58:55,034:conn2 received b'b'
+INFO:2017-09-22 05:58:55,071:conn2 received b'cdbcuf'
+INFO:2017-09-22 05:58:56,036:conn2 sending b'xyz^123'
+INFO:2017-09-22 05:58:56,036:conn2 received b'234'
+INFO:2017-09-22 05:58:57,037:conn2 sending b'25$^ab0000$abab'
+INFO:2017-09-22 05:58:57,038:conn2 received b'36bc1111'
+INFO:2017-09-22 05:58:57,238:conn2 disconnecting
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Recall the behavior of previously discussed servers:&lt;/p&gt;
+&lt;ol class=&quot;arabic simple&quot;&gt;
+&lt;li&gt;In the sequential server, all connections were serialized. One finished, and
+only then the next started.&lt;/li&gt;
+&lt;li&gt;In the thread-per-client server earlier in this post, all connections wer
+accepted and serviced concurrently.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here we see another possibility: two connections are serviced concurrently, and
+only when one of them is done the third is admitted. This is a direct result of
+the thread pool size set to 2. For a more realistic use case we'd set the thread
+pool size to much higher, depending on the machine and the exact protocol. This
+buffering behavior of thread pools is well understood - I've written about it
+more in detail &lt;a class=&quot;reference external&quot; href=&quot;http://eli.thegreenplace.net/2017/clojure-concurrency-and-blocking-with-coreasync/&quot;&gt;just a few months ago&lt;/a&gt;
+in the context of Clojure's &lt;tt class=&quot;docutils literal&quot;&gt;core.async&lt;/tt&gt; module.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;summary-and-next-steps&quot;&gt;
+&lt;h2&gt;Summary and next steps&lt;/h2&gt;
+&lt;p&gt;This post discusses multi-threading as a means of concurrency in network
+servers. The one-thread-per-client approach is presented for an initial
+discussion, but this method is not common in practice since it's a security
+hazard.&lt;/p&gt;
+&lt;p&gt;Thread pools are much more common, and most popular programming languages have
+solid implementations (for some, like Python, it's in the standard library). The
+thread pool server presented here doesn't suffer from the problems of
+one-thread-per-client.&lt;/p&gt;
+&lt;p&gt;However, threads are not the only way to handle multiple clients concurrently.
+In the next post we're going to look at some solutions using &lt;em&gt;asynchronous&lt;/em&gt;, or
+&lt;em&gt;event-driven&lt;/em&gt; programming.&lt;/p&gt;
+&lt;hr class=&quot;docutils&quot; /&gt;
+&lt;table class=&quot;docutils footnote&quot; frame=&quot;void&quot; id=&quot;id3&quot; rules=&quot;none&quot;&gt;
+&lt;colgroup&gt;&lt;col class=&quot;label&quot; /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign=&quot;top&quot;&gt;
+&lt;tr&gt;&lt;td class=&quot;label&quot;&gt;&lt;a class=&quot;fn-backref&quot; href=&quot;https://eli.thegreenplace.net/feeds/python.atom.xml#id1&quot;&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;To be fair, modern Linux kernels can tolerate a significant number of
+concurrent threads - as long as these threads are mostly blocked on I/O,
+of course. &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/eliben/code-for-blog/blob/master/2017/async-socket-server/threadspammer.c&quot;&gt;Here's a sample program&lt;/a&gt;
+that launches a configurable number of threads that sleep in a loop,
+waking up every 50 ms. On my 4-core Linux machine I can easily launch
+10000 threads; even though these threads sleep almost all the time, they
+still consume between one and two cores for the context switching. Also,
+they occupy 80 GB of virtual memory (8 MB is the default per-thread stack
+size for Linux). More realistic threads that actually use memory and not
+just sleep in a loop can therefore exhaust the physical memory of a
+machine fairly quickly.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class=&quot;docutils footnote&quot; frame=&quot;void&quot; id=&quot;id4&quot; rules=&quot;none&quot;&gt;
+&lt;colgroup&gt;&lt;col class=&quot;label&quot; /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign=&quot;top&quot;&gt;
+&lt;tr&gt;&lt;td class=&quot;label&quot;&gt;&lt;a class=&quot;fn-backref&quot; href=&quot;https://eli.thegreenplace.net/feeds/python.atom.xml#id2&quot;&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Implementing a thread pool from scratch is a fun exercise, but I'll leave
+it for another day. I've written about hand-rolled &lt;a class=&quot;reference external&quot; href=&quot;http://eli.thegreenplace.net/2011/12/27/python-threads-communication-and-stopping&quot;&gt;thread pools for
+specific tasks&lt;/a&gt;
+in the past. That's in Python; doing it in C would be more challenging,
+but shouldn't take more than a few of hours for an experienced
+programmer.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;</description>
+	<pubDate>Wed, 04 Oct 2017 12:24:00 +0000</pubDate>
+</item>
+<item>
+	<title>Talk Python to Me: #132 Contributing to open source</title>
+	<guid>https://talkpython.fm/episodes/show/132/contributing-to-open-source</guid>
+	<link>https://talkpython.fm/episodes/show/132/contributing-to-open-source</link>
+	<pubDate>Wed, 04 Oct 2017 08:00:00 +0000</pubDate>
+</item>
+<item>
+	<title>Kushal Das: The journey continues at Freedom of the Press Foundation</title>
+	<guid>https://kushaldas.in/posts/the-journey-continues-at-freedom-of-the-press-foundation.html</guid>
+	<link>https://kushaldas.in/posts/the-journey-continues-at-freedom-of-the-press-foundation.html</link>
+	<description>&lt;!--
+.. title: The journey continues at Freedom of the Press Foundation
+.. slug: the-journey-continues-at-freedom-of-the-press-foundation
+.. date: 2017-10-04T12:06:23+05:30
+.. tags: Fedora, Python, FPF, SecureDrop, Life, News
+.. link:
+.. description:
+.. type: text
+--&gt;
+
+&lt;p&gt;The code we write is the extension of our emotions and thinking.  A few months
+back a twitter thread on Gnome&amp;rsquo;s account made &lt;a href=&quot;https://anweshadas.in&quot;&gt;Anwesha&lt;/a&gt;
+and me
+&lt;a href=&quot;https://kushaldas.in/pages/hacker-ethic-and-free-software-movement.html&quot;&gt;think&lt;/a&gt;
+about it once again. I think the most important reply in that thread came from
+Miguel de Icaza.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://kushaldas.in/images/gnomepolitical.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The contribution to Free Software happens over 2 forms, for many it helps to
+solve or support a personal cause. Sometimes it is something we deeply care
+about (actually the 2 points are not that different). That is why people come
+back to home from their daily jobs, and then continue contributing upstream
+till late night. Many jobs now also allow working on upstream Free Software
+projects as part of the work. The word &lt;em&gt;Open Source&lt;/em&gt; helped to create a bridge
+between businesses and creators. But, we still have to keep fighting for
+Freedom in various levels in life, even including for the basic human rights.&lt;/p&gt;
+
+&lt;p&gt;More than a month back, the Supreme Court of India ruled that privacy is a
+fundamental right to every Indian citizen. It was a huge win for every privacy
+advocate, but it was one of the big battles in the whole fight for right to
+privacy. Even though governments are using public money to develop software
+infrastructure, almost none of them are Free Software. There is a current
+&lt;a href=&quot;https://publiccode.eu/&quot;&gt;campaign&lt;/a&gt; happening for having publicly financed
+software developer for people to be Free Software. No one knows what is going
+on in the closed source infrastructure, and if people point out the issues,
+they are getting punished. If you never heard about Aadhaar project in India,
+feel free to visit &lt;a href=&quot;https://rethinkaadhaar.in/&quot;&gt;this site&lt;/a&gt; to learn about how
+much destruction it is bringing in.&lt;/p&gt;
+
+&lt;p&gt;Journalists were the most common people in the movies (in our childhood days)
+who used to find out all bad things people in power were doing, and at the end
+of the movie, public used to win with help of court (and sometimes fights
+between the hero and villains). Things have changed a lot over the years. Now
+technology enables many to be in a condition to find out the wrongdoings of the
+state, or private companies. It is much easier to send across that information
+to the journalists, and we can see how those revelations are helping the world.
+But, technology also enables the wrong-doers to attack the whistleblowers and
+the journalists who publish the truth to the people.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;At this point if the government can identify the whistleblower, it is too
+dangerous to be a whistleblower. If we want to find what the state is doing,
+so that, we, the people, can have control over it, we need to make
+whistleblowers safe. -- RMS in his &lt;a href=&quot;https://youtu.be/n9YDz-Iwgyw?t=112&quot;&gt;talk&lt;/a&gt;
+last year.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://kushaldas.in/images/fpf.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://freedom.press/&quot;&gt;Freedom of the Press Foundation&lt;/a&gt; is one such
+organization working to protect and defend journalism, to support journalists
+and whistleblowers worldwide. One of the major development from the foundation
+is &lt;a href=&quot;https://securedrop.org/&quot;&gt;SecureDrop project&lt;/a&gt;. SecureDrop is an open-source
+whistleblower submission system that media organizations can use to securely
+accept documents from and communicate with anonymous sources. It was originally
+created by the late Aaron Swartz. The project also
+&lt;a href=&quot;https://www.fsf.org/news/securedrop-and-alexandre-oliva-are-2016-free-software-awards-winners&quot;&gt;won&lt;/a&gt;
+&lt;em&gt;The Award for Projects of Social Benefit from Free Software Foundation in
+2016&lt;/em&gt;.  This week I joined the Freedom of the Press Foundation as a staff
+member to help on the SecureDrop and other projects.&lt;/p&gt;
+
+&lt;p&gt;As I started writing the post with &lt;em&gt;Why Free Software?&lt;/em&gt;, helping the
+journalists and whistleblowers with Free Software is vital cause I can
+personally relate to. In the last month, we saw at least 3 journalists killed
+in India, from 1992, we have the &lt;a href=&quot;https://cpj.org/killed/asia/india/&quot;&gt;second highest
+deaths&lt;/a&gt; of the journalists due to their
+work. We also saw the &lt;a href=&quot;https://cpj.org/2017/09/several-indian-journalists-receive-death-threats.php&quot;&gt;increased death
+threats&lt;/a&gt;
+to the journalists in India and other parts of the world. The freedom of the
+press stands as a pillar of the democracy, and we will continue to protect it.&lt;/p&gt;</description>
+	<pubDate>Wed, 04 Oct 2017 06:36:00 +0000</pubDate>
+</item>
+<item>
+	<title>Stack Abuse: Parallel Processing in Python</title>
+	<guid>http://stackabuse.com/parallel-processing-in-python/</guid>
+	<link>http://stackabuse.com/parallel-processing-in-python/</link>
+	<description>&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
+
+&lt;p&gt;When you start a program on your machine it runs in its own &quot;bubble&quot; which is completely separate from other programs that are active at the same time. This &quot;bubble&quot; is called a &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Process_(computing)&quot;&gt;process&lt;/a&gt;, and comprises everything which is needed to manage this program call.&lt;/p&gt;
+
+&lt;p&gt;For example, this so-called process environment includes the &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Page_(computer_memory)&quot;&gt;memory pages&lt;/a&gt; the process has in use, the file handles this process has opened, both user and group access rights, and its entire command line call, including given parameters. &lt;/p&gt;
+
+&lt;p&gt;This information is kept in the process file system of your UNIX/Linux system, which is a virtual file system, and accessible via the &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;https://github.com/torvalds/linux/blob/master/Documentation/filesystems/proc.txt&quot;&gt;/proc&lt;/a&gt; directory. The entries are sorted by the process ID, which is unique to each process. &lt;em&gt;Example 1&lt;/em&gt; shows this for an arbitrarily selected process that has the process ID #177.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Example 1: Information that is available to a process&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;root@system:/proc/177# ls
+attr         cpuset   limits      net            projid_map   statm
+autogroup    cwd      loginuid    ns             root         status
+auxv         environ  map_files   numa_maps      sched        syscall
+cgroup       exe      maps        oom_adj        sessionid    task
+clear_refs   fd       mem         oom_score      setgroups    timers
+cmdline      fdinfo   mountinfo   oom_score_adj  smaps        uid_map
+comm         gid_map  mounts      pagemap        stack        wchan
+coredump_filter       io          mountstats     personality  stat
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;structuringprogramcodeanddata&quot;&gt;Structuring Program Code and Data&lt;/h3&gt;
+
+&lt;p&gt;The more complex a program gets the more often it is handy to divide it into smaller pieces. This does not refer to source code, only, but also to code that is executed on your machine. One solution for this is the usage of subprocesses in combination with parallel execution. Thoughts behind this are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A single process covers a piece of code that can be run separately&lt;/li&gt;
+&lt;li&gt;Certain sections of code can be run simultaneusly, and allow parallelization in principle&lt;/li&gt;
+&lt;li&gt;Using the features of modern processors, and operating systems, for example every core of a processor we have available to reduce the total execution time of a program&lt;/li&gt;
+&lt;li&gt;To reduce the complexity of your program/code, and outsource pieces of work to specialized agents acting as subprocesses&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Using subprocesses requires you to rethink the way your program is executed, from linear to parallel. It is similar to changing your work perspective in a company from an ordinary worker to a manager - you will have to keep an eye on who is doing what, how long does a single step take, and what are the dependencies between the intermediate results.&lt;/p&gt;
+
+&lt;p&gt;This helps you to split your code into smaller chunks that can be executed by an agent specialized only for this task. If not yet done, think about how your dataset is structured as well so that it can be processed effectively by the individual agents. This leads to these questions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Why do you want to parallelize code? In your specific case and in terms of effort, does it make sense to think about it?&lt;/li&gt;
+&lt;li&gt;Is your program intended to run just once, or will it run regularly on a similar dataset?&lt;/li&gt;
+&lt;li&gt;Can you split your algorithm into several execution steps?&lt;/li&gt;
+&lt;li&gt;Does your data allow parallelization at all? If not yet, in which way does the organisation of your data have to be adapted?&lt;/li&gt;
+&lt;li&gt;Which intermediate results of your computation depend on each other?&lt;/li&gt;
+&lt;li&gt;Which change in hardware is needed for that?&lt;/li&gt;
+&lt;li&gt;Is there a bottle neck in either the hardware, or the algorithm, and how can you avoid, or minimize the influence of these factors?&lt;/li&gt;
+&lt;li&gt;Which other side effects of parallelization can happen?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A possible use case is a main process, and a daemon running in the background (master/slave) waiting to be activated. Also, this can be a main process that starts worker processes running on demand. In practice, the main process is a feeder process that controls two or more agents that are fed portions of the data, and do calculations on the given portion. &lt;/p&gt;
+
+&lt;p&gt;Keep in mind that parallelization is both costly, and time-consuming due to the overhead of the subprocesses that is needed by your operating system. Compared to running two or more tasks in a linear way, doing this in parallel you may save between 25 and 30 percent of time per subprocess, depending on your use-case. For example, two tasks that consume 5 seconds each need 10 seconds in total if executed in series, and may need about 8 seconds on average on a multi-core machine when parallelized. 3 of those 8 seconds may be lost to overhead, limiting your speed improvements.&lt;/p&gt;
+
+&lt;h3 id=&quot;runningafunctioninparallelwithpython&quot;&gt;Running a Function in Parallel with Python&lt;/h3&gt;
+
+&lt;p&gt;Python offers four possible ways to handle that. First, you can execute functions in parallel using the &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;https://docs.python.org/3/library/multiprocessing.html&quot;&gt;multiprocessing&lt;/a&gt; module. Second, an alternative to processes are threads. Technically, these are lightweight processes, and are outside the scope of this article. For further reading you may have a look at the Python &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;https://docs.python.org/3/library/threading.html&quot;&gt;threading module&lt;/a&gt;. Third, you can call external programs using the &lt;code&gt;system()&lt;/code&gt; method of the &lt;code&gt;os&lt;/code&gt; module, or methods provided by the &lt;code&gt;subprocess&lt;/code&gt; module, and collect the results afterwards.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;multiprocessing&lt;/code&gt; module covers a nice selection of methods to handle the parallel execution of routines. This includes processes, pools of agents, queues, and pipes.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Listing 1&lt;/em&gt; works with a pool of five agents that process a chunk of three values at the same time. The values for the number of agents, and for the &lt;code&gt;chunksize&lt;/code&gt; are chosen arbitrarily for demonstration purposes. Adjust these values accordingly to the number of cores in your processor.&lt;/p&gt;
+
+&lt;p&gt;The method &lt;code&gt;Pool.map()&lt;/code&gt; requires three parameters - a function to be called on each element of the dataset, the dataset itself, and the &lt;code&gt;chunksize&lt;/code&gt;. In &lt;em&gt;Listing 1&lt;/em&gt; we use a function that is named &lt;code&gt;square&lt;/code&gt; and calculates the square of the given integer value. Furthermore, the &lt;code&gt;chunksize&lt;/code&gt; can be omitted. If not set explicitly the default &lt;code&gt;chunksize&lt;/code&gt; is 1.&lt;/p&gt;
+
+&lt;p&gt;Please note that the execution order of the agents is not guaranteed, but the result set is in the right order. It contains the square values according to the order of the elements of the original dataset.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Listing 1: Running functions in parallel&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;from multiprocessing import Pool
+
+def square(x):
+    # calculate the square of the value of x
+    return x*x
+
+if __name__ == '__main__':
+
+    # Define the dataset
+    dataset = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+
+    # Output the dataset
+    print ('Dataset: ' + str(dataset))
+
+    # Run this with a pool of 5 agents having a chunksize of 3 until finished
+    agents = 5
+    chunksize = 3
+    with Pool(processes=agents) as pool:
+        result = pool.map(square, dataset, chunksize)
+
+    # Output the result
+    print ('Result:  ' + str(result))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Running this code should yield the following output:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ python3 pool_multiprocessing.py
+Dataset: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+Result:  [1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: We'll be using Python 3 for these examples.&lt;/p&gt;
+
+&lt;h3 id=&quot;runningmultiplefunctionsusingaqueue&quot;&gt;Running Multiple Functions Using a Queue&lt;/h3&gt;
+
+&lt;p&gt;As a data structure, a queue is very common, and exists in several ways. It is organized as either &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics)&quot;&gt;First In First Out&lt;/a&gt; (FIFO), or Last In First Out (LIFO)/&lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Stack_(abstract_data_type)&quot;&gt;stack&lt;/a&gt;, as well as with and without priorities (priority queue). The data structure is implemented as an array with a fixed number of entries, or as a list holding a variable number of single elements.&lt;/p&gt;
+
+&lt;p&gt;In &lt;em&gt;Listings 2.1-2.7&lt;/em&gt; we use a FIFO queue. It is implemented as a list which is already provided by the corresponding class from the &lt;code&gt;multiprocessing&lt;/code&gt; module. Furthermore, the &lt;code&gt;time&lt;/code&gt; module is loaded and used to imitate work load.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Listing 2.1: Modules to be used&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;import multiprocessing
+from time import sleep
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Next, a worker function is defined (&lt;em&gt;Listing 2.2&lt;/em&gt;). This function represents the agent, actually, and requires three arguments. The process name indicates which process it is, and both the &lt;code&gt;tasks&lt;/code&gt; and &lt;code&gt;results&lt;/code&gt; refer to the corresponding queue.&lt;/p&gt;
+
+&lt;p&gt;Inside the worker function is an infinite &lt;code&gt;while&lt;/code&gt; loop. Both &lt;code&gt;tasks&lt;/code&gt; and &lt;code&gt;results&lt;/code&gt; are queues that are defined in the main program. &lt;code&gt;tasks.get()&lt;/code&gt; returns the current task from the task queue to be processed. A task value smaller than 0 quits the &lt;code&gt;while&lt;/code&gt; loop, and returns a value of -1. Any other task value will perform a computation (square), and will return this value. Returning a value to the main program is implemented as &lt;code&gt;results.put()&lt;/code&gt;. This adds the computed value at the end of the &lt;code&gt;results&lt;/code&gt; queue.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Listing 2.2: The worker function&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;# define worker function
+def calculate(process_name, tasks, results):
+    print('[%s] evaluation routine starts' % process_name)
+
+    while True:
+        new_value = tasks.get()
+        if new_value &amp;lt; 0:
+            print('[%s] evaluation routine quits' % process_name)
+
+            # Indicate finished
+            results.put(-1)
+            break
+        else:
+            # Compute result and mimic a long-running task
+            compute = new_value * new_value
+            sleep(0.02*new_value)
+
+            # Output which process received the value
+            # and the calculation result
+            print('[%s] received value: %i' % (process_name, new_value))
+            print('[%s] calculated value: %i' % (process_name, compute))
+
+            # Add result to the queue
+            results.put(compute)
+
+    return
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The next step is the main loop (see &lt;em&gt;Listing 2.3&lt;/em&gt;). First, a manager for &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Inter-process_communication&quot;&gt;inter-process communication&lt;/a&gt; (IPC) is defined. Next, two queues are added - one that keeps the tasks, and the other one for the results.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Listing 2.3: IPC and queues&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;if __name__ == &quot;__main__&quot;:
+    # Define IPC manager
+    manager = multiprocessing.Manager()
+
+    # Define a list (queue) for tasks and computation results
+    tasks = manager.Queue()
+    results = manager.Queue()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Having done this setup we define a process pool with four worker processes (agents). We make use of the class &lt;code&gt;multiprocessing.Pool()&lt;/code&gt;, and create an instance of it. Next, we define an empty list of processes (see &lt;em&gt;Listing 2.4&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Listing 2.4: Defining a process pool&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;# Create process pool with four processes
+num_processes = 4
+pool = multiprocessing.Pool(processes=num_processes)
+processes = []
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As the following step we initiate the four worker processes (agents). For simplicity, they are named &quot;P0&quot; to &quot;P3&quot;. Creating the four worker processes is done using &lt;code&gt;multiprocessing.Process()&lt;/code&gt;. This connects each of them to the worker function as well as the task and the results queue. Finally, we add the newly initialized process at the end of the list of processes, and start the new process using &lt;code&gt;new_process.start()&lt;/code&gt; (see &lt;em&gt;Listing 2.5&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Listing 2.5: Prepare the worker processes&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;# Initiate the worker processes
+for i in range(num_processes):
+
+    # Set process name
+    process_name = 'P%i' % i
+
+    # Create the process, and connect it to the worker function
+    new_process = multiprocessing.Process(target=calculate, args=(process_name,tasks,results))
+
+    # Add new process to the list of processes
+    processes.append(new_process)
+
+    # Start the process
+    new_process.start()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Our worker processes are waiting for work. We define a list of tasks, which in our case are arbitrarily selected integers. These values are added to the task list using &lt;code&gt;tasks.put()&lt;/code&gt;. Each worker process waits for tasks, and picks the next available task from the list of tasks. This is handled by the queue itself (see &lt;em&gt;Listing 2.6&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Listing 2.6: Prepare the task queue&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;# Fill task queue
+task_list = [43, 1, 780, 256, 142, 68, 183, 334, 325, 3]
+for single_task in task_list:
+    tasks.put(single_task)
+
+# Wait while the workers process
+sleep(5)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;After a while we would like our agents to finish. Each worker process reacts on a task with the value -1. It interprets this value as a termination signal, and dies thereafter. That's why we put as many -1 in the task queue as we have processes running. Before dying, a process that terminates puts a -1 in the results queue. This is meant to be a confirmation signal to the main loop that the agent is terminating.&lt;/p&gt;
+
+&lt;p&gt;In the main loop we read from that queue, and count the number of -1. The main loop quits as soon as we have counted as many termination confirmations as we have processes. Otherwise, we output the calculation result from the queue.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Listing 2.7: Termination and output of results&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;# Quit the worker processes by sending them -1
+for i in range(num_processes):
+    tasks.put(-1)
+
+# Read calculation results
+num_finished_processes = 0
+while True:
+    # Read result
+    new_result = results.get()
+
+    # Have a look at the results
+    if new_result == -1:
+        # Process has finished
+        num_finished_processes += 1
+
+        if num_finished_processes == num_processes:
+            break
+    else:
+        # Output result
+        print('Result:' + str(new_result))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;Example 2&lt;/em&gt; displays the output of the Python program. Running the program more than once you may notice that the order in which the worker processes start is as unpredictable as the process itself that picks a task from the queue. However, once finished the order of the elements of the results queue matches the order of the elements of the tasks queue.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Example 2&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ python3 queue_multiprocessing.py
+[P0] evaluation routine starts
+[P1] evaluation routine starts
+[P2] evaluation routine starts
+[P3] evaluation routine starts
+[P1] received value: 1
+[P1] calculated value: 1
+[P0] received value: 43
+[P0] calculated value: 1849
+[P0] received value: 68
+[P0] calculated value: 4624
+[P1] received value: 142
+[P1] calculated value: 20164
+result: 1
+result: 1849
+result: 4624
+result: 20164
+[P3] received value: 256
+[P3] calculated value: 65536
+result: 65536
+[P0] received value: 183
+[P0] calculated value: 33489
+result: 33489
+[P0] received value: 3
+[P0] calculated value: 9
+result: 9
+[P0] evaluation routine quits
+[P1] received value: 334
+[P1] calculated value: 111556
+result: 111556
+[P1] evaluation routine quits
+[P3] received value: 325
+[P3] calculated value: 105625
+result: 105625
+[P3] evaluation routine quits
+[P2] received value: 780
+[P2] calculated value: 608400
+result: 608400
+[P2] evaluation routine quits
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: As mentioned earlier, your output may not exactly match the one shown above since the order of execution is unpredicatble.&lt;/p&gt;
+
+&lt;h3 id=&quot;usingtheossystemmethod&quot;&gt;Using the os.system() Method&lt;/h3&gt;
+
+&lt;p&gt;The &lt;code&gt;system()&lt;/code&gt; method is part of the &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;https://docs.python.org/3/library/os.html&quot;&gt;os module&lt;/a&gt;, which allows to execute external command line programs in a separate process from your Python program. The &lt;code&gt;system()&lt;/code&gt; method is a blocking call, and you have to wait until the call is finished and returns. As a UNIX/Linux fetishist you know that a command can be run in the background, and write the computed result to the output stream that is redirected to a file like this (see &lt;em&gt;Example 3&lt;/em&gt;):&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Example 3: Command with output redirection&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ ./program &amp;gt;&amp;gt; outputfile &amp;amp;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In a Python program you simply encapsulate this call as shown below:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Listing 3: Simple system call using the os module&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;import os
+
+os.system(&quot;./program &amp;gt;&amp;gt; outputfile &amp;amp;&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This system call creates a process that runs in parallel to your current Python program. Fetching the result may become a bit tricky because this call may terminate after the end of your Python program - you never know.&lt;/p&gt;
+
+&lt;p&gt;Using this method is much more expensive than the previous methods I described. First, the overhead is much bigger (process switch), and second, it writes data to physical memory, such as a disk, which takes longer. Though, this is a better option you have limited memory (like with RAM) and instead you can have massive output data written to a solid-state disk.&lt;/p&gt;
+
+&lt;h3 id=&quot;usingthesubprocessmodule&quot;&gt;Using the subprocess module&lt;/h3&gt;
+
+&lt;p&gt;This module is intended to replace &lt;code&gt;os.system()&lt;/code&gt; and &lt;code&gt;os.spawn()&lt;/code&gt; calls. The idea of &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;https://pymotw.com/3/subprocess/index.html&quot;&gt;subprocess&lt;/a&gt; is to simplify spawning processes, communicating with them via pipes and signals, and collecting the output they produce including error messages.&lt;/p&gt;
+
+&lt;p&gt;Beginning with Python 3.5, the subprocess contains the method &lt;code&gt;subprocess.run()&lt;/code&gt; to start an external command, which is a wrapper for the underlying &lt;code&gt;subprocess.Popen()&lt;/code&gt; class. As an example we launch the UNIX/Linux command &lt;code&gt;df -h&lt;/code&gt; to find out how much disk space is still available on the &lt;code&gt;/home&lt;/code&gt; partition of your machine. In a Python program you do this call as shown below (&lt;em&gt;Listing 4&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Listing 4: Basic example to run an external command&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;import subprocess
+
+ret = subprocess.run([&quot;df&quot;, &quot;-h&quot;, &quot;/home&quot;])
+print(ret)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is the basic call, and very similar to the command &lt;code&gt;df -h /home&lt;/code&gt; being executed in a terminal. Note that the parameters are separated as a list instead of a single string. The output will be similar to &lt;em&gt;Example 4&lt;/em&gt;. Compared to the official Python documentation for this module, it outputs the result of the call to &lt;code&gt;stdout&lt;/code&gt;, in addition to the return value of the call. &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Example 4&lt;/em&gt; shows the output of our call. The last line of the output shows the successful execution of the command. Calling &lt;code&gt;subprocess.run()&lt;/code&gt; returns an instance of the class &lt;code&gt;CompletedProcess&lt;/code&gt; which has the two attributes named &lt;code&gt;args&lt;/code&gt; (command line arguments), and &lt;code&gt;returncode&lt;/code&gt; (return value of the command).&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Example 4: Running the Python script from Listing 4&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;$ python3 diskfree.py
+Filesystem   Size   Used  Avail Capacity  iused   ifree %iused  Mounted on
+/dev/sda3  233Gi  203Gi   30Gi    88% 53160407 7818407   87%   /home
+CompletedProcess(args=['df', '-h', '/home'], returncode=0)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To suppress the output to &lt;code&gt;stdout&lt;/code&gt;, and catch both the output, and the return value for further evaluation, the call of &lt;code&gt;subprocess.run()&lt;/code&gt; has to be slightly modified. Without further modification, &lt;code&gt;subprocess.run()&lt;/code&gt; sends the output of the executed command to &lt;code&gt;stdout&lt;/code&gt; which is the output channel of the underlying Python process. To grab the output, we have to change this, and to set the output channel to the pre-defined value &lt;code&gt;subprocess.PIPE&lt;/code&gt;. &lt;em&gt;Listing 5&lt;/em&gt; shows how to do that.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Listing 5: Grabbing the output in a pipe&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;import subprocess
+
+# Call the command
+output = subprocess.run([&quot;df&quot;, &quot;-h&quot;, &quot;/home&quot;], stdout=subprocess.PIPE)
+
+# Read the return code and the output data
+print (&quot;Return code: %i&quot; % output.returncode)
+print (&quot;Output data: %s&quot; % output.stdout)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As explained before &lt;code&gt;subprocess.run()&lt;/code&gt; returns an instance of the class &lt;code&gt;CompletedProcess&lt;/code&gt;. In &lt;em&gt;Listing 5&lt;/em&gt;, this instance is a variable simply named &lt;code&gt;output&lt;/code&gt;. The return code of the command is kept in the attribute &lt;code&gt;output.returncode&lt;/code&gt;, and the output printed to &lt;code&gt;stdout&lt;/code&gt; can be found in the attribute &lt;code&gt;output.stdout&lt;/code&gt;. Keep in mind this does not cover handling error messages because we did not change the output channel for that.&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;Parallel processing is a great opportunity to use the power of contemporary hardware. Python gives you access to these methods at a very sophisticated level. As you have seen before both the &lt;code&gt;multiprocessing&lt;/code&gt; and the &lt;code&gt;subprocess&lt;/code&gt; module let's you dive into that topic easily.&lt;/p&gt;
+
+&lt;h3 id=&quot;acknowledgements&quot;&gt;Acknowledgements&lt;/h3&gt;
+
+&lt;p&gt;The author would like to thank &lt;a rel=&quot;nofollow&quot; target=&quot;_blank&quot; href=&quot;http://geneva-observer.blogspot.com/&quot;&gt; Gerold Rupprecht&lt;/a&gt; for his support, and critics while preparing this article.&lt;/p&gt;</description>
+	<pubDate>Tue, 03 Oct 2017 23:18:17 +0000</pubDate>
+</item>
+<item>
+	<title>Sandipan Dey: Some Variational Image Processing: Poisson Image Editing and its applications in Python</title>
+	<guid></guid>
+	<link></link>
+	<description>Poisson Image Editing The goal of Poisson image editing is to perform seamless blending of an object or a texture from a source image (captured by a mask image) to a target image. We want to create a photomontage by pasting an image region onto a new background using Poisson image editing. This idea is from &amp;#8230; &lt;a href=&quot;https://sandipanweb.wordpress.com/2017/10/03/some-variational-image-processing-possion-image-editing-and-its-applications/&quot; class=&quot;more-link&quot;&gt;Continue reading &lt;span class=&quot;screen-reader-text&quot;&gt;Some Variational Image Processing: Poisson Image Editing and its applications in&amp;#160;Python&lt;/span&gt;&lt;/a&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;https://pixel.wp.com/b.gif?host=sandipanweb.wordpress.com&amp;blog=113312303&amp;post=5636&amp;subd=sandipanweb&amp;ref=&amp;feed=1&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</description>
+	<pubDate>Tue, 03 Oct 2017 21:32:14 +0000</pubDate>
+</item>
+<item>
+	<title>A. Jesse Jiryu Davis: My conversation with Mark Weiss on the new &quot;Using Reflection&quot; podcast</title>
+	<guid>https://emptysqua.re/blog/using-reflection-podcast/</guid>
+	<link>https://emptysqua.re/blog/using-reflection-podcast/</link>
+	<description>&lt;p&gt;&lt;img src=&quot;https://emptysqua.re/blog/category/python/nikon.jpg&quot; alt=&quot;Image description: Color photograph of a Nikon 35mm camera, with its back open. Jesse's face is out of focus in the background, and his eye is shown upside-down through the camera lens.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I had a revealing conversation with my old colleague Mark Weiss on his new podcast, &amp;ldquo;Using Reflection.&amp;rdquo; We talked about the software industry&amp;rsquo;s sorry lack of mentorship, we contrasted the short-term mindset I had when I was a freelancer versus my long-term commitment to my team at MongoDB, and I described the influence of my Zen practice on my career as a programmer.&lt;/p&gt;
+
+&lt;p&gt;Listen to the episode here and subscribe to the Using Reflection podcast for more insightful interviews.&lt;/p&gt;
+
+
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;span&gt;Image &amp;copy; A. Jesse Jiryu Davis&lt;/span&gt;&lt;/p&gt;</description>
+	<pubDate>Tue, 03 Oct 2017 21:25:36 +0000</pubDate>
+</item>
+
+</channel>
+</rss>
