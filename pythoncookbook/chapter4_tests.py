@@ -1,6 +1,7 @@
 """Chapter 4: Iterators and Generators."""
 
 from collections import defaultdict
+import io
 from unittest import TestCase
 
 from pythoncookbook.code.chapter4 import (Countdown,
@@ -189,28 +190,29 @@ class IteratingOverTheIndexPairsOfASequenceTest(TestCase):
     def test_find_lines_words_occurred_on(self):
         word_summary = defaultdict(list)
 
-        with open('words_on_lines.txt', 'r') as f:
+        with open('data/words_on_lines.txt', 'r') as f:
             lines = f.readlines()
 
         self.fail('Populate the word_summary. The key should be the word, '
                   'and the value should be a list of the line numbers '
                   'that contain that word')
 
-        self.assertListEqual(word_summary['is'], [1, 4, 5, 6])
+        self.assertListEqual(word_summary['in'], [1, 4, 5, 6])
 
     def test_iterate_sequence_of_tuples(self):
-        data = [(1, 2), (3, 4), (5, 6), (7, 8)]
+        data = [(1, 2), (2, 4), (3, 6), (4, 8)]
         output = {}
 
         self.fail('Iterate the sequence of data and add to the output'
                   'dictionary. The key should be the index of the '
-                  'tuple in the list, and the value the tuple itself.')
+                  'tuple in the list, and the value the second tuple'
+                  'element divided by the first.')
 
         self.assertEqual(output, {
-            0: (1, 2),
-            1: (3, 4),
-            2: (5, 6),
-            3: (7, 8)
+            0: 2,
+            1: 2,
+            2: 2,
+            3: 2
         })
 
 
@@ -222,7 +224,7 @@ class IteratingOverMultipleSequencesSimultaneouslyTest(TestCase):
 
         self.fail('Write a single line expression')
 
-        self.assertListEqual(result, [(1, 100), (5, 78), (4, 37), (2, 15),
+        self.assertListEqual(result, [(1, 101), (5, 78), (4, 37), (2, 15),
                                       (10, 62), (7, 99)])
 
     def test_iterate_two_sequences_different_lengths(self):
@@ -243,7 +245,7 @@ class IteratingOverMultipleSequencesSimultaneouslyTest(TestCase):
         self.assertListEqual(result, [(1, 'w'), (2, 'x'), (3, 'y'),
                                       (0, 'z')])
 
-    def test_create_zip_from_two_sequences(self):
+    def test_create_dict_from_two_sequences(self):
         headers = ['name', 'shares', 'price']
         values = ['ACME', 100, 490.1]
 
@@ -258,10 +260,12 @@ class IteratingOverMultipleSequencesSimultaneouslyTest(TestCase):
     def test_create_output_from_two_sequences(self):
         headers = ['name', 'shares', 'price']
         values = ['ACME', 100, 490.1]
+        
+        output = io.StringIO()
 
         self.fail('Build the output to satisfy the assertion')
 
-        self.assertEqual(output, 'name=ACME, shares=100, price=490.1')
+        self.assertEqual(output.getvalue(), 'name=ACME\nshares=100\nprice=490.1')
 
 
 class IteratingOnItemsInSeparateContainersTest(TestCase):
