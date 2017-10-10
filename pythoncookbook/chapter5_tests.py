@@ -20,7 +20,7 @@ class ReadingAndWritingTextDataTest(TestCase):
     def test_open_ignore_non_ascii_characters(self):
         self.fail('Read sample.txt and ignore the non-ascii character.')
 
-        self.assertEqual(contents, 'Jalepeo')
+        self.assertEqual(contents, 'Jalapeo')
 
 
 class PrintingToAFileTest(TestCase):
@@ -64,6 +64,12 @@ class WritingToAFileThatDoesNotAlreadyExistTest(TestCase):
         with self.assertRaises(FileExistsError):
             self.fail('Write to data/somefile')
 
+    def tearDown(self):
+        try:
+            os.remove('data/somefile')
+        except OSError:
+            pass
+
 
 class PerformingIOOperationsOnAStringTest(TestCase):
 
@@ -77,27 +83,28 @@ class PerformingIOOperationsOnAStringTest(TestCase):
 class ReadingAndWritingCompressedDataFilesTest(TestCase):
 
     def test_read_compressed_file(self):
+        """Read the data/compressed.txt.gz file"""
         self.fail('Write a single line expression')
         text = f.read()
+        f.close()
 
         self.assertEqual(text, 'hello world\n')
 
     def tes_read_compressed_file_alternative(self):
-        f = open('data/compressed.txt.gz', 'rb')  # Note the 'b'
+        with open('data/compressed.txt.gz', 'rb') as f: # Note the 'b'
 
-        self.fail('Read the compressed binary file')
+            self.fail('Read the compressed binary file')
 
-        self.assertEqual(text, 'hello world\n')
+            self.assertEqual(text, 'hello world\n')
 
 
 class IteratingOverFixedSizeRecordsTest(TestCase):
 
     def test_iterate_over_fixed_size_records(self):
         """Hint: use functools.partial() and the other version
-        of iter() for this one."""
+        of iter() for this one. The iter_records function should
+        return a list."""
         records = iter_records('data/records.txt', record_size=10)
-
-        records = list(records)
 
         self.assertEqual(records[0], 'Strings ar')
         self.assertEqual(records[3], 'opular typ')

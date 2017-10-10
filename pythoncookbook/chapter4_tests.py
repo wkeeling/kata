@@ -260,7 +260,7 @@ class IteratingOverMultipleSequencesSimultaneouslyTest(TestCase):
     def test_create_output_from_two_sequences(self):
         headers = ['name', 'shares', 'price']
         values = ['ACME', 100, 490.1]
-        
+
         output = io.StringIO()
 
         self.fail('Build the output to satisfy the assertion')
