@@ -4,6 +4,8 @@ from collections import namedtuple
 from io import StringIO
 from unittest import TestCase
 
+from pythoncookbook.code.chapter6 import dict_to_xml
+
 
 class ReadingAndWritingCSVDataTest(TestCase):
 
@@ -91,3 +93,16 @@ class ParsingSimpleXMLDataTest(TestCase):
         self.assertEqual(items[2].pubDate, 'Sat, 07 Oct 2017 15:51:47 +0000')
         self.assertEqual(items[5].link, 'http://stackabuse.com/scikit-learn-'
                                         'save-and-restore-models/')
+
+
+class TurningADictionaryIntoXMLTest(TestCase):
+
+    def test_convert_to_xml(self):
+        s = {'name': 'GOOG', 'shares': 100, 'price': 490.1}
+        e = dict_to_xml('stock', s)
+
+        self.fail('Implement dict_to_xml() and then turn resulting root node '
+                  'e into a string for the assertion')
+
+        self.assertEqual(result, b'<stock><price>490.1</price><shares>100'
+                                 b'</shares><name>GOOG</name></stock>')
