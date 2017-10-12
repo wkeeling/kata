@@ -102,9 +102,10 @@ class IteratingOverFixedSizeRecordsTest(TestCase):
 
     def test_iterate_over_fixed_size_records(self):
         """Hint: use functools.partial() and the other version
-        of iter() for this one. The iter_records function should
-        return a list."""
+        of iter() for this one."""
         records = iter_records('data/records.txt', record_size=10)
+
+        records = list(records)
 
         self.assertEqual(records[0], 'Strings ar')
         self.assertEqual(records[3], 'opular typ')
@@ -116,9 +117,10 @@ class ReadingBinaryDataIntoAMutableBufferTest(TestCase):
         with open('data/sample.bin', 'wb') as f:
             f.write(b'Hello World')
 
-        buf = read_into_buffer('sample.bin')
+        buf = read_into_buffer('data/sample.bin')
 
         self.assertEqual(buf, bytearray(b'Hello World'))
+        os.remove('data/sample.bin')
 
     def test_manipulate_string_in_memory(self):
         buf = bytearray(b'Hello World')
@@ -150,17 +152,11 @@ class TestingForExistenceOfAFileTest(TestCase):
 
     def test_get_modified_time(self):
         file = 'data/file1.bin'
+        os.utime(file, (1506886291.0, 1506886291.0))
 
         self.fail('Write a single line expression')
 
         self.assertEqual(mtime, 1506886291.0)
-
-    def test_get_created_time(self):
-        file = 'data/file1.bin'
-
-        self.fail('Write a single line expression')
-
-        self.assertEqual(ctime, 1506886291.0)
 
 
 class AddingOrChangingTheEncodingOfAnAlreadyOpenFileTest(TestCase):
@@ -200,7 +196,7 @@ class WrappingAnExistingFileDescriptorAsAFileObjectTest(TestCase):
         try:
             fd = os.open('somefile.txt', os.O_WRONLY | os.O_CREAT)
 
-            # self.fail('Write text to the file')
+            self.fail('Write text to the file')
 
             with open('somefile.txt') as inp:
                 self.assertEqual(inp.read(), 'Hello World')
@@ -240,8 +236,8 @@ class MakingTemporaryFilesAndDirectoriesTest(TestCase):
     def test_make_named_temporary_file_prefix_suffix(self):
         self.fail('Make a named temporary file')
 
-        self.assertTrue(f.name.startswith('foo'))
-        self.assertTrue(f.name.endswith('bar'))
+        self.assertTrue(os.path.basename(f).name.startswith('foo'))
+        self.assertTrue(os.path.basename(f).name.endswith('bar'))
         f.close()  # deletes the file
 
 
