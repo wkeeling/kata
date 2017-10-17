@@ -336,7 +336,7 @@ class SortingAListOfDictionariesByAComonKeyTest(TestCase):
         ]
 
     def test_sort_rows_by_first_name(self):
-        """Hint: try to avoid using a lambda."""
+        """Hint: try to avoid using a lambda for the key."""
         self.fail('Write a single line expression')
 
         self.assertListEqual(rows_by_fname,
