@@ -11,3 +11,6 @@ _no_object = object()
 
 def spam():
     pass
+
+def sample():
+    pass
