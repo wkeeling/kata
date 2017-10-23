@@ -161,6 +161,7 @@ class PickingThingsAtRandomTest(TestCase):
 
         self.fail('Create a new list based on shuffling values')
 
+        self.assertEqual(len(shuffled), len(values))
         self.assertNotEqual(shuffled, values)
 
     def test_create_random_integer_between_1_and_10(self):
