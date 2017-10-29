@@ -1,6 +1,10 @@
 """Chapter 8: Classes and Objects."""
 
+import math
 from unittest import TestCase
+
+from pythoncookbook.code.chapter8 import (Integer,
+                                          lazyproperty)
 
 
 class ChangingTheStringRepresentationOfInstancesTest(TestCase):
@@ -108,4 +112,49 @@ class CallingAMethodOnAParentClassTest(TestCase):
 
         self.assertEqual(p.hello(), 'world')
         self.assertTrue(hasattr(p, 'a'))
+
+
+class CreatingANewKindOfClassOrInstanceAttribute(TestCase):
+
+    def test_create_descriptor(self):
+        class Point:
+            x = Integer('x')
+            y = Integer('y')
+
+            def __init__(self, x, y):
+                self.x = x
+                self.y = y
+
+        p = Point(2, 3)
+
+        self.assertEqual(p.x, 2)
+        p.y = 5
+        self.assertEqual(p.y, 5)
+        with self.assertRaises(TypeError):
+            p.x = 2.3  # Can only set integers
+        self.assertIsInstance(Point.x, Integer)
+        del p.x
+        with self.assertRaises(KeyError):
+            p.x
+
+
+class UsingLazilyComputedPropertiesTest(TestCase):
+
+    def test_define_lazy_attribute(self):
+        class Circle:
+            def __init__(self, radius):
+                self.radius = radius
+
+            @lazyproperty
+            def area(self):
+                print('Computing area')
+                return math.pi * self.radius ** 2
+
+        c = Circle(4.0)
+
+        self.assertEqual(c.radius, 4.0)
+        self.assertAlmostEqual(c.area, 50.26548245743669)
+        self.assertEqual(c.area.call_count, 1)
+        self.assertAlmostEqual(c.area, 50.26548245743669)
+        self.assertEqual(c.area.call_count, 1)  # Area is not recalculated
 
