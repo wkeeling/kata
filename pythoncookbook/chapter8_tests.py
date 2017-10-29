@@ -1,10 +1,15 @@
 """Chapter 8: Classes and Objects."""
 
+import collections
 import math
 from unittest import TestCase
+import time
 
-from pythoncookbook.code.chapter8 import (Integer,
-                                          lazyproperty)
+from pythoncookbook.code.chapter8 import (Date,
+                                          Integer,
+                                          IStream,
+                                          lazyproperty,
+                                          Proxy)
 
 
 class ChangingTheStringRepresentationOfInstancesTest(TestCase):
@@ -158,3 +163,104 @@ class UsingLazilyComputedPropertiesTest(TestCase):
         self.assertAlmostEqual(c.area, 50.26548245743669)
         self.assertEqual(c.area.call_count, 1)  # Area is not recalculated
 
+
+class DefiningAnInterfaceOrAbstractBaseClassTest(TestCase):
+
+    def test_raise_exception_on_instantiate_abc(self):
+        with self.assertRaises(TypeError):
+            IStream()
+
+    def test_raise_exception_method_missing(self):
+        class SocketStream(IStream):
+            def read(self):
+                pass
+
+        with self.assertRaises(TypeError):
+            SocketStream()
+
+    def test_isinstance(self):
+        class SocketStream(IStream):
+            def read(self):
+                pass
+
+            def write(self, data):
+                pass
+
+        s = SocketStream()
+
+        self.assertIsInstance(s, IStream)
+
+    def test_register(self):
+        class Foobar:
+            pass
+
+        IStream.register(Foobar)
+
+        f = Foobar()
+
+        self.assertIsInstance(f, IStream)
+
+    def test_name_five_collection_abcs(self):
+        """Name 5 ABCs that define top level types in the collections module.
+        """
+        self.fail('Add 5 names to the list')
+
+        abcs = [
+            # Add the names
+        ]
+
+        self.assertEqual(len(abcs), 5)
+        for name in abcs:
+            self.assertIn(name, vars(collections))
+
+
+class DelegatingAttributeAccessTest(TestCase):
+
+    def test_create_proxy(self):
+        """Hint: Need to implement get/set/del and handle special methods."""
+        class Spam:
+            def __init__(self, x):
+                self.x = x
+
+            def bar(self, y):
+                return 'Spam.bar: {} {}'.format(self.x, y)
+
+        s = Spam(2)
+        p = Proxy(s)
+
+        self.assertEqual(p.x, 2)
+        self.assertEqual(p.bar(3), 'Spam.bar: 2 3')
+        p.x = 37
+        self.assertEqual(s.x, 37)
+        del p.x
+        self.assertFalse(hasattr(s, 'x'))
+        p._hello = 'world'
+        self.assertTrue(hasattr(p, '_hello'))
+        self.assertFalse(hasattr(s, '_hello'))
+        del p._hello
+        self.assertFalse(hasattr(p, '_hello'))
+
+
+class DefiningMoreThanOneConstructorInAClassTest(TestCase):
+
+    def test_define_a_second_constructor(self):
+        """Think about the reasons why a factory method is a good idea
+        over an __init__ that does too much (via *args).
+
+        1. Factory method much clearer and communicates intent.
+        2. Better doc. *args __init__ won't show useful help strings
+            with argument names.
+        3. Simpler __init__ implementation. In fact, __init__ must do as
+            little as possible, simply assigning attributes and leaving more
+            complex work to specific factory methods.
+        """
+        a = Date(2012, 12, 21)
+        self.assertEqual(a.year, 2012)
+        self.assertEqual(a.month, 12)
+        self.assertEqual(a.day, 21)
+
+        t = time.localtime()
+        b = Date.today()
+        self.assertEqual(b.year, t.tm_year)
+        self.assertEqual(b.month, t.tm_mon)
+        self.assertEqual(b.day, t.tm_mday)
