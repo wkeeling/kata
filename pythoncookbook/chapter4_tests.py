@@ -64,9 +64,9 @@ class ImplementingTheIteratorProtocolTest(TestCase):
 class IteratingInReverseTest(TestCase):
 
     def test_reverse_file_contents(self):
-        self.fail('Reverse the contents of file2.txt')
+        self.fail('Reverse the contents of data/file2.txt')
 
-        self.assertListEqual(file2, [9, 8, 7, 6, 5, 4, 3, 2, 1])
+        self.assertListEqual(list(file2), [9, 8, 7, 6, 5, 4, 3, 2, 1])
 
     def test_reverse_user_defined_class(self):
         c = Countdown(9)
@@ -105,7 +105,7 @@ class TakingASliceOfAnIteratorTest(TestCase):
 
         self.fail('Write a single line expression')
 
-        self.assertListEqual(sliced, [5, 6, 7, 8, 9, 10])
+        self.assertListEqual(list(sliced), [5, 6, 7, 8, 9, 10])
 
 
 class SkippingTheFirstPartOfAnIterableTest(TestCase):
@@ -133,7 +133,7 @@ class IteratingOverAllPossibleCombinationsOrPermutationsTest(TestCase):
 
         self.fail('Create permutations of the list of items')
 
-        self.assertListEqual(p, [
+        self.assertListEqual(list(p), [
             ('a', 'b', 'c'),
             ('a', 'c', 'b'),
             ('b', 'a', 'c'),
@@ -147,7 +147,7 @@ class IteratingOverAllPossibleCombinationsOrPermutationsTest(TestCase):
 
         self.fail('Create permutations of the list of items')
 
-        self.assertListEqual(p, [
+        self.assertListEqual(list(p), [
             ('a', 'b'),
             ('a', 'c'),
             ('b', 'a'),
@@ -164,7 +164,7 @@ class IteratingOverAllPossibleCombinationsOrPermutationsTest(TestCase):
 
         self.fail('Produce combinations of items')
 
-        self.assertListEqual(c, [
+        self.assertListEqual(list(c), [
             ('a', 'b'),
             ('a', 'c'),
             ('b', 'c')
@@ -175,7 +175,7 @@ class IteratingOverAllPossibleCombinationsOrPermutationsTest(TestCase):
 
         self.fail('Produce combinations of items')
 
-        self.assertListEqual(c, [
+        self.assertListEqual(list(c), [
             ('a', 'a'),
             ('a', 'b'),
             ('a', 'c'),
@@ -224,8 +224,9 @@ class IteratingOverMultipleSequencesSimultaneouslyTest(TestCase):
 
         self.fail('Write a single line expression')
 
-        self.assertListEqual(result, [(1, 101), (5, 78), (4, 37), (2, 15),
-                                      (10, 62), (7, 99)])
+        self.assertListEqual(list(result),
+                             [(1, 101), (5, 78), (4, 37), (2, 15),
+                              (10, 62), (7, 99)])
 
     def test_iterate_two_sequences_different_lengths(self):
         a = [1, 2, 3]
@@ -233,8 +234,8 @@ class IteratingOverMultipleSequencesSimultaneouslyTest(TestCase):
 
         self.fail('Write a single line expression')
 
-        self.assertListEqual(result, [(1, 'w'), (2, 'x'), (3, 'y'),
-                                      (None, 'z')])
+        self.assertListEqual(list(result), [(1, 'w'), (2, 'x'), (3, 'y'),
+                                            (None, 'z')])
 
     def test_iterate_two_sequences_different_lengths_fill_blanks(self):
         a = [1, 2, 3]
@@ -242,8 +243,8 @@ class IteratingOverMultipleSequencesSimultaneouslyTest(TestCase):
 
         self.fail('Write a single line expression')
 
-        self.assertListEqual(result, [(1, 'w'), (2, 'x'), (3, 'y'),
-                                      (0, 'z')])
+        self.assertListEqual(list(result), [(1, 'w'), (2, 'x'), (3, 'y'),
+                                            (0, 'z')])
 
     def test_create_dict_from_two_sequences(self):
         headers = ['name', 'shares', 'price']

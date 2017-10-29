@@ -429,7 +429,7 @@ class FilteringSequenceElementsTest(TestCase):
 
         self.fail('Write a single line expression')
 
-        self.assertListEqual(ivals, ['1', '2', '-3', '4', '5'])
+        self.assertListEqual(list(ivals), ['1', '2', '-3', '4', '5'])
 
     def test_get_addresses_with_count(self):
         """Hint: this uses something from itertools."""
@@ -449,7 +449,7 @@ class FilteringSequenceElementsTest(TestCase):
 
         self.fail('Write a single line expression')
 
-        self.assertListEqual(greater_than_five,
+        self.assertListEqual(list(greater_than_five),
                              ['5800 E 58TH', '1060 W ADDISON',
                               '4801 N BROADWAY'])
 
