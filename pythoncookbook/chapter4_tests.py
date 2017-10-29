@@ -110,15 +110,15 @@ class TakingASliceOfAnIteratorTest(TestCase):
 
 class SkippingTheFirstPartOfAnIterableTest(TestCase):
 
-    def test_skip_initial_lines_with_comments(self):
+    def test_skip_initial_comments(self):
         """Hint: assume you don't know how many initial comments there are
         and the number of them might vary.
         """
         lines = skip_initial_lines('data/initial_comments.txt')
 
         self.assertListEqual(lines, [
-            'nobody:*:-2:-2:Unprivileged User:/var/empty:/usr/bin/false',
-            'root:*:0:0:System Administrator:/var/root:/bin/sh',
+            'nobody:*:-2:-2:Unprivileged User:/var/empty:/usr/bin/false\n',
+            'root:*:0:0:System Administrator:/var/root:/bin/sh\n',
             '# Some other comment'
         ])
 
