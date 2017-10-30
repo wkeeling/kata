@@ -259,6 +259,7 @@ class IteratingOverMultipleSequencesSimultaneouslyTest(TestCase):
         })
 
     def test_create_output_from_two_sequences(self):
+        """Hint: notice that the types of values in the sequences are mixed."""
         headers = ['name', 'shares', 'price']
         values = ['ACME', 100, 490.1]
 
@@ -266,7 +267,8 @@ class IteratingOverMultipleSequencesSimultaneouslyTest(TestCase):
 
         self.fail('Build the output to satisfy the assertion')
 
-        self.assertEqual(output.getvalue(), 'name=ACME\nshares=100\nprice=490.1')
+        self.assertEqual(output.getvalue(),
+                         'name=ACME\nshares=100\nprice=490.1\n')
 
 
 class IteratingOnItemsInSeparateContainersTest(TestCase):
@@ -277,7 +279,8 @@ class IteratingOnItemsInSeparateContainersTest(TestCase):
 
         self.fail('Iterate over the iterables in a single loop')
 
-        self.assertListEqual(result, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+        self.assertListEqual(sorted(list(result)),
+                             [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 
     def test_iterate_over_iterables_combine(self):
         """Hint: do this differently from above by combining the lists.
@@ -296,14 +299,15 @@ class CreatingDataProcessingPipelinesTest(TestCase):
 
     def test_create_pipeline(self):
         """Hint: create the generator functions/expressions below and stack
-        them together to form a processing pipeline.
-        One of the generators "yields from" one of the others.
+        them together to form a processing pipeline. One of the generators
+        "yields from" one of the others.
+        
+        Implement the generators:
+            gen_find_files('*.tsv')
+            gen_opener(filenames)
+            gen_concatenate(files)
+            gen_grep('.*Chelsea.*', lines)
         """
-        gen_find = None
-        gen_opener = None
-        gen_concatenate = None
-        gen_grep = None
-
         self.fail('Write the generator expressions and stack them.')
 
         found = gen_grep('Chelsea', lines)

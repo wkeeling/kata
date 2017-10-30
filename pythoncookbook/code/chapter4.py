@@ -44,3 +44,19 @@ def skip_initial_lines(f):
 def flatten(seq):
     pass
 
+
+def gen_find_files(pattern):
+    pass
+
+
+def gen_opener(*filenames):
+    pass
+
+
+def gen_concatenate(*files):
+    pass
+
+
+def gen_grep(pattern):
+    pass
+
