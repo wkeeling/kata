@@ -49,14 +49,14 @@ def gen_find_files(pattern):
     pass
 
 
-def gen_opener(*filenames):
+def gen_opener(filenames):
     pass
 
 
-def gen_concatenate(*files):
+def gen_concatenate(files):
     pass
 
 
-def gen_grep(pattern):
+def gen_grep(pattern, lines):
     pass
 

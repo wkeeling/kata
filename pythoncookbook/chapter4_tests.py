@@ -301,7 +301,8 @@ class CreatingDataProcessingPipelinesTest(TestCase):
         """Hint: create the generator functions/expressions below and stack
         them together to form a processing pipeline. One of the generators
         "yields from" one of the others.
-        
+        The final output must have converted the tabs to spaces.
+
         Implement the generators:
             gen_find_files('*.tsv')
             gen_opener(filenames)
@@ -312,12 +313,12 @@ class CreatingDataProcessingPipelinesTest(TestCase):
 
         found = gen_grep('Chelsea', lines)
 
-        self.assertEqual(found, [
-            'pythoncookbook/data/file1.tsv:A Brazil  3       4       Defender        27      36      Chelsea         David Luiz      0',
-            'pythoncookbook/data/file1.tsv:A Brazil  3       11      Midfielder      22      31      Chelsea         Oscar   0',
-            'pythoncookbook/data/file1.tsv:A Brazil  3       16      Midfielder      27      42      Chelsea         Ramires 0',
-            'pythoncookbook/data/file1.tsv:A Brazil  3       19      Midfielder      25      7       Chelsea         Willian 0',
-            "pythoncookbook/data/file2.tsv:A Cameroon        56      9       Forward 33      117     Chelsea         Samuel Eto'o    c               0"
+        self.assertEqual(list(found), [
+            'A Brazil 3 4 Defender 27 36 Chelsea David Luiz 0',
+            'A Brazil 3 11 Midfielder 22 31 Chelsea Oscar 0',
+            'A Brazil 3 16 Midfielder 27 42 Chelsea Ramires 0',
+            'A Brazil 3 19 Midfielder 25 7 Chelsea Willian 0',
+            "A Cameroon 56 9 Forward 33 117 Chelsea Samuel Eto'o c 0"
         ])
 
 
@@ -351,7 +352,10 @@ class ReplacingInfiniteWhileLoopsWithAnIteratorTest(TestCase):
         """Hint: don't use a while loop for this one. Use the
         second form of iter().
         """
-        self.fail("Write loop that reads file1.txt 5 chars at a time.")
+        chunk = 5
+        result = ''
+
+        self.fail("Write loop that reads data/file1.txt 5 chars at a time.")
 
         self.assertEqual(result, 'hello\nworld\nfoo\nbar\nbaz')
 
