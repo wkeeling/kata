@@ -15,7 +15,7 @@ class ReadingAndWritingCSVDataTest(TestCase):
             self.fail('Read the CSV file into a list of rows')
 
         self.assertEqual(len(rows), 7)
-        self.assertEqual(rows[0][1], 'Symbol')
+        self.assertEqual(rows[0][1], 'Price')
         self.assertEqual(rows[3][3], '9:36am')
 
     def test_read_csv_named_attributes(self):
@@ -32,8 +32,8 @@ class ReadingAndWritingCSVDataTest(TestCase):
             self.fail('Read the CSV file into a list of dicts')
 
         self.assertEqual(len(rows), 6)
-        self.assertEqual(rows[4]['Change'], -0.25)
-        self.assertEqual(rows[4]['Volume'], 225400)
+        self.assertEqual(rows[4]['Change'], '-0.25')
+        self.assertEqual(rows[4]['Volume'], '360900')
 
     def test_write_csv(self):
         headers = ['Symbol', 'Price', 'Date', 'Time', 'Change', 'Volume']
@@ -46,10 +46,10 @@ class ReadingAndWritingCSVDataTest(TestCase):
 
         self.fail('Write the csv data into the StringIO object')
 
-        self.assertEqual(f.getvalue(), """Symbol,Price,Date,Time,Change,Volume
-AA,39.48,6/11/2007,9:36am,-0.18,181800
-AIG,71.38,6/11/2007,9:36am,-0.15,195500
-AXP,62.58,6/11/2007,9:36am,-0.46,935000""")
+        self.assertEqual(f.getvalue(), 'Symbol,Price,Date,Time,Change,Volume\n'
+                                       'AA,39.48,6/11/2007,9:36am,-0.18,181800\n'
+                                       'AIG,71.38,6/11/2007,9:36am,-0.15,195500\n'
+                                       'AXP,62.58,6/11/2007,9:36am,-0.46,935000\n')
 
     def test_write_csv_dict(self):
         headers = ['Symbol', 'Price', 'Date', 'Time', 'Change', 'Volume']
@@ -65,10 +65,10 @@ AXP,62.58,6/11/2007,9:36am,-0.46,935000""")
 
         self.fail('Write the csv data into the StringIO object')
 
-        self.assertEqual(f.getvalue(), """Symbol,Price,Date,Time,Change,Volume
-AA,39.48,6/11/2007,9:36am,-0.18,181800
-AIG,71.38,6/11/2007,9:36am,-0.15,195500
-AXP,62.58,6/11/2007,9:36am,-0.46,935000""")
+        self.assertEqual(f.getvalue(), 'Symbol,Price,Date,Time,Change,Volume\n'
+                                       'AA,39.48,6/11/2007,9:36am,-0.18,181800\n'
+                                       'AIG,71.38,6/11/2007,9:36am,-0.15,195500\n'
+                                       'AXP,62.58,6/11/2007,9:36am,-0.46,935000\n')
 
     def test_read_csv_converting_values(self):
         """Hint: apply the conversion to each row as it is read in."""

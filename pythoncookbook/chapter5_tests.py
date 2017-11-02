@@ -90,7 +90,7 @@ class ReadingAndWritingCompressedDataFilesTest(TestCase):
 
         self.assertEqual(text, 'hello world\n')
 
-    def tes_read_compressed_file_alternative(self):
+    def test_read_compressed_file_alternative(self):
         with open('data/compressed.txt.gz', 'rb') as f: # Note the 'b'
 
             self.fail('Read the compressed binary file')
@@ -236,8 +236,8 @@ class MakingTemporaryFilesAndDirectoriesTest(TestCase):
     def test_make_named_temporary_file_prefix_suffix(self):
         self.fail('Make a named temporary file')
 
-        self.assertTrue(os.path.basename(f).name.startswith('foo'))
-        self.assertTrue(os.path.basename(f).name.endswith('bar'))
+        self.assertTrue(os.path.basename(f.name).startswith('foo'))
+        self.assertTrue(os.path.basename(f.name).endswith('bar'))
         f.close()  # deletes the file
 
 
