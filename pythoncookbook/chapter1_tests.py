@@ -158,12 +158,14 @@ class FindingTheLargestOrSmallestNItemsTest(TestCase):
 
         self.fail('Write a single line expression')
 
-        self.assertEqual(expensive, [{'name': 'AAPL', 'shares': 50,
-                                      'price': 543.22},
-                                     {'name': 'IBM', 'shares': 100,
-                                      'price': 91.1},
-                                     {'name': 'ACME', 'shares': 75,
-                                      'price': 115.65}])
+        self.assertEqual(expensive, [
+            {'name': 'AAPL', 'shares': 50,
+             'price': 543.22},
+            {'name': 'ACME', 'shares': 75,
+             'price': 115.65},
+            {'name': 'IBM', 'shares': 100,
+             'price': 91.1},
+        ])
 
 
 class ImplementingAPriorityQueueTest(TestCase):
