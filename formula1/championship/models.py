@@ -1,6 +1,6 @@
 from django.db import models
 
-from formula1.team.models import Driver, Team
+from team.models import Driver, Team
 
 
 class Season(models.Model):
