@@ -15,13 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.views.generic import RedirectView
-from django.urls import path
+from django.urls import include, path
 
-import championship.views
-import team.views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('', RedirectView.as_view(pattern_name='home')),
-    path('championship/', championship.views.home_page, name='home'),
+    path('admin/', admin.site.urls),
+    path('championship/', include('championship.urls')),
 ]
