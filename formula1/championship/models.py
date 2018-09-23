@@ -5,6 +5,9 @@ from team.models import Driver, Team
 
 class Season(models.Model):
 
+    class Meta:
+        ordering = ('-year', )
+
     year = models.IntegerField()
 
 
