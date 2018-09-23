@@ -1,6 +1,8 @@
 from django.template.loader import render_to_string
 from django.test import TestCase
 
+from championship.models import Season
+
 
 class HomePageTest(TestCase):
 
@@ -15,7 +17,8 @@ class HomePageTest(TestCase):
         self.assertTemplateUsed(response, 'home.html')
 
     def test_renders_home_page(self):
-        expected_html = render_to_string('home.html')
+        season = Season.objects.get(year=2017)
+        expected_html = render_to_string('home.html', {'season': season})
 
         response = self.client.get('/championship/')
 
