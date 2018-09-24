@@ -484,9 +484,9 @@ class CombineMultipleMappingsInToSingleMappingTest(TestCase):
 
         self.fail('Write a single line expression')
 
-        self.assertEquals(c['x'], 1)
-        self.assertEquals(c['y'], 2)
-        self.assertEquals(c['z'], 3)
+        self.assertEqual(c['x'], 1)
+        self.assertEqual(c['y'], 2)
+        self.assertEqual(c['z'], 3)
 
     def test_mutate_two_dicts(self):
         a = {'x': 1, 'z': 3}
@@ -498,7 +498,7 @@ class CombineMultipleMappingsInToSingleMappingTest(TestCase):
         c['w'] = 40
         del c['x']
 
-        self.assertEquals(a, {'w': 40, 'z': 10})
+        self.assertEqual(a, {'w': 40, 'z': 10})
 
         with self.assertRaises(KeyError):
             del c['y']
