@@ -34,7 +34,7 @@ class MatchingStringsUsingShellWildcardPatternsTest(TestCase):
 
     def test_match_filename_string(self):
         """Hint: use a wildcard for the match."""
-        names = ['Dat1.csv', 'Dat2.csv', 'config.ini', 'foo.py']
+        names = ['Dat1.csv', 'Dat2.CSV', 'config.ini', 'foo.py']
 
         self.fail('Write a single line expression')
 
