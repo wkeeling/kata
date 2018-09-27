@@ -132,7 +132,7 @@ class WorkingWithInfinityAndNaNsTest(TestCase):
 class CalculatingWithFractionsTest(TestCase):
 
     def test_add_fractions(self):
-        a = 0
+        a = Fraction(5, 4)
         b = 0
 
         self.assertEqual(a + b, Fraction(27, 16))
