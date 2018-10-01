@@ -37,7 +37,7 @@ class LineHistory:
     pass
 
 
-def skip_initial_lines(f):
+def skip_initial_lines(filename):
     pass
 
 
