@@ -193,7 +193,7 @@ class IteratingOverTheIndexPairsOfASequenceTest(TestCase):
         with open('data/words_on_lines.txt', 'r') as f:
             lines = f.readlines()
 
-        self.fail('Populate the word_summary. The key should be the word, '
+        self.fail('Populate word_summary. The key should be the word, '
                   'and the value should be a list of the line numbers '
                   'that contain that word')
 
