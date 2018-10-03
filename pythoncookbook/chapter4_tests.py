@@ -337,7 +337,7 @@ class FlatteningANestSequenceTest(TestCase):
 class IteratingInSortedOrderOverMergedSortedIterablesTest(TestCase):
 
     def test_iterate_over_merged_sorted_sequences(self):
-        """Hint: do not sort the lists again."""
+        """Hint: do not sort the lists again, use a standard library module."""
         a = [1, 4, 7, 10]
         b = [2, 5, 6, 11]
 
