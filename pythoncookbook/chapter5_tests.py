@@ -114,6 +114,9 @@ class IteratingOverFixedSizeRecordsTest(TestCase):
 class ReadingBinaryDataIntoAMutableBufferTest(TestCase):
 
     def test_read_file_into_buffer(self):
+        """Hint: the buffer must be initialised to the
+        correct size.
+        """
         with open('data/sample.bin', 'wb') as f:
             f.write(b'Hello World')
 
