@@ -72,7 +72,7 @@ class ReadingAndWritingCSVDataTest(TestCase):
                                        'AXP,62.58,6/11/2007,9:36am,-0.46,935000\n')
 
     def test_read_csv_converting_values(self):
-        """Hint: apply the conversion to each row as it is read in."""
+        """Hint: create a list of column types and comvert each field."""
         with open('data/stocks.csv') as f:
             self.fail('Read the CSV file into a list of rows, '
                       'converting values')
