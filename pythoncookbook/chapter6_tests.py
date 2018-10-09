@@ -36,6 +36,7 @@ class ReadingAndWritingCSVDataTest(TestCase):
         self.assertEqual(rows[4]['Volume'], '360900')
 
     def test_write_csv(self):
+        """Hint: match the line endings."""
         headers = ['Symbol', 'Price', 'Date', 'Time', 'Change', 'Volume']
         rows = [('AA', 39.48, '6/11/2007', '9:36am', -0.18, 181800),
                 ('AIG', 71.38, '6/11/2007', '9:36am', -0.15, 195500),
