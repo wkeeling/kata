@@ -86,6 +86,7 @@ class ReadingAndWritingCSVDataTest(TestCase):
 class ParsingSimpleXMLDataTest(TestCase):
 
     def test_extract_data_from_xml_file(self):
+        """Hint: the named tuple is just used to ease test implementation."""
         with open('data/rss20.xml') as f:
             item = namedtuple('Item', 'title pubDate link')
             self.fail('Parse the file and extract the data')
