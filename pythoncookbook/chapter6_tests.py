@@ -1,6 +1,6 @@
 """Chapter 6: Data Encoding and Processing."""
 
-from collections import namedtuple
+from collections import namedtuple, OrderedDict
 from io import StringIO
 import os
 from unittest import TestCase
@@ -101,7 +101,10 @@ class ParsingSimpleXMLDataTest(TestCase):
 class TurningADictionaryIntoXMLTest(TestCase):
 
     def test_convert_to_xml(self):
-        s = {'name': 'GOOG', 'shares': 100, 'price': 490.1}
+        s = OrderedDict()
+        s['price'] = 490.1
+        s['shares'] = 100
+        s['name'] = 'GOOG'
         e = dict_to_xml('stock', s)
 
         self.fail('Implement dict_to_xml() and then turn resulting root node '
