@@ -119,7 +119,7 @@ class ParsingModifyingAndRewritingXMLTest(TestCase):
     def test_get_root_element(self):
         self.fail('Parse the file data/pred.xml and get the root element')
 
-        self.assertEqual(root.name, 'stop')
+        self.assertEqual(root.tag, 'stop')
 
     def test_remove_elements(self):
         self.fail('Remove the elements <sri> and <cr> from data/pred.xml '
