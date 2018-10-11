@@ -201,10 +201,6 @@ class InteractingWithARelationalDatabaseTest(TestCase):
             ('AAPL', 50, 545.75),
         ])
 
-    @classmethod
-    def tearDownClass(cls):
-        os.remove('data/test.db')
-
 
 class DecodingAndEncodingHexadecimalDigitsTest(TestCase):
 
