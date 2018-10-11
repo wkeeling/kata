@@ -138,12 +138,13 @@ class ParsingModifyingAndRewritingXMLTest(TestCase):
                   'document to data/pred1.xml')
 
         with open('data/pred1.xml') as f1:
-            content = f1.read()
+            content = ''.join(line.strip() for line in f1)
 
-        with open('data/pred_expected.xml') as f2:
-            expected = f2.read()
+        with open('data/pred1_expected.xml') as f2:
+            expected = ''.join(line.strip() for line in f2)
 
-        self.assertEqual(f1, f2)
+        self.assertEqual(content, expected)
+        os.remove('data/pred1.xml')
 
     def test_get_nth_child(self):
         """Hint: do his without using find or iterating the root node."""
