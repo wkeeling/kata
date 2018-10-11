@@ -154,7 +154,7 @@ class ParsingModifyingAndRewritingXMLTest(TestCase):
 
 
 class InteractingWithARelationalDatabaseTest(TestCase):
-    """The tests in this class a interdependent. They won't work
+    """The tests in this class are interdependent. They won't work
     if executed individually.
     """
 
