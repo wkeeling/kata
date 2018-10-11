@@ -150,7 +150,7 @@ class ParsingModifyingAndRewritingXMLTest(TestCase):
         """Hint: do his without using find or iterating the root node."""
         self.fail('Read data/pred.xml and extract the 1, 2 and 3rd elements')
 
-        self.assertEqual(child_names, ['nm', 'sri', 'cr'])
+        self.assertEqual([nm.tag, sri.tag, cr.tag], ['nm', 'sri', 'cr'])
 
 
 class InteractingWithARelationalDatabaseTest(TestCase):
