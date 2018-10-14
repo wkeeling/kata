@@ -6,14 +6,18 @@
     </head>
     <body>
         <div class="container">
-            <div class="container row header-bar">
+            <div class="row header-bar pt-4">
                 {% block navigation %}{% endblock %}
                 <div class="col-md-8"></div>
-                {% for href, text in navigation %}
-                    <div class="col-md-2 text-right"><a href="{{ href }}">{{ text }}</a></div>
-                {% endfor %}
+                <div class="col-md-2 text-right">
+                    <div class="btn-group">
+                        {% for href, text in navigation %}
+                            <a class="btn btn-info" href="{{ href }}">{{ text }}</a>
+                        {% endfor %}
+                    </div>
+                </div>
             </div>
-            <div class="container content">
+            <div class="row content">
                 <div class="col-md">
                     <h1>{% block header_text %}{% endblock %}</h1>
                 </div>

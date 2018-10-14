@@ -2,6 +2,15 @@
 
 {% block title_text %}{{ season.year }} Season{% endblock %}
 
-{% block header_text %}Formula 1 {{ season.year }} Season{% endblock %}
+{% block header_text %}Formula 1 - {{ season.year }} Season{% endblock %}
 
-{% block content %}{% endblock %}
+{% block content %}
+    <table>
+    {% for result in season.driver_results.all %}
+        <tr>
+            <td>{{ result.driver.name }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+
+{% endblock %}
