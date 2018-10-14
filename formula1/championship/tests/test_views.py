@@ -18,7 +18,13 @@ class HomePageTest(TestCase):
 
     def test_renders_home_page(self):
         season = Season.objects.get(year=2017)
-        expected_html = render_to_string('home.html', {'season': season})
+        expected_html = render_to_string('home.html', {
+            'season': season,
+            'navigation': [
+                ('', 'Switch Season'),
+                ('', 'Add Season')
+            ]
+        })
 
         response = self.client.get('/championship/')
 
