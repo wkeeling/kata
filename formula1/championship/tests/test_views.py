@@ -29,3 +29,11 @@ class HomePageTest(TestCase):
         response = self.client.get('/championship/')
 
         self.assertMultiLineEqual(response.content.decode(), expected_html)
+
+
+class AddSeasonTest(TestCase):
+
+    def test_uses_correct_template(self):
+        response = self.client.get('/championship/')
+
+        self.assertTemplateUsed(response, 'add_season.html')
