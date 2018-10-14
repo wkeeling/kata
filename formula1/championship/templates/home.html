@@ -5,7 +5,7 @@
 {% block header_text %}Formula 1 - {{ season.year }} Season{% endblock %}
 
 {% block content %}
-    <table>
+    <table class="table">
     {% for result in season.driver_results.all %}
         <tr>
             <td>{{ result.driver.name }}</td>
