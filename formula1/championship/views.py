@@ -11,3 +11,7 @@ def home_page(request):
             ('', 'Add Season')
         ]
     })
+
+
+def add_season(request):
+    return render(request, 'add_season.html')

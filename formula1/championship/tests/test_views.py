@@ -34,6 +34,6 @@ class HomePageTest(TestCase):
 class AddSeasonTest(TestCase):
 
     def test_uses_correct_template(self):
-        response = self.client.get('/championship/')
+        response = self.client.get('/championship/add')
 
         self.assertTemplateUsed(response, 'add_season.html')
