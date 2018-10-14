@@ -5,6 +5,15 @@
         <link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <div class="container">
+            <div class="row header-bar">
+                <div class="col-md-8"></div>
+                <div class="col-md-2 text-right"><a href="">Add Season</a></div>
+            </div>
+            <div class="content">
+                <h1>{% block header_text %}{% endblock %}</h1>
+            </div>
+        </div>
+        {% block content %}{% endblock %}
     </body>
 </html>
