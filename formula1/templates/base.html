@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Formula 1 - {% block title_text %}{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+        <link href="/static/base.css" rel="stylesheet" media="screen">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row header-bar pt-4">
+                {% block navigation %}{% endblock %}
+                <div class="col-md-8"></div>
+                <div class="col-md-2 text-right">
+                    <div class="btn-group">
+                        {% for href, text in navigation %}
+                            <a class="btn btn-info" href="{{ href }}">{{ text }}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="row content">
+                <div class="col-md">
+                    <h1>{% block header_text %}{% endblock %}</h1>
+                </div>
+            </div>
+        </div>
+        {% block content %}{% endblock %}
+    </body>
+</html>

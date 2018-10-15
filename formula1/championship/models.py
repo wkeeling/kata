@@ -11,15 +11,15 @@ class Season(models.Model):
     year = models.IntegerField()
 
 
-class ConstructorsChampionship(models.Model):
+class ConstructorsChampionshipResult(models.Model):
 
-    season = models.ForeignKey(Season, on_delete=models.CASCADE)
+    season = models.ForeignKey(Season, on_delete=models.CASCADE, related_name='constructor_results')
     team = models.OneToOneField(Team, on_delete=models.CASCADE)
     position = models.IntegerField()
 
 
-class DriversChampionship(models.Model):
+class DriversChampionshipResult(models.Model):
 
-    season = models.ForeignKey(Season, on_delete=models.CASCADE)
+    season = models.ForeignKey(Season, on_delete=models.CASCADE, related_name='driver_results')
     driver = models.OneToOneField(Driver, on_delete=models.CASCADE)
     position = models.IntegerField()
