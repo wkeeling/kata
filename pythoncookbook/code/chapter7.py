@@ -6,7 +6,7 @@ def add():
     pass
 
 
-_no_object = object()
+_no_value = object()
 
 
 def spam():
