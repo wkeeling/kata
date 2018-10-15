@@ -77,7 +77,7 @@ class MakingAnNArgumentCallableWorkTest(TestCase):
                   'will not be suitable - because its signature is not '
                   'compatible with key=')
 
-        points.sort(key=None)
+        sorted_points = sorted(points, key=None)
 
         self.assertEqual(sorted_points, [(3, 4), (1, 2), (5, 6), (7, 8)])
 
