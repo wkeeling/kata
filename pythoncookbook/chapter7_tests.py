@@ -13,20 +13,19 @@ from pythoncookbook.code.chapter7 import (add,
 class WritingFunctionsThatAcceptOnlyKeywordArgumentsTest(TestCase):
 
     def test_write_function_that_specifies_keyword_only_argument(self):
-        self.fail('Write the recv() function where the block argument '
-                  'must be passed keyword-only.')
-
+        """Write the recv() function where the block argument '
+        'must be passed keyword-only.
+        """
         with self.assertRaises(TypeError):
             recv(1024, True)
-            
+
         recv(1024, block=True)
 
 
 class AttachingInformationalMetadataToFunctionArgumentsTest(TestCase):
 
     def test_annotate_function(self):
-        self.fail('Annotate the add() function')
-
+        """Annotate the add() function."""
         self.assertEqual(add.__annotations__, {
             'y': int.__class__, 'return': int.__class__, 'x': int.__class__
         })
