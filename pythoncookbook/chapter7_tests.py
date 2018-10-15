@@ -27,7 +27,7 @@ class AttachingInformationalMetadataToFunctionArgumentsTest(TestCase):
     def test_annotate_function(self):
         """Annotate the add() function."""
         self.assertEqual(add.__annotations__, {
-            'y': int.__class__, 'return': int.__class__, 'x': int.__class__
+            'y': int().__class__, 'return': int().__class__, 'x': int().__class__
         })
 
 
