@@ -15,6 +15,10 @@ class WritingFunctionsThatAcceptOnlyKeywordArgumentsTest(TestCase):
     def test_write_function_that_specifies_keyword_only_argument(self):
         self.fail('Write the recv() function where the block argument '
                   'must be passed keyword-only.')
+
+        with self.assertRaises(TypeError):
+            recv(1024, True)
+            
         recv(1024, block=True)
 
 
