@@ -55,8 +55,8 @@ class CapturingVariablesInAnonymousFunctionsTest(TestCase):
         self.fail('Create the list comprehension')
 
         self.assertEqual(len(funcs), 3)
-        self.assertEqual(funcs[0](2), 0)
-        self.assertEqual(funcs[1](2), 2)
+        self.assertEqual(funcs[0](2), 2)
+        self.assertEqual(funcs[1](2), 3)
         self.assertEqual(funcs[2](2), 4)
 
 
