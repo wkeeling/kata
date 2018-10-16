@@ -113,7 +113,8 @@ class CarryingExtraStateWithCallbackFunctionsTest(TestCase):
             # Invoke the callback with the result
             callback(result)
 
-        # Here is how the code gets used *without* printing a sequence number
+        # Here is how the code gets used *without* printing a sequence number.
+        # Rework this function.
         def print_result(result):
             print('Got:', result)
 
