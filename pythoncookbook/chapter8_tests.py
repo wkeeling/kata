@@ -60,6 +60,9 @@ class CustomizingStringFormattingTest(TestCase):
 class CreatingManagedAttributesTest(TestCase):
 
     def test_create_properties(self):
+        """Hint: attempting to set a non-string
+        for first_name should raise a TypeError.
+        """
         class Person:
             def __init__(self, first_name):
                 pass
