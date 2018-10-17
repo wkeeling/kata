@@ -71,11 +71,11 @@ class CreatingManagedAttributesTest(TestCase):
 
         self.fail('Implement the Person class')
 
-        self.assertEqual(a.first_name, 'John')
+        self.assertEqual(p.first_name, 'John')
         with self.assertRaises(TypeError):
-            a.first_name = 10
+            p.first_name = 10
         with self.assertRaises(AttributeError):
-            del a.first_name
+            del p.first_name
         with self.assertRaises(TypeError):
             Person(10)
 
