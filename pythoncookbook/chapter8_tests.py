@@ -25,8 +25,6 @@ class ChangingTheStringRepresentationOfInstancesTest(TestCase):
 
         p = Pair(3, 4)
 
-        self.fail('Implement the __str__ and __repr__ methods')
-
         self.assertEqual(str(p), '(3, 4)')
         self.assertEqual(eval(repr(p)), p)
 
