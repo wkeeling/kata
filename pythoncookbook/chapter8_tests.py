@@ -26,7 +26,7 @@ class ChangingTheStringRepresentationOfInstancesTest(TestCase):
         p = Pair(3, 4)
 
         self.assertEqual(str(p), '(3, 4)')
-        self.assertEqual(eval(repr(p)), p)
+        self.assertIsInstance(eval(repr(p)), Pair)
 
 
 class CustomizingStringFormattingTest(TestCase):
