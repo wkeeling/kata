@@ -204,8 +204,6 @@ class DefiningAnInterfaceOrAbstractBaseClassTest(TestCase):
     def test_name_five_collection_abcs(self):
         """Name 5 ABCs that define top level types in the collections module.
         """
-        self.fail('Add 5 names to the list')
-
         abcs = [
             # Add the names
         ]
