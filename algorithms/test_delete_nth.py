@@ -16,6 +16,6 @@ def test_delete_nth():
     n = 2
     arr = [1, 2, 3, 1, 2, 1, 2, 3]
 
-    result = delete_nth(n, arr)
+    result = delete_nth(arr, n)
 
     assert result == [1, 2, 3, 1, 2, 3]
