@@ -19,5 +19,6 @@ def max_ones_index(arr):
     pass
 
 
+
 def test_max_ones_index():
-    assert max_ones_index([1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1]) == 3
+    assert max_ones_index([1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1]) == 3
