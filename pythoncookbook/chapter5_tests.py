@@ -101,14 +101,15 @@ class ReadingAndWritingCompressedDataFilesTest(TestCase):
 class IteratingOverFixedSizeRecordsTest(TestCase):
 
     def test_iterate_over_fixed_size_records(self):
-        """Hint: use functools.partial() and the other version
-        of iter() for this one."""
+        """Hint: use functools.partial() together with the other version
+        of iter() for this one. Open the file in binary mode.
+        """
         records = iter_records('data/records.txt', record_size=10)
 
         records = list(records)
 
-        self.assertEqual(records[0], 'Strings ar')
-        self.assertEqual(records[3], 'opular typ')
+        self.assertEqual(records[0], b'Strings ar')
+        self.assertEqual(records[3], b'opular typ')
 
 
 class ReadingBinaryDataIntoAMutableBufferTest(TestCase):
