@@ -257,7 +257,7 @@ class SerializingPythonObjectsTest(TestCase):
     def test_pickle_unpickle_object_to_from_string(self):
         to_pickle = [1, 2, 3, 4, 5]
 
-        self.fail('Pickle then unpickle the object to/from a string')
+        self.fail('Pickle then unpickle the object to/from a bytes object')
 
         self.assertEqual(unpickled, [1, 2, 3, 4, 5])
 
