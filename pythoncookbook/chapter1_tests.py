@@ -15,39 +15,39 @@ class UnpackingSequenceTest(TestCase):
     def test_unpack_sequence(self):
         self.fail('Write a single line expression')
 
-        self.assertEquals(name, 'ACME')
-        self.assertEquals(shares, 50)
-        self.assertEquals(price, 91.1)
-        self.assertEquals(date, (2012, 12, 21))
+        self.assertEqual(name, 'ACME')
+        self.assertEqual(shares, 50)
+        self.assertEqual(price, 91.1)
+        self.assertEqual(date, (2012, 12, 21))
 
     def test_unpack_sequence_nested_tuple(self):
         self.fail('Write a single line expression')
 
-        self.assertEquals(name, 'ACME')
-        self.assertEquals(shares, 50)
-        self.assertEquals(price, 91.1)
-        self.assertEquals(year, 2012)
-        self.assertEquals(month, 12)
-        self.assertEquals(day, 21)
+        self.assertEqual(name, 'ACME')
+        self.assertEqual(shares, 50)
+        self.assertEqual(price, 91.1)
+        self.assertEqual(year, 2012)
+        self.assertEqual(month, 12)
+        self.assertEqual(day, 21)
 
     def test_unpack_sequence_string(self):
         self.fail('Write a single line expression')
 
-        self.assertEquals(a, 'H')
-        self.assertEquals(b, 'e')
-        self.assertEquals(c, 'l')
-        self.assertEquals(d, 'l')
-        self.assertEquals(e, 'o')
+        self.assertEqual(a, 'H')
+        self.assertEqual(b, 'e')
+        self.assertEqual(c, 'l')
+        self.assertEqual(d, 'l')
+        self.assertEqual(e, 'o')
 
     def test_unpack_sequence_object(self):
         w = World('World')
         a, b, c, d, e = w
 
-        self.assertEquals(a, 'W')
-        self.assertEquals(b, 'o')
-        self.assertEquals(c, 'r')
-        self.assertEquals(d, 'l')
-        self.assertEquals(e, 'd')
+        self.assertEqual(a, 'W')
+        self.assertEqual(b, 'o')
+        self.assertEqual(c, 'r')
+        self.assertEqual(d, 'l')
+        self.assertEqual(e, 'd')
 
 
 class UnpackingElementsFromIterablesArbitraryLengthTest(TestCase):
@@ -57,26 +57,26 @@ class UnpackingElementsFromIterablesArbitraryLengthTest(TestCase):
 
         self.fail('Write a single line expression')
 
-        self.assertEquals(first, 56)
-        self.assertEquals(mean(middle), 67)
-        self.assertEquals(last, 44)
+        self.assertEqual(first, 56)
+        self.assertEqual(mean(middle), 67)
+        self.assertEqual(last, 44)
 
     def test_unpack_phone_numbers(self):
         record = ('Dave', 'dave@example.com', '773-555-1212', '847-555-1212')
 
         self.fail('Write a single line expression')
 
-        self.assertEquals(name, 'Dave')
-        self.assertEquals(email, 'dave@example.com')
-        self.assertEquals(phone_numbers, ['773-555-1212', '847-555-1212'])
+        self.assertEqual(name, 'Dave')
+        self.assertEqual(email, 'dave@example.com')
+        self.assertEqual(phone_numbers, ['773-555-1212', '847-555-1212'])
 
     def test_unpack_last(self):
         values = [5, 8, 3, 1, 9]
 
         self.fail('Write a single line expression')
 
-        self.assertEquals(mean(first_four), 4.25)
-        self.assertEquals(last, 9)
+        self.assertEqual(mean(first_four), 4.25)
+        self.assertEqual(last, 9)
 
     def test_iterate_varying_length_tuples(self):
         records = [
@@ -204,7 +204,7 @@ class MappingKeysToMutipleValuesDictionaryTest(TestCase):
         except KeyError:
             pass  # Should not raise
 
-        self.assertEquals(d['a'], [1, 2])
+        self.assertEqual(d['a'], [1, 2])
 
 
 class CalculatingWithDictionariesTest(TestCase):
@@ -306,7 +306,7 @@ class NamingASliceTest(TestCase):
 
         self.fail('Retrive the information from the string')
 
-        self.assertEquals(shares, 100)
+        self.assertEqual(shares, 100)
         self.assertEqual(price, 513.25)
 
 
