@@ -425,8 +425,6 @@ class GroupingRecordsBasedOnAFieldTest(TestCase):
 class FilteringSequenceElementsTest(TestCase):
 
     def test_filter_non_numeric_values(self):
-        """Hint: don't use a list comprehension, generator expression for
-        this."""
         values = ['1', '2', '-3', '-', '4', 'N/A', '5']
 
         self.fail('Write a single line expression')
