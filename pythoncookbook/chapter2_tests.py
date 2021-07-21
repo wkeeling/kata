@@ -1,5 +1,8 @@
 """Chapter 2: Strings and Text."""
 
+import fnmatch
+import html
+import re
 from unittest import TestCase
 
 
@@ -12,7 +15,7 @@ class SplitStringOnMultipleDelimetersTest(TestCase):
         """
         line = 'asdf fjdk; afed, fjek,asdf, foo'
 
-        self.fail('Write a single line expression')
+        split = re.split(r'[;,\s]\s*', line)
 
         self.assertListEqual(split, ['asdf', 'fjdk', 'afed', 'fjek', 'asdf',
                                      'foo'])
@@ -25,7 +28,7 @@ class MatchingTextAtStartAndEndOfStringTest(TestCase):
         expression."""
         filenames = ['Makefile', 'foo.c', 'bar.py', 'spam.c', 'spam.h']
 
-        self.fail('Write a single line expression')
+        filtered = [f for f in filenames if f.endswith(('.c', '.h'))]
 
         self.assertListEqual(filtered, ['foo.c', 'spam.c', 'spam.h'])
 
@@ -34,9 +37,9 @@ class MatchingStringsUsingShellWildcardPatternsTest(TestCase):
 
     def test_match_filename_string(self):
         """Hint: use a wildcard for the match."""
-        names = ['Dat1.csv', 'Dat2.CSV', 'config.ini', 'foo.py']
+        names = ['Dat1.csv', 'Dat2.csv', 'config.ini', 'foo.py']
 
-        self.fail('Write a single line expression')
+        matched = [n for n in names if fnmatch.fnmatch(n, '*.csv')]
 
         self.assertListEqual(matched, ['Dat1.csv', 'Dat2.csv'])
 
@@ -50,7 +53,7 @@ class MatchingStringsUsingShellWildcardPatternsTest(TestCase):
             '4802 N BROADWAY',
         ]
 
-        self.fail('Write a single line expression')
+        streets = [s for s in addresses if fnmatch.fnmatch(s, '*ST')]
 
         self.assertListEqual(streets, ['5412 N CLARK ST', '1060 W ADDISON ST',
                                        '2122 N CLARK ST'])
@@ -66,7 +69,7 @@ class MatchingStringsUsingShellWildcardPatternsTest(TestCase):
             '4802 N BROADWAY',
         ]
 
-        self.fail('Write a single line expression')
+        streets = [s for s in addresses if fnmatch.fnmatch(s, '54*ST')]
 
         self.assertListEqual(streets, ['5412 N CLARK ST', '5423 N CLARK ST'])
 
@@ -77,7 +80,7 @@ class SearchingAndReplacingTextTest(TestCase):
         """Hint: don't use str.replace()."""
         text = 'Today is 11/27/2012. PyCon starts 3/13/2013.'
 
-        self.fail('Write a single line expression')
+        new_text = re.sub(r'(\d+)/(\d+)/(\d+)', r'\3-\1-\2', text)
 
         self.assertEqual(new_text,
                          'Today is 2012-11-27. PyCon starts 2013-3-13.')
@@ -89,7 +92,7 @@ class StripUnwantedCharactersFromStringsTest(TestCase):
         """Hint: don't use more than one function call."""
         t = '-----hello====='
 
-        self.fail('Write a single line expression')
+        stripped = t.strip('-=')
 
         self.assertEqual(stripped, 'hello')
 
@@ -101,7 +104,8 @@ class AligningTextStringsTest(TestCase):
         Max width is 20 chars."""
         text = 'Hello World'
 
-        self.fail('Write a single line expression')
+        aligned = text.ljust(20)
+        aligned = format(text, '<20')
 
         self.assertEqual(aligned, 'Hello World         ')
 
@@ -109,7 +113,8 @@ class AligningTextStringsTest(TestCase):
         """Hint: two ways to do this. Try both."""
         text = 'Hello World'
 
-        self.fail('Write a single line expression')
+        aligned = text.rjust(20)
+        aligned = format(text, '>20')
 
         self.assertEqual(aligned, '         Hello World')
 
@@ -117,21 +122,22 @@ class AligningTextStringsTest(TestCase):
         """Hint: two ways to do this. Try both."""
         text = 'Hello World'
 
-        self.fail('Write a single line expression')
+        aligned = text.center(20)
+        aligned = format(text, '^20')
 
         self.assertEqual(aligned, '    Hello World     ')
 
     def test_align_non_string(self):
         x = 1.2345
 
-        self.fail('Write a single line expression')
+        aligned = format(x, '>10')
 
         self.assertEqual(aligned, '    1.2345')
 
     def test_align_non_string_decimal_places(self):
         x = 1.2345
 
-        self.fail('Write a single line expression')
+        aligned = format(x, '^10.2f')
 
         self.assertEqual(aligned, '   1.23   ')
 
@@ -145,7 +151,7 @@ class CombiningAndConcatenatingStringsTest(TestCase):
             yield 'Not'
             yield 'Chicago?'
 
-        self.fail('Write a single line expression')
+        built = ' '.join(sample())
 
         self.assertEqual(built, 'Is Chicago Not Chicago?')
 
@@ -156,7 +162,7 @@ class InterpolatingVariablesInStringsTest(TestCase):
         name = 'Guido'
         n = 37
 
-        self.fail('Write a single line expression')
+        formatted = '{name} has {n} messages.'.format(**locals())
 
         self.assertEqual(formatted, 'Guido has 37 messages.')
 
@@ -168,7 +174,7 @@ class InterpolatingVariablesInStringsTest(TestCase):
 
         a = Info('Guido', 37)
 
-        self.fail('Write a single line expression')
+        formatted = '{name} has {n} messages.'.format_map(vars(a))
 
         self.assertEqual(formatted, 'Guido has 37 messages.')
 
@@ -178,7 +184,7 @@ class HandlingHtmlAndXmlEntitiesInTextTest(TestCase):
     def test_escape_text(self):
         s = 'Elements are written as "<tag>text</tag>".'
 
-        self.fail('Write a single line expression')
+        escaped = html.escape(s)
 
         self.assertEqual(escaped, 'Elements are written as &quot;&lt;tag&gt;'
                                   'text&lt;/tag&gt;&quot;.')
@@ -186,16 +192,18 @@ class HandlingHtmlAndXmlEntitiesInTextTest(TestCase):
     def test_escape_text_not_quotes(self):
         s = 'Elements are written as "<tag>text</tag>".'
 
-        self.fail('Write a single line expression')
+        escaped = html.escape(s, quote=False)
 
         self.assertEqual(escaped, 'Elements are written as "&lt;tag&gt;text'
                                   '&lt;/tag&gt;".')
 
     def test_unescape_text(self):
         """Hint: look to xml.sax"""
+        from xml.sax.saxutils import unescape
         t = 'The prompt is &gt;&gt;&gt;'
 
-        self.fail('Write a single line expression')
+        unescaped = unescape(t)
+        unescaped = html.unescape(t)
 
         self.assertEqual(unescaped, 'The prompt is >>>')
 
@@ -205,21 +213,21 @@ class PerformingTextOperationsOnByteStringsTest(TestCase):
     def test_slice_byte_string(self):
         data = b'Hello World'
 
-        self.fail('Write a single line expression')
+        hello = data[:5]
 
         self.assertEqual(hello, b'Hello')
 
     def test_slice_byte_array(self):
         data = bytearray(b'Hello World')
 
-        self.fail('Write a single line expression')
+        hello = data[:5]
 
         self.assertEqual(hello, bytearray(b'Hello'))
 
     def test_split_byte_array(self):
         data = bytearray(b'Hello World')
 
-        self.fail('Write a single line expression')
+        parts = data.split()
 
         self.assertEqual(parts, [bytearray(b'Hello'), bytearray(b'World')])
 
@@ -227,6 +235,6 @@ class PerformingTextOperationsOnByteStringsTest(TestCase):
         """Index the first letter of the string."""
         b = b'Hello World'
 
-        self.fail('Write a single line expression')
+        h = b[0]
 
         self.assertEqual(h, 72)

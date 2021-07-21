@@ -1,5 +1,7 @@
 """Chapter 6: Data Encoding and Processing."""
 
+from collections import namedtuple
+import csv
 from collections import namedtuple, OrderedDict
 from io import StringIO
 import os
@@ -11,8 +13,11 @@ from pythoncookbook.code.chapter6 import dict_to_xml
 class ReadingAndWritingCSVDataTest(TestCase):
 
     def test_read_csv(self):
+        rows = []
         with open('data/stocks.csv') as f:
-            self.fail('Read the CSV file into a list of rows')
+            reader = csv.reader(f)
+            for rec in reader:
+                rows.append(rec)
 
         self.assertEqual(len(rows), 7)
         self.assertEqual(rows[0][1], 'Price')
@@ -20,16 +25,23 @@ class ReadingAndWritingCSVDataTest(TestCase):
 
     def test_read_csv_named_attributes(self):
         """Hint: each row here is a named tuple."""
+        rows = []
         with open('data/stocks.csv') as f:
-            self.fail('Read the CSV file into a list of rows')
+            reader = csv.reader(f)
+            row = namedtuple('Row', next(reader))
+            for rec in reader:
+                rows.append(row(*rec))
 
         self.assertEqual(len(rows), 6)
         self.assertEqual(rows[0].Date, '6/11/2007')
         self.assertEqual(rows[4].Symbol, 'C')
 
     def test_read_csv_as_sequence_of_dicts(self):
+        rows = []
         with open('data/stocks.csv') as f:
-            self.fail('Read the CSV file into a list of dicts')
+            reader = csv.DictReader(f)
+            for rec in reader:
+                rows.append(rec)
 
         self.assertEqual(len(rows), 6)
         self.assertEqual(rows[4]['Change'], '-0.25')
@@ -45,12 +57,14 @@ class ReadingAndWritingCSVDataTest(TestCase):
 
         f = StringIO()
 
-        self.fail('Write the csv data into the StringIO object')
+        writer = csv.writer(f)
+        writer.writerow(headers)
+        writer.writerows(rows)
 
-        self.assertEqual(f.getvalue(), 'Symbol,Price,Date,Time,Change,Volume\n'
-                                       'AA,39.48,6/11/2007,9:36am,-0.18,181800\n'
-                                       'AIG,71.38,6/11/2007,9:36am,-0.15,195500\n'
-                                       'AXP,62.58,6/11/2007,9:36am,-0.46,935000\n')
+        self.assertEqual(f.getvalue(), 'Symbol,Price,Date,Time,Change,Volume\r\n'
+                                       'AA,39.48,6/11/2007,9:36am,-0.18,181800\r\n'
+                                       'AIG,71.38,6/11/2007,9:36am,-0.15,195500\r\n'
+                                       'AXP,62.58,6/11/2007,9:36am,-0.46,935000\r\n')
 
     def test_write_csv_dict(self):
         headers = ['Symbol', 'Price', 'Date', 'Time', 'Change', 'Volume']
@@ -64,18 +78,26 @@ class ReadingAndWritingCSVDataTest(TestCase):
 
         f = StringIO()
 
-        self.fail('Write the csv data into the StringIO object')
+        writer = csv.DictWriter(f, fieldnames=headers)
+        writer.writeheader()
+        writer.writerows(rows)
 
-        self.assertEqual(f.getvalue(), 'Symbol,Price,Date,Time,Change,Volume\n'
-                                       'AA,39.48,6/11/2007,9:36am,-0.18,181800\n'
-                                       'AIG,71.38,6/11/2007,9:36am,-0.15,195500\n'
-                                       'AXP,62.58,6/11/2007,9:36am,-0.46,935000\n')
+        self.assertEqual(f.getvalue(), 'Symbol,Price,Date,Time,Change,Volume\r\n'
+                                       'AA,39.48,6/11/2007,9:36am,-0.18,181800\r\n'
+                                       'AIG,71.38,6/11/2007,9:36am,-0.15,195500\r\n'
+                                       'AXP,62.58,6/11/2007,9:36am,-0.46,935000\r\n')
 
     def test_read_csv_converting_values(self):
         """Hint: create a list of column types and comvert each field."""
+        types = [str, float, str, str, float, int]
+        rows = []
         with open('data/stocks.csv') as f:
-            self.fail('Read the CSV file into a list of rows, '
-                      'converting values')
+            reader = csv.reader(f)
+            next(reader)
+
+            # rows.append(next(reader)) # header
+            for rec in reader:
+                rows.append([convert(rec) for convert, rec in zip(types, rec)])
 
         self.assertEqual(len(rows), 6)
         self.assertIsInstance(rows[1][0], str)

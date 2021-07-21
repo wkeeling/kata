@@ -1,16 +1,17 @@
-def recv():
+
+def recv(size, *, block):
     pass
 
 
-def add():
+def add(x: int, y: int) -> int:
     pass
 
 
 _no_value = object()
 
 
-def spam():
-    pass
+def spam(x, y=None):
+    return ()
 
 
 def sample():

@@ -23,6 +23,12 @@ class ChangingTheStringRepresentationOfInstancesTest(TestCase):
                 self.x = x
                 self.y = y
 
+            def __str__(self):
+                return f'{(self.x, self.y)}'
+
+            def __repr__(self):
+                return f'Pair(x={self.x}, y={self.y})'
+
         p = Pair(3, 4)
 
         self.assertEqual(str(p), '(3, 4)')
@@ -47,9 +53,11 @@ class CustomizingStringFormattingTest(TestCase):
                 self.month = month
                 self.day = day
 
-        d = Date(2012, 12, 21)
+            def __format__(self, format_spec):
+                default = _formats.get('ymd')
+                return _formats.get(format_spec, default).format(d=self)
 
-        self.fail('Implenent the necessary method on the Date class')
+        d = Date(2012, 12, 21)
 
         self.assertEqual(format(d), '2012-12-21')
         self.assertEqual(format(d, 'mdy'), '12/21/2012')
@@ -65,11 +73,19 @@ class CreatingManagedAttributesTest(TestCase):
         """
         class Person:
             def __init__(self, first_name):
-                pass
+                self.first_name = first_name
+
+            @property
+            def first_name(self):
+                return self._first_name
+
+            @first_name.setter
+            def first_name(self, first_name):
+                if isinstance(first_name, int):
+                    raise TypeError()
+                self._first_name = first_name
 
         p = Person('John')
-
-        self.fail('Implement the Person class')
 
         self.assertEqual(p.first_name, 'John')
         with self.assertRaises(TypeError):
@@ -98,8 +114,6 @@ class CallingAMethodOnAParentClassTest(TestCase):
 
         c = C()
 
-        self.fail('Implement the necessary methods in the hierarchy')
-
         self.assertEqual(c.foo(), 'bar')
 
     def test_delegate_call_excluding_special_method(self):
@@ -107,17 +121,27 @@ class CallingAMethodOnAParentClassTest(TestCase):
             def __init__(self, obj):
                 self._obj = obj
 
+            def __getattr__(self, item):
+                return getattr(self._obj, item)
+
+            def __setattr__(self, key, value):
+                if key.startswith('_'):
+                    super().__setattr__(key, value)
+                else:
+                    setattr(self._obj, key, value)
+
         class Foo:
             def hello(self):
                 return 'world'
 
-        p = Proxy(Foo())
+        f = Foo()
+        p = Proxy(f)
         setattr(p, 'a', 'b')
-
-        self.fail('Implement he neessary methods on Proxy')
+        setattr(p, '_a', 'b')
 
         self.assertEqual(p.hello(), 'world')
-        self.assertTrue(hasattr(p, 'a'))
+        self.assertTrue(hasattr(f, 'a'))
+        self.assertTrue(hasattr(p, '_a'))
 
 
 class CreatingANewKindOfClassOrInstanceAttribute(TestCase):
@@ -159,10 +183,10 @@ class UsingLazilyComputedPropertiesTest(TestCase):
         c = Circle(4.0)
 
         self.assertEqual(c.radius, 4.0)
-        self.assertAlmostEqual(c.area, 50.26548245743669)
-        self.assertEqual(c.area.call_count, 1)
-        self.assertAlmostEqual(c.area, 50.26548245743669)
-        self.assertEqual(c.area.call_count, 1)  # Area is not recalculated
+        self.assertAlmostEqual(c.area(), 50.26548245743669)
+        self.assertEqual(c.area.call_count(), 1)
+        self.assertAlmostEqual(c.area(), 50.26548245743669)
+        self.assertEqual(c.area.call_count(), 1)  # Area is not recalculated
 
 
 class DefiningAnInterfaceOrAbstractBaseClassTest(TestCase):

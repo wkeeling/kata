@@ -4,41 +4,50 @@ import random
 from timeit import timeit
 
 
-def quicksort(lst):
+def quicksort(lst, start, end):
     """Quicksort over a list-like sequence"""
-    if len(lst) == 0:
-        # print('Exiting with []')
-        return lst
+    if start >= end:
+        return
+    low, high = start, end
+    pivot = lst[start + (end - start) // 2]
 
-    pivot = lst[0]
-    pivots = [x for x in lst if x == pivot]
+    while low <= high:
+        while lst[low] < pivot:
+            low += 1
+        while lst[high] > pivot:
+            high -= 1
+        if low <= high:
+            lst[low], lst[high] = lst[high], lst[low]
+            low, high = low + 1, high - 1
 
-    # print('Sorting small {} (lst is {}, pivot is {})'.format([x for x in lst if x < pivot],
-    # lst, pivot))
-    small = quicksort([x for x in lst if x < pivot])
-    # print('Sorting large {} (lst is {}, pivot is {})'.format([x for x in lst if x > pivot],
-    # lst, pivot))
-    large = quicksort([x for x in lst if x > pivot])
-
-    # print('Exiting with {}'.format(small + pivots + large))
-    return small + pivots + large
+    quicksort(lst, low, end)
+    quicksort(lst, start, high)
 
 
 def bubblesort(lst):
-    for j in range(len(lst)):
-        for k in range(len(lst) - 1):
-            if lst[k] > lst[k + 1]:
-                lst[k], lst[k + 1] = lst[k + 1], lst[k]
-
+    for _ in range(len(lst)):  # Don't care about the outer loop var
+        for j in range(len(lst) - 1):
+            if lst[j] > lst[j + 1]:
+                lst[j], lst[j + 1] = lst[j + 1], lst[j]
 
 x = list(range(20))
 random.shuffle(x)
 
 
 def test_quicksort():
+    import random
+    lst = list(range(20))
+    random.shuffle(lst)
+    print(lst)
+    bubblesort(lst)
+    print(lst)
+
     # print('Sorting {}'.format(x))
     # cProfile.runctx('quicksort(x)', globals=globals(), locals=locals())
     # s = quicksort(x)
-    # print(list(s))
-    print(timeit('quicksort(x)', globals=globals()))
-    print(timeit('bubblsort(x)', globals=globals()))
+    # # print(list(s))
+    # print(timeit('quicksort(x)', globals=globals()))
+    # print(timeit('bubblsort(x)', globals=globals()))
+
+if __name__ == '__main__':
+    test_quicksort()

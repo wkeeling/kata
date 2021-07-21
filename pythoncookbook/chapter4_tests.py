@@ -1,6 +1,7 @@
 """Chapter 4: Iterators and Generators."""
 
 from collections import defaultdict
+from itertools import islice, permutations, combinations, combinations_with_replacement, zip_longest, chain
 import io
 from unittest import TestCase
 
@@ -9,14 +10,19 @@ from pythoncookbook.code.chapter4 import (Countdown,
                                           frange,
                                           LineHistory,
                                           Node,
-                                          skip_initial_lines)
+                                          skip_initial_lines,
+                                          gen_grep,
+                                          gen_find_files,
+                                          gen_opener,
+                                          gen_concatenate)
 
 
 class ManuallyConsumingAnIteratorTest(TestCase):
 
     def test_iterate_file_without_using_for_loop(self):
         """Hint: load the contents of data/file1.txt"""
-        self.fail('Write code to iterate file without using for loop')
+        with open('data/file1.txt') as f:
+            lines = list(map(str.strip, f))
 
         self.assertListEqual(lines, ['hello', 'world', 'foo', 'bar', 'baz'])
 
@@ -57,14 +63,16 @@ class ImplementingTheIteratorProtocolTest(TestCase):
 
         nodes = list(root.depth_first())
 
-        self.assertListEqual(nodes, [root, child1, child3, child4, child2,
-                                     child5])
+        self.assertListEqual(
+            nodes, [root, child1, child3, child4, child2, child5]
+        )
 
 
 class IteratingInReverseTest(TestCase):
 
     def test_reverse_file_contents(self):
-        self.fail('Reverse the contents of data/file2.txt')
+        with open('data/file2.txt') as f:
+            file2 = reversed(list(map(int, f)))
 
         self.assertListEqual(list(file2), [9, 8, 7, 6, 5, 4, 3, 2, 1])
 
@@ -89,6 +97,7 @@ class DefiningGeneratorsWithExtraStateTest(TestCase):
                 if 'python' in line:
                     found[line] = list(lines.history)
 
+        print(found)
         self.assertEqual(len(found), 2)
         self.assertEqual(found['line8 python'],
                          [(5, 'line5'), (6, 'line6'), (7, 'line7')])
@@ -103,7 +112,7 @@ class TakingASliceOfAnIteratorTest(TestCase):
             for i in range(100):
                 yield i
 
-        self.fail('Write a single line expression')
+        sliced = islice(count(), 5, 11)
 
         self.assertListEqual(list(sliced), [5, 6, 7, 8, 9, 10])
 
@@ -114,7 +123,7 @@ class SkippingTheFirstPartOfAnIterableTest(TestCase):
         """Hint: assume you don't know how many initial comments there are
         and the number of them might vary.
         """
-        lines = skip_initial_lines('data/initial_comments.txt')
+        lines = list(skip_initial_lines('data/initial_comments.txt'))
 
         self.assertListEqual(lines, [
             'nobody:*:-2:-2:Unprivileged User:/var/empty:/usr/bin/false\n',
@@ -131,7 +140,7 @@ class IteratingOverAllPossibleCombinationsOrPermutationsTest(TestCase):
         """
         items = ['a', 'b', 'c']
 
-        self.fail('Create permutations of the list of items')
+        p = permutations(items)
 
         self.assertListEqual(list(p), [
             ('a', 'b', 'c'),
@@ -145,7 +154,7 @@ class IteratingOverAllPossibleCombinationsOrPermutationsTest(TestCase):
     def test_rearrange_into_permutations_smaller_length(self):
         items = ['a', 'b', 'c']
 
-        self.fail('Create permutations of the list of items')
+        p = permutations(items, 2)
 
         self.assertListEqual(list(p), [
             ('a', 'b'),
@@ -162,7 +171,7 @@ class IteratingOverAllPossibleCombinationsOrPermutationsTest(TestCase):
         """
         items = ['a', 'b', 'c']
 
-        self.fail('Produce combinations of items')
+        c = combinations(items, 2)
 
         self.assertListEqual(list(c), [
             ('a', 'b'),
@@ -173,7 +182,7 @@ class IteratingOverAllPossibleCombinationsOrPermutationsTest(TestCase):
     def test_produce_combinations_using_duplicate_items(self):
         items = ['a', 'b', 'c']
 
-        self.fail('Produce combinations of items')
+        c = combinations_with_replacement(items, 2)
 
         self.assertListEqual(list(c), [
             ('a', 'a'),
@@ -193,9 +202,9 @@ class IteratingOverTheIndexPairsOfASequenceTest(TestCase):
         with open('data/words_on_lines.txt', 'r') as f:
             lines = f.readlines()
 
-        self.fail('Populate word_summary. The key should be the word, '
-                  'and the value should be a list of the line numbers '
-                  'that contain that word')
+        for i, line in enumerate(lines, 1):
+            for word in line.split():
+                word_summary[word.lower()].append(i)
 
         self.assertListEqual(word_summary['in'], [1, 4, 5, 6])
 
@@ -203,10 +212,8 @@ class IteratingOverTheIndexPairsOfASequenceTest(TestCase):
         data = [(1, 2), (2, 4), (3, 6), (4, 8)]
         output = {}
 
-        self.fail('Iterate the sequence of data and add to the output'
-                  'dictionary. The key should be the index of the '
-                  'tuple in the list, and the value the second tuple'
-                  'element divided by the first.')
+        for i, (a, b) in enumerate(data):
+            output[i] = b / a
 
         self.assertEqual(output, {
             0: 2,
@@ -222,7 +229,7 @@ class IteratingOverMultipleSequencesSimultaneouslyTest(TestCase):
         xpts = [1, 5, 4, 2, 10, 7]
         ypts = [101, 78, 37, 15, 62, 99]
 
-        self.fail('Write a single line expression')
+        result = zip(xpts, ypts)
 
         self.assertListEqual(list(result),
                              [(1, 101), (5, 78), (4, 37), (2, 15),
@@ -232,7 +239,7 @@ class IteratingOverMultipleSequencesSimultaneouslyTest(TestCase):
         a = [1, 2, 3]
         b = ['w', 'x', 'y', 'z']
 
-        self.fail('Write a single line expression')
+        result = zip_longest(a, b)
 
         self.assertListEqual(list(result), [(1, 'w'), (2, 'x'), (3, 'y'),
                                             (None, 'z')])
@@ -241,7 +248,7 @@ class IteratingOverMultipleSequencesSimultaneouslyTest(TestCase):
         a = [1, 2, 3]
         b = ['w', 'x', 'y', 'z']
 
-        self.fail('Write a single line expression')
+        result = zip_longest(a, b, fillvalue=0)
 
         self.assertListEqual(list(result), [(1, 'w'), (2, 'x'), (3, 'y'),
                                             (0, 'z')])
@@ -250,7 +257,7 @@ class IteratingOverMultipleSequencesSimultaneouslyTest(TestCase):
         headers = ['name', 'shares', 'price']
         values = ['ACME', 100, 490.1]
 
-        self.fail('Write a single line expression')
+        result = dict(zip(headers, values))
 
         self.assertEqual(result, {
             'name': 'ACME',
@@ -265,7 +272,8 @@ class IteratingOverMultipleSequencesSimultaneouslyTest(TestCase):
 
         output = io.StringIO()
 
-        self.fail('Build the output to satisfy the assertion')
+        for h, v in zip(headers, values):
+            print(h, v, sep='=', file=output)
 
         self.assertEqual(output.getvalue(),
                          'name=ACME\nshares=100\nprice=490.1\n')
@@ -277,7 +285,7 @@ class IteratingOnItemsInSeparateContainersTest(TestCase):
         a = [1, 2, 3, 4, 5]
         b = {6, 7, 8, 9, 10}
 
-        self.fail('Iterate over the iterables in a single loop')
+        result = chain(a, b)
 
         self.assertListEqual(sorted(list(result)),
                              [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
@@ -290,7 +298,7 @@ class IteratingOnItemsInSeparateContainersTest(TestCase):
         a = [1, 2, 3, 4, 5]
         b = [6, 7, 8, 9, 10]
 
-        self.fail('Iterate over the iterables in a single loop')
+        result = a + b
 
         self.assertListEqual(result, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 
@@ -309,7 +317,6 @@ class CreatingDataProcessingPipelinesTest(TestCase):
             gen_concatenate(files)
             gen_grep('.*Chelsea.*', lines)
         """
-        self.fail('Write the generator expressions and stack them.')
 
         found = gen_grep('Chelsea', lines)
 
@@ -341,7 +348,8 @@ class IteratingInSortedOrderOverMergedSortedIterablesTest(TestCase):
         a = [1, 4, 7, 10]
         b = [2, 5, 6, 11]
 
-        self.fail('Use a single for loop to iterate over the lists together.')
+        import heapq
+        c = list(heapq.merge(a, b))
 
         self.assertEqual(c, [1, 2, 4, 5, 6, 7, 10, 11])
 
@@ -355,7 +363,10 @@ class ReplacingInfiniteWhileLoopsWithAnIteratorTest(TestCase):
         chunk = 5
         result = ''
 
-        self.fail("Write loop that reads data/file1.txt 5 chars at a time.")
+        from functools import partial
+
+        with open('data/file1.txt') as f:
+            result = ''.join(iter(partial(f.read, chunk), result))
 
         self.assertEqual(result, 'hello\nworld\nfoo\nbar\nbaz')
 

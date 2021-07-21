@@ -3,6 +3,17 @@ from unittest import TestCase
 
 def find_position(val, search_list):
     """Runs in O(log n) time, O(1) space. Always finds leftmost element."""
+    start, end = 0, len(search_list)
+
+    while start <= end:
+        mid = (start + end) // 2
+
+        if search_list[mid] < val:
+            start = mid + 1
+        elif search_list[mid] > val:
+            end = mid - 1
+        else:
+            return mid
 
 
 class BinarySearchTest(TestCase):

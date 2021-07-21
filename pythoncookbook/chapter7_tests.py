@@ -38,8 +38,6 @@ class DefiningFunctionsWithDefaultArgumentsTest(TestCase):
         Pay attention to what the default value should be.
         Remember: defaut values should *never* be mutable objects.
         """
-        self.fail('Implement the spam() function')
-
         self.assertEqual(spam(1), 1)
         self.assertEqual(spam(1, 2), (1, 2))
         self.assertEqual(spam(1, None), (1, None))
@@ -52,7 +50,7 @@ class CapturingVariablesInAnonymousFunctionsTest(TestCase):
         function for 3 iterations and each function will sum its
         iteration number with the value passed to it.
         """
-        self.fail('Create the list comprehension')
+        funcs = [lambda v, i=i: v + i for i in range(3)]
 
         self.assertEqual(len(funcs), 3)
         self.assertEqual(funcs[0](2), 2)
@@ -62,7 +60,9 @@ class CapturingVariablesInAnonymousFunctionsTest(TestCase):
 
 class MakingAnNArgumentCallableWorkTest(TestCase):
 
+
     def test_sort_points_according_to_distance_from_other_point(self):
+        from functools import partial
         points = [(1, 2), (3, 4), (5, 6), (7, 8)]
 
         def distance(p1, p2):
@@ -72,12 +72,7 @@ class MakingAnNArgumentCallableWorkTest(TestCase):
 
         fixed_point = (4, 3)
 
-        self.fail('Define the function that will sort each point according '
-                  'to distance from fixed_point. Note that using distance() '
-                  'will not be suitable - because its signature is not '
-                  'compatible with key=')
-
-        sorted_points = sorted(points, key=None)
+        sorted_points = sorted(points, key=partial(distance, p2=fixed_point))
 
         self.assertEqual(sorted_points, [(3, 4), (1, 2), (5, 6), (7, 8)])
 
@@ -93,9 +88,12 @@ class ReplacingSingleMethodClassesWithFunctionsTest(TestCase):
             def open(self, **kwargs):
                 return urlopen(self.template.format_map(kwargs))
 
-        self.fail('Simplify the above by using functions')
+        def urltemplate(template):
+            def _(**kwargs):
+                return urlopen(template.format_map(kwargs))
+            return _
 
-        yahoo = urltemplate('http://finance.yahoo.com/d/quotes.csv?s={names}'
+        yahoo = urltemplate('https://finance.yahoo.com/d/quotes.csv?s={names}'
                             '&f={fields}')
         for line in yahoo(names='IBM,AAPL,FB', fields='sl1c1v'):
             print(line.decode('utf-8'))
@@ -113,19 +111,22 @@ class CarryingExtraStateWithCallbackFunctionsTest(TestCase):
             # Invoke the callback with the result
             callback(result)
 
-        # Here is how the code gets used *without* printing a sequence number.
-        # Rework this function.
-        def print_result(result):
-            print('Got:', result)
-
         def add(x, y):
             return x + y
 
-        apply_async(add, (2, 3), callback=print_result)
-        apply_async(add, ('hello', 'world'), callback=print_result)
+        def make_handler():
+            sequence = 0
 
-        self.fail('Call apply_async and maintain a sequence number for '
-                  'each call, using different techniques to achieve it')
+            def handler(result):
+                nonlocal sequence
+                sequence += 1
+                print(result, sequence)
+
+            return handler
+
+        h = make_handler()
+        apply_async(add, (2, 3), callback=h)
+        apply_async(add, ('hello', 'world'), callback=h)
 
 
 class AccessingVariablesDefinedInsideAClosureTest(TestCase):

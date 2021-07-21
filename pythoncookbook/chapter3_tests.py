@@ -1,5 +1,7 @@
 """Chapter 3: Numbers, Dates and Times."""
 
+import random
+import decimal
 import math
 from datetime import (datetime,
                       timedelta)
@@ -15,7 +17,7 @@ class RoundingNumericalValuesTest(TestCase):
     def test_round_floating_point_number(self):
         num = 1.23
 
-        self.fail('Write a single line expression')
+        rounded = round(num, 1)
 
         self.assertEqual(rounded, 1.2)
 
@@ -26,7 +28,8 @@ class RoundingNumericalValuesTest(TestCase):
         a = 1.5
         b = 2.5
 
-        self.fail('Round the two numbers')
+        a_rounded = round(a)
+        b_rounded = round(b)
 
         self.assertEqual(a_rounded, 2)
         self.assertEqual(b_rounded, 2)
@@ -34,21 +37,21 @@ class RoundingNumericalValuesTest(TestCase):
     def test_round_tens(self):
         a = 1627731
 
-        self.fail('Write a single line expression')
+        rounded = round(a, -1)
 
         self.assertEqual(rounded, 1627730)
 
     def test_round_hundreds(self):
         a = 1627731
 
-        self.fail('Write a single line expression')
+        rounded = round(a, -2)
 
         self.assertEqual(rounded, 1627700)
 
     def test_round_thousands(self):
         a = 1627731
 
-        self.fail('Write a single line expression')
+        rounded = round(a, -3)
 
         self.assertEqual(rounded, 1628000)
 
@@ -56,7 +59,7 @@ class RoundingNumericalValuesTest(TestCase):
         """Hint: don't use round when formatting text."""
         x = 1.23456
 
-        self.fail('Write a single line expression')
+        formatted = format(x, '.2f')
 
         self.assertEqual(formatted, '1.23')
 
@@ -71,7 +74,7 @@ class PerformingAccurateDecimalCalculationsTest(TestCase):
         a = 4.2
         b = 2.1
 
-        self.fail('Write a single line expression')
+        c = decimal.Decimal(a) + decimal.Decimal(b)
 
         self.assertEqual(float(c), 6.3)
 
@@ -119,12 +122,12 @@ class FormattingNumbersForOutputTest(TestCase):
 class WorkingWithInfinityAndNaNsTest(TestCase):
 
     def test_create_infinity_value(self):
-        self.fail('Write a single line expression')
+        x = math.inf
 
         self.assertTrue(math.isinf(x))
 
     def test_create_nan_value(self):
-        self.fail('Write a single line expression')
+        x = math.nan
 
         self.assertTrue(math.isnan(x))
 
@@ -143,14 +146,14 @@ class PickingThingsAtRandomTest(TestCase):
     def test_pick_random_item_from_sequence(self):
         values = [1, 2, 3, 4, 5, 6]
 
-        self.fail('Write a single line expression')
+        val = random.choice(values)
 
         self.assertIn(val, values)
 
     def test_pick_two_random_items_from_sequence(self):
         values = [1, 2, 3, 4, 5, 6]
 
-        self.fail('Write a single line expression')
+        vals = random.sample(values, 2)
 
         self.assertEqual(len(vals), 2)
         for val in vals:
@@ -159,15 +162,16 @@ class PickingThingsAtRandomTest(TestCase):
     def test_shuffle_sequence(self):
         values = [1, 2, 3, 4, 5, 6]
 
-        self.fail('Create a new list based on shuffling values')
+        shuffled = list(values)
+        random.shuffle(shuffled)
 
         self.assertEqual(len(shuffled), len(values))
         self.assertNotEqual(shuffled, values)
 
     def test_create_random_integer_between_1_and_10(self):
-        self.fail('Write a single line expression')
+        i = random.randint(1, 10)
 
-        self.assertIn(i, range(1, 10))
+        self.assertIn(i, range(1, 11))
 
     def test_create_random_float_between_0_and_1(self):
         self.fail('Write a single line expression')

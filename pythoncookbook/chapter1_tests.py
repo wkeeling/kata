@@ -1,5 +1,10 @@
 """Chapter 1: Data Structures and Algorithms."""
 
+import collections
+import itertools
+import operator
+import heapq
+from collections import defaultdict, Counter
 from statistics import mean
 from unittest import TestCase
 
@@ -13,7 +18,7 @@ from pythoncookbook.code.chapter1 import (dedupe,
 class UnpackingSequenceTest(TestCase):
 
     def test_unpack_sequence(self):
-        self.fail('Write a single line expression')
+        name, shares, price, date = ['ACME', 50, 91.1, (2012, 12, 21)]
 
         self.assertEqual(name, 'ACME')
         self.assertEqual(shares, 50)
@@ -21,7 +26,7 @@ class UnpackingSequenceTest(TestCase):
         self.assertEqual(date, (2012, 12, 21))
 
     def test_unpack_sequence_nested_tuple(self):
-        self.fail('Write a single line expression')
+        name, shares, price, (year, month, day) = ['ACME', 50, 91.1, (2012, 12, 21)]
 
         self.assertEqual(name, 'ACME')
         self.assertEqual(shares, 50)
@@ -31,7 +36,7 @@ class UnpackingSequenceTest(TestCase):
         self.assertEqual(day, 21)
 
     def test_unpack_sequence_string(self):
-        self.fail('Write a single line expression')
+        a, b, c, d, e = 'Hello'
 
         self.assertEqual(a, 'H')
         self.assertEqual(b, 'e')
@@ -55,7 +60,7 @@ class UnpackingElementsFromIterablesArbitraryLengthTest(TestCase):
     def test_drop_first_last(self):
         grades = [56, 77, 75, 68, 53, 62, 44]
 
-        self.fail('Write a single line expression')
+        first, *middle, last = grades
 
         self.assertEqual(first, 56)
         self.assertEqual(mean(middle), 67)
@@ -64,7 +69,7 @@ class UnpackingElementsFromIterablesArbitraryLengthTest(TestCase):
     def test_unpack_phone_numbers(self):
         record = ('Dave', 'dave@example.com', '773-555-1212', '847-555-1212')
 
-        self.fail('Write a single line expression')
+        name, email, *phone_numbers = record
 
         self.assertEqual(name, 'Dave')
         self.assertEqual(email, 'dave@example.com')
@@ -73,7 +78,7 @@ class UnpackingElementsFromIterablesArbitraryLengthTest(TestCase):
     def test_unpack_last(self):
         values = [5, 8, 3, 1, 9]
 
-        self.fail('Write a single line expression')
+        *first_four, last = values
 
         self.assertEqual(mean(first_four), 4.25)
         self.assertEqual(last, 9)
@@ -91,12 +96,16 @@ class UnpackingElementsFromIterablesArbitraryLengthTest(TestCase):
         def do_bar(s):
             print('bar', s)
 
-        self.fail('Iterate records calling appropriate function')
+        for k, *v in records:
+            if k == 'foo':
+                do_foo(*v)
+            else:
+                do_bar(v)
 
     def test_unpack_split_string(self):
         line = 'nobody:*:-2:-2:Unprivileged User:/var/empty:/usr/bin/false'
 
-        self.fail('Write a single line expression')
+        uname, *_, homedir, sh = line.split(':')
 
         self.assertEqual(uname, 'nobody')
         self.assertEqual(homedir, '/var/empty')
@@ -132,7 +141,7 @@ class FindingTheLargestOrSmallestNItemsTest(TestCase):
          """
         nums = [1, 8, 2, 23, 7, -4, 18, 23, 42, 37, 2]
 
-        self.fail('Write a single line expression')
+        largest = heapq.nlargest(3, nums)
 
         self.assertEqual(largest, [42, 37, 23])
 
@@ -142,7 +151,7 @@ class FindingTheLargestOrSmallestNItemsTest(TestCase):
         """
         nums = [1, 8, 2, 23, 7, -4, 18, 23, 42, 37, 2]
 
-        self.fail('Write a single line expression')
+        smallest = heapq.nsmallest(3, nums)
 
         self.assertEqual(smallest, [-4, 1, 2])
 
@@ -156,7 +165,7 @@ class FindingTheLargestOrSmallestNItemsTest(TestCase):
             {'name': 'ACME', 'shares': 75, 'price': 115.65}
         ]
 
-        self.fail('Write a single line expression')
+        expensive = heapq.nlargest(3, portfolio, key=lambda x: x['price'])
 
         self.assertEqual(expensive, [
             {'name': 'AAPL', 'shares': 50,
@@ -195,7 +204,7 @@ class ImplementingAPriorityQueueTest(TestCase):
 class MappingKeysToMutipleValuesDictionaryTest(TestCase):
 
     def test_append_to_list_value(self):
-        self.fail('Write a single line expression')
+        d = defaultdict(list)
 
         try:
             d['a'].append(1)
@@ -219,24 +228,24 @@ class CalculatingWithDictionariesTest(TestCase):
         }
 
     def test_find_min_price(self):
-        self.fail('Write a single line expression')
+        min_price = min(zip(self._prices.values(), self._prices.keys()))
 
         self.assertEqual(min_price, (10.75, 'FB'))
 
     def test_find_max_price(self):
-        self.fail('Write a single line expression')
+        max_price = max(zip(self._prices.values(), self._prices.keys()))
 
         self.assertEqual(max_price, (612.78, 'AAPL'))
 
     def test_sort_prices(self):
-        self.fail('Write a single line expression')
+        prices_sorted = sorted(zip(self._prices.values(), self._prices.keys()))
 
         self.assertEqual(prices_sorted, [(10.75, 'FB'), (37.2, 'HPQ'),
                                          (45.23, 'ACME'), (205.55, 'IBM'),
                                          (612.78, 'AAPL')])
 
     def test_raises_value_error(self):
-        self.fail('Write a single line expression')
+        prices_and_names = zip(self._prices.values(), self._prices.keys())
 
         with self.assertRaises(ValueError):
             min(prices_and_names)
@@ -258,18 +267,18 @@ class FindingCommonalitiesInTwoDictionariesTest(TestCase):
         }
 
     def test_find_keys_in_common(self):
-        self.fail('Write a single line expression')
+        common_keys = self._a.keys() & self._b.keys()
 
         self.assertEqual(common_keys, {'x', 'y'})
 
     def test_find_keys_in_a_not_b(self):
         """Hint: think of it as removing b's keys from a."""
-        self.fail('Write a single line expression')
+        keys = self._a.keys() - self._b.keys()
 
         self.assertEqual(keys, {'z'})
 
     def test_find_key_value_pairs_in_common(self):
-        self.fail('Write a single line expression')
+        common_pairs = self._a.items() & self._b.items()
 
         self.assertEqual(common_pairs, {('y', 2)})
 
@@ -304,10 +313,11 @@ class NamingASliceTest(TestCase):
     def test_use_named_slice(self):
         record = '....................100          .......513.25     ........'
 
-        self.fail('Retrive the information from the string')
+        s1 = slice(20, 23)
+        s2 = slice(40, 46)
 
-        self.assertEqual(shares, 100)
-        self.assertEqual(price, 513.25)
+        self.assertEqual(int(record[s1]), 100)
+        self.assertEqual(float(record[s2]), 513.25)
 
 
 class DeterminingMostFrequentlyOccurringItemsInASequenceTest(TestCase):
@@ -322,7 +332,7 @@ class DeterminingMostFrequentlyOccurringItemsInASequenceTest(TestCase):
             'into', 'my', 'eyes', "you're", 'under'
         ]
 
-        self.fail('Find the top three words')
+        top_three = Counter(words).most_common(3)
 
         self.assertEqual(top_three, [('eyes', 8), ('the', 5), ('look', 4)])
 
@@ -339,7 +349,7 @@ class SortingAListOfDictionariesByAComonKeyTest(TestCase):
 
     def test_sort_rows_by_first_name(self):
         """Hint: try to avoid using a lambda for the key."""
-        self.fail('Write a single line expression')
+        rows_by_fname = sorted(self._rows, key=operator.itemgetter('fname'))
 
         self.assertListEqual(rows_by_fname,
                              [{'fname': 'Big', 'uid': 1004, 'lname': 'Jones'},
@@ -351,7 +361,7 @@ class SortingAListOfDictionariesByAComonKeyTest(TestCase):
                                'lname': 'Cleese'}])
 
     def test_sort_rows_by_first_name_and_last_name(self):
-        self.fail('Write a single line expression')
+        rows_by_lfname = sorted(self._rows, key=operator.itemgetter('lname', 'fname'))
 
         self.assertListEqual(rows_by_lfname,
                              [{'fname': 'David', 'uid': 1002,
@@ -380,7 +390,7 @@ class SortingObjectsWithoutNativeComparisonSupportTest(TestCase):
 
         users = [user1, user2, user3]
 
-        self.fail('Write a single line expression')
+        by_user_id = sorted(users, key=operator.attrgetter('user_id'))
 
         self.assertListEqual(by_user_id, [user2, user1, user3])
 
@@ -427,7 +437,14 @@ class FilteringSequenceElementsTest(TestCase):
     def test_filter_non_numeric_values(self):
         values = ['1', '2', '-3', '-', '4', 'N/A', '5']
 
-        self.fail('Write a single line expression')
+        def is_numeric(v):
+            try:
+                int(v)
+                return True
+            except ValueError:
+                return False
+
+        ivals = filter(is_numeric, values)
 
         self.assertListEqual(list(ivals), ['1', '2', '-3', '4', '5'])
 
@@ -447,7 +464,7 @@ class FilteringSequenceElementsTest(TestCase):
         counts = [0, 3, 10, 4, 1, 7, 6, 1]
         more5 = [n > 5 for n in counts]
 
-        self.fail('Write a single line expression')
+        greater_than_five = itertools.compress(addresses, more5)
 
         self.assertListEqual(list(greater_than_five),
                              ['5800 E 58TH', '1060 W ADDISON',
@@ -466,7 +483,7 @@ class ExtractingASubsetOfADictionaryTest(TestCase):
             'FB': 10.75
         }
 
-        self.fail('Write a single line expression')
+        prices_subset = {k: v for k, v in prices.items() if v > 200}
 
         self.assertEqual(prices_subset, {
             'AAPL': 612.78,
@@ -480,7 +497,7 @@ class CombineMultipleMappingsInToSingleMappingTest(TestCase):
         a = {'x': 1, 'z': 3}
         b = {'y': 2, 'z': 4}
 
-        self.fail('Write a single line expression')
+        c = collections.ChainMap(a, b)
 
         self.assertEqual(c['x'], 1)
         self.assertEqual(c['y'], 2)
@@ -490,7 +507,7 @@ class CombineMultipleMappingsInToSingleMappingTest(TestCase):
         a = {'x': 1, 'z': 3}
         b = {'y': 2, 'z': 4}
 
-        self.fail('Write a single line expression')
+        c = collections.ChainMap(a, b)
 
         c['z'] = 10
         c['w'] = 40

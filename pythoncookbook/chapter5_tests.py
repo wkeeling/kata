@@ -2,8 +2,11 @@
 
 """Chapter 5: Files and I/O."""
 import os
-from io import StringIO
+import pickle
+import tempfile
 from unittest import TestCase
+from io import StringIO, TextIOWrapper
+
 
 from pythoncookbook.code.chapter5 import (create_temp_file,
                                           iter_records,
@@ -13,12 +16,14 @@ from pythoncookbook.code.chapter5 import (create_temp_file,
 class ReadingAndWritingTextDataTest(TestCase):
 
     def test_open_file_preserving_line_endings(self):
-        self.fail('Read hello.txt but preserve the windows line ending.')
+        with open('data/hello.txt', mode='rt', newline='') as f:
+            contents = f.read()
 
         self.assertEqual(contents, 'hello\r\n')
 
     def test_open_ignore_non_ascii_characters(self):
-        self.fail('Read sample.txt and ignore the non-ascii character.')
+        with open('data/sample.txt', mode='rt', encoding='ascii', errors='ignore') as f:
+            contents = f.read()
 
         self.assertEqual(contents, 'Jalapeo')
 
@@ -28,7 +33,7 @@ class PrintingToAFileTest(TestCase):
     def test_print_to_file(self):
         f = StringIO()
 
-        self.fail('Write a single line expression')
+        print('hello', file=f)
 
         self.assertEqual(f.getvalue(), 'hello\n')
 
@@ -41,7 +46,7 @@ class PrintingWithADifferentSeparatorOrLineEndingTest(TestCase):
         l = ['hello', 'world', 99]
         f = StringIO()
 
-        self.fail('Write a single line expression')
+        print(*l, sep=',', file=f, end='')
 
         self.assertEqual(f.getvalue(), 'hello,world,99')
 
@@ -50,7 +55,7 @@ class PrintingWithADifferentSeparatorOrLineEndingTest(TestCase):
         l = range(5)
         f = StringIO()
 
-        self.fail('Write a single line expression')
+        print(*l, sep=' ', file=f, end=' ')
 
         self.assertEqual(f.getvalue(), '0 1 2 3 4 ')
 
@@ -62,7 +67,8 @@ class WritingToAFileThatDoesNotAlreadyExistTest(TestCase):
             f.write('Hello\n')
 
         with self.assertRaises(FileExistsError):
-            self.fail('Write to data/somefile')
+            with open('data/somefile', 'xt') as f:
+                f.write('Hello\n')
 
     def tearDown(self):
         try:
@@ -74,7 +80,8 @@ class WritingToAFileThatDoesNotAlreadyExistTest(TestCase):
 class PerformingIOOperationsOnAStringTest(TestCase):
 
     def test_write_binary_string_to_file_like_object(self):
-        self.fail('Write a single line expression')
+        from io import BytesIO
+        s = BytesIO()
         s.write(b'some binary data')
 
         self.assertEqual(s.getvalue(), b'some binary data')
@@ -84,16 +91,19 @@ class ReadingAndWritingCompressedDataFilesTest(TestCase):
 
     def test_read_compressed_file(self):
         """Read the data/compressed.txt.gz file"""
-        self.fail('Write a single line expression')
+        import gzip
+        f = gzip.open('data/compressed.txt.gz', 'rt')
         text = f.read()
         f.close()
 
         self.assertEqual(text, 'hello world\n')
 
     def test_read_compressed_file_alternative(self):
-        with open('data/compressed.txt.gz', 'rb') as f: # Note the 'b'
+        with open('data/compressed.txt.gz', 'rb') as f:  # Note the 'b'
 
-            self.fail('Read the compressed binary file')
+            import gzip
+            z = gzip.open(f, 'rt')
+            text = z.read()
 
             self.assertEqual(text, 'hello world\n')
 
@@ -129,7 +139,7 @@ class ReadingBinaryDataIntoAMutableBufferTest(TestCase):
     def test_manipulate_string_in_memory(self):
         buf = bytearray(b'Hello World')
 
-        self.fail('Wrap and manipulate the string')
+        buf[6:] = b'WORLD'
 
         # Note: asserting the exact same variable. Don't reassign it.
         self.assertEqual(buf, bytearray(b'Hello WORLD'))
@@ -140,7 +150,7 @@ class ManipulatingPathnamesTest(TestCase):
     def test_split_file_extension(self):
         path = '/some/file/path.txt'
 
-        self.fail('Write a single line expression')
+        split = os.path.splitext(path)
 
         self.assertEqual(split, ('/some/file/path', '.txt'))
 
@@ -150,7 +160,7 @@ class TestingForExistenceOfAFileTest(TestCase):
     def test_get_file_size(self):
         file = 'data/file1.bin'
 
-        self.fail('Write a single line expression')
+        size = os.path.getsize(file)
 
         self.assertEqual(size, 11)
 
@@ -158,7 +168,7 @@ class TestingForExistenceOfAFileTest(TestCase):
         file = 'data/file1.bin'
         os.utime(file, (1506886291.0, 1506886291.0))
 
-        self.fail('Write a single line expression')
+        mtime = os.path.getmtime(file)
 
         self.assertEqual(mtime, 1506886291.0)
 
@@ -170,7 +180,7 @@ class AddingOrChangingTheEncodingOfAnAlreadyOpenFileTest(TestCase):
 
         try:
             f = open(file, encoding='utf-8')
-            self.fail('Change the encoding of "f" to latin-1')
+            f = TextIOWrapper(f, encoding='latin-1')
 
             self.assertEqual(f.encoding, 'latin-1')
         finally:
@@ -182,7 +192,7 @@ class WritingBytesToATextFileTest(TestCase):
     def test_write_bytes(self):
         try:
             with open('text.txt', 'wt') as text:
-                self.fail('Write a byte string to the text file')
+                text.buffer.write(b'Hello World')
 
             with open('text.txt') as inp:
                 self.assertEqual(inp.read(), 'Hello World')
@@ -222,7 +232,7 @@ class MakingTemporaryFilesAndDirectoriesTest(TestCase):
             self.assertEqual(data, 'Hello World')
 
     def test_make_temporary_file_alternate(self):
-        self.fail('Make a temporary file')
+        f = tempfile.TemporaryFile('w+t')
 
         f.write('Hello World')
         f.seek(0)
@@ -232,13 +242,13 @@ class MakingTemporaryFilesAndDirectoriesTest(TestCase):
         f.close()  # deletes the file
 
     def test_make_named_temporary_file(self):
-        self.fail('Make a named temporary file')
+        f = tempfile.NamedTemporaryFile()
 
         self.assertTrue(hasattr(f, 'name'))
         f.close()  # deletes the file
 
     def test_make_named_temporary_file_prefix_suffix(self):
-        self.fail('Make a named temporary file')
+        f = tempfile.NamedTemporaryFile(prefix='foo', suffix='bar')
 
         self.assertTrue(os.path.basename(f.name).startswith('foo'))
         self.assertTrue(os.path.basename(f.name).endswith('bar'))
@@ -250,9 +260,15 @@ class SerializingPythonObjectsTest(TestCase):
     def test_pickle_unpickle_object_to_from_file(self):
         to_pickle = list('helloworld')
 
-        self.fail('Pickle then unpickle the object to/from a file')
+        with open('test.pickle', 'wb') as f:
+            pickle.dump(to_pickle, f)
+
+        with open('test.pickle', 'rb') as f:
+            unpickled = pickle.load(f)
 
         self.assertEqual(unpickled, list('helloworld'))
+
+        os.unlink('test.pickle')
 
     def test_pickle_unpickle_object_to_from_string(self):
         to_pickle = [1, 2, 3, 4, 5]
