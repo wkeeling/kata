@@ -1,15 +1,18 @@
 """Chapter 8: Classes and Objects."""
 
+# flake8: noqa
 import collections
 import math
-from unittest import TestCase
 import time
+from unittest import TestCase
 
-from pythoncookbook.code.chapter8 import (Date,
-                                          Integer,
-                                          IStream,
-                                          lazyproperty,
-                                          Proxy)
+from pythoncookbook.code.chapter8 import (
+    Date,
+    Integer,
+    IStream,
+    Proxy,
+    lazyproperty,
+)
 
 
 class ChangingTheStringRepresentationOfInstancesTest(TestCase):
@@ -18,6 +21,7 @@ class ChangingTheStringRepresentationOfInstancesTest(TestCase):
         """Hint: think about the way the strings are formatted, in terms
         of special string formatting args that need to be used.
         """
+
         class Pair:
             def __init__(self, x, y):
                 self.x = x
@@ -25,7 +29,7 @@ class ChangingTheStringRepresentationOfInstancesTest(TestCase):
 
         p = Pair(3, 4)
 
-        self.assertEqual(str(p), '(3, 4)')
+        self.assertEqual(str(p), "(3, 4)")
         self.assertIsInstance(eval(repr(p)), Pair)
 
 
@@ -36,9 +40,9 @@ class CustomizingStringFormattingTest(TestCase):
         achieved in the assertions.
         """
         _formats = {
-            'ymd': '{d.year}-{d.month}-{d.day}',
-            'mdy': '{d.month}/{d.day}/{d.year}',
-            'dmy': '{d.day}/{d.month}/{d.year}'
+            "ymd": "{d.year}-{d.month}-{d.day}",
+            "mdy": "{d.month}/{d.day}/{d.year}",
+            "dmy": "{d.day}/{d.month}/{d.year}",
         }
 
         class Date:
@@ -49,12 +53,11 @@ class CustomizingStringFormattingTest(TestCase):
 
         d = Date(2012, 12, 21)
 
-        self.fail('Implenent the necessary method on the Date class')
+        self.fail("Implenent the necessary method on the Date class")
 
-        self.assertEqual(format(d), '2012-12-21')
-        self.assertEqual(format(d, 'mdy'), '12/21/2012')
-        self.assertEqual('The date is {:ymd}'.format(d),
-                         'The date is 2012-12-21')
+        self.assertEqual(format(d), "2012-12-21")
+        self.assertEqual(format(d, "mdy"), "12/21/2012")
+        self.assertEqual("The date is {:ymd}".format(d), "The date is 2012-12-21")
 
 
 class CreatingManagedAttributesTest(TestCase):
@@ -63,15 +66,16 @@ class CreatingManagedAttributesTest(TestCase):
         """Hint: attempting to set a non-string
         for first_name should raise a TypeError.
         """
+
         class Person:
             def __init__(self, first_name):
                 pass
 
-        p = Person('John')
+        p = Person("John")
 
-        self.fail('Implement the Person class')
+        self.fail("Implement the Person class")
 
-        self.assertEqual(p.first_name, 'John')
+        self.assertEqual(p.first_name, "John")
         with self.assertRaises(TypeError):
             p.first_name = 10
         with self.assertRaises(AttributeError):
@@ -91,16 +95,16 @@ class CallingAMethodOnAParentClassTest(TestCase):
 
         class B(Base):
             def foo(self):
-                return 'bar'
+                return "bar"
 
         class C(A, B):
             pass
 
         c = C()
 
-        self.fail('Implement the necessary methods in the hierarchy')
+        self.fail("Implement the necessary methods in the hierarchy")
 
-        self.assertEqual(c.foo(), 'bar')
+        self.assertEqual(c.foo(), "bar")
 
     def test_delegate_call_excluding_special_method(self):
         class Proxy:
@@ -109,23 +113,23 @@ class CallingAMethodOnAParentClassTest(TestCase):
 
         class Foo:
             def hello(self):
-                return 'world'
+                return "world"
 
         p = Proxy(Foo())
-        setattr(p, 'a', 'b')
+        setattr(p, "a", "b")
 
-        self.fail('Implement he neessary methods on Proxy')
+        self.fail("Implement he neessary methods on Proxy")
 
-        self.assertEqual(p.hello(), 'world')
-        self.assertTrue(hasattr(p, 'a'))
+        self.assertEqual(p.hello(), "world")
+        self.assertTrue(hasattr(p, "a"))
 
 
 class CreatingANewKindOfClassOrInstanceAttribute(TestCase):
 
     def test_create_descriptor(self):
         class Point:
-            x = Integer('x')
-            y = Integer('y')
+            x = Integer("x")
+            y = Integer("y")
 
             def __init__(self, x, y):
                 self.x = x
@@ -153,8 +157,8 @@ class UsingLazilyComputedPropertiesTest(TestCase):
 
             @lazyproperty
             def area(self):
-                print('Computing area')
-                return math.pi * self.radius ** 2
+                print("Computing area")
+                return math.pi * self.radius**2
 
         c = Circle(4.0)
 
@@ -202,8 +206,7 @@ class DefiningAnInterfaceOrAbstractBaseClassTest(TestCase):
         self.assertIsInstance(f, IStream)
 
     def test_name_five_collection_abcs(self):
-        """Name 5 ABCs that define top level types in the collections module.
-        """
+        """Name 5 ABCs that define top level types in the collections module."""
         abcs = [
             # Add the names
         ]
@@ -217,27 +220,28 @@ class DelegatingAttributeAccessTest(TestCase):
 
     def test_create_proxy(self):
         """Hint: Need to implement get/set/del and handle special methods."""
+
         class Spam:
             def __init__(self, x):
                 self.x = x
 
             def bar(self, y):
-                return 'Spam.bar: {} {}'.format(self.x, y)
+                return "Spam.bar: {} {}".format(self.x, y)
 
         s = Spam(2)
         p = Proxy(s)
 
         self.assertEqual(p.x, 2)
-        self.assertEqual(p.bar(3), 'Spam.bar: 2 3')
+        self.assertEqual(p.bar(3), "Spam.bar: 2 3")
         p.x = 37
         self.assertEqual(s.x, 37)
         del p.x
-        self.assertFalse(hasattr(s, 'x'))
-        p._hello = 'world'
-        self.assertTrue(hasattr(p, '_hello'))
-        self.assertFalse(hasattr(s, '_hello'))
+        self.assertFalse(hasattr(s, "x"))
+        p._hello = "world"
+        self.assertTrue(hasattr(p, "_hello"))
+        self.assertFalse(hasattr(s, "_hello"))
         del p._hello
-        self.assertFalse(hasattr(p, '_hello'))
+        self.assertFalse(hasattr(p, "_hello"))
 
 
 class DefiningMoreThanOneConstructorInAClassTest(TestCase):

@@ -1,13 +1,12 @@
 """Chapter 3: Numbers, Dates and Times."""
 
+# flake8: noqa
 import math
-from datetime import (datetime,
-                      timedelta)
+from datetime import datetime, timedelta
 from fractions import Fraction
 from unittest import TestCase
 
-from pythoncookbook.code.chapter3 import (date_range,
-                                          get_days_in_month)
+from pythoncookbook.code.chapter3 import date_range, get_days_in_month
 
 
 class RoundingNumericalValuesTest(TestCase):
@@ -15,7 +14,7 @@ class RoundingNumericalValuesTest(TestCase):
     def test_round_floating_point_number(self):
         num = 1.23
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
         self.assertEqual(rounded, 1.2)
 
@@ -26,7 +25,7 @@ class RoundingNumericalValuesTest(TestCase):
         a = 1.5
         b = 2.5
 
-        self.fail('Round the two numbers')
+        self.fail("Round the two numbers")
 
         self.assertEqual(a_rounded, 2)
         self.assertEqual(b_rounded, 2)
@@ -34,21 +33,21 @@ class RoundingNumericalValuesTest(TestCase):
     def test_round_tens(self):
         a = 1627731
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
         self.assertEqual(rounded, 1627730)
 
     def test_round_hundreds(self):
         a = 1627731
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
         self.assertEqual(rounded, 1627700)
 
     def test_round_thousands(self):
         a = 1627731
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
         self.assertEqual(rounded, 1628000)
 
@@ -56,9 +55,9 @@ class RoundingNumericalValuesTest(TestCase):
         """Hint: don't use round when formatting text."""
         x = 1.23456
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertEqual(formatted, '1.23')
+        self.assertEqual(formatted, "1.23")
 
 
 class PerformingAccurateDecimalCalculationsTest(TestCase):
@@ -71,7 +70,7 @@ class PerformingAccurateDecimalCalculationsTest(TestCase):
         a = 4.2
         b = 2.1
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
         self.assertEqual(float(c), 6.3)
 
@@ -80,7 +79,7 @@ class PerformingAccurateDecimalCalculationsTest(TestCase):
         a = 1.3
         b = 1.7
 
-        self.fail('Do the calculation and round the result')
+        self.fail("Do the calculation and round the result")
 
         self.assertEqual(float(c), 0.765)
 
@@ -91,40 +90,40 @@ class FormattingNumbersForOutputTest(TestCase):
         self._x = 1234.56789
 
     def test_format_two_decimal_places(self):
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertEqual(formatted, '1234.57')
+        self.assertEqual(formatted, "1234.57")
 
     def test_format_right_justified_10_chars_one_decimal_place(self):
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertEqual(formatted, '    1234.6')
+        self.assertEqual(formatted, "    1234.6")
 
     def test_format_left_justified_10_chars_three_decimal_places(self):
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertEqual(formatted, '1234.568  ')
+        self.assertEqual(formatted, "1234.568  ")
 
     def test_format_center_justified_10_chars_one_decimal_place(self):
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertEqual(formatted, '  1234.6  ')
+        self.assertEqual(formatted, "  1234.6  ")
 
     def test_format_one_decimal_place_include_thousands_sep(self):
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertEqual(formatted, '1,234.6')
+        self.assertEqual(formatted, "1,234.6")
 
 
 class WorkingWithInfinityAndNaNsTest(TestCase):
 
     def test_create_infinity_value(self):
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
         self.assertTrue(math.isinf(x))
 
     def test_create_nan_value(self):
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
         self.assertTrue(math.isnan(x))
 
@@ -143,14 +142,14 @@ class PickingThingsAtRandomTest(TestCase):
     def test_pick_random_item_from_sequence(self):
         values = [1, 2, 3, 4, 5, 6]
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
         self.assertIn(val, values)
 
     def test_pick_two_random_items_from_sequence(self):
         values = [1, 2, 3, 4, 5, 6]
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
         self.assertEqual(len(vals), 2)
         for val in vals:
@@ -159,18 +158,18 @@ class PickingThingsAtRandomTest(TestCase):
     def test_shuffle_sequence(self):
         values = [1, 2, 3, 4, 5, 6]
 
-        self.fail('Create a new list based on shuffling values')
+        self.fail("Create a new list based on shuffling values")
 
         self.assertEqual(len(shuffled), len(values))
         self.assertNotEqual(shuffled, values)
 
     def test_create_random_integer_between_1_and_10(self):
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
         self.assertIn(i, range(1, 10))
 
     def test_create_random_float_between_0_and_1(self):
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
         self.assertGreaterEqual(i, 0)
         self.assertLessEqual(i, 1)
@@ -179,16 +178,19 @@ class PickingThingsAtRandomTest(TestCase):
 class ConvertingDaysToSecondsAndOtherBasicTimeConversionsTest(TestCase):
 
     def test_arithmetic_with_units_of_time(self):
-        self.fail('Define three variables, the third should be the '
-                  'sum of the first two')
+        self.fail(
+            "Define three variables, the third should be the " "sum of the first two"
+        )
 
         self.assertEqual(a.days, 2)
         self.assertEqual(b.days, 3)
         self.assertEqual(c.days, 5)
 
     def test_arithmetic_with_units_of_time_2(self):
-        self.fail('Define three variables, the third should be the '
-                  'result of dividing the first by the second.')
+        self.fail(
+            "Define three variables, the third should be the "
+            "result of dividing the first by the second."
+        )
 
         self.assertEqual(a.days, 4)
         self.assertEqual(b.days, 2)
@@ -198,7 +200,7 @@ class ConvertingDaysToSecondsAndOtherBasicTimeConversionsTest(TestCase):
         a = datetime(2012, 9, 23)
         b = datetime(2012, 12, 21)
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
         self.assertEqual(c.days, 89)
 
@@ -207,7 +209,7 @@ class ConvertingDaysToSecondsAndOtherBasicTimeConversionsTest(TestCase):
         a = datetime(2012, 9, 23)
         b = datetime(2012, 12, 21)
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
         self.assertEqual(d.months, 2)
         self.assertEqual(d.days, 28)
@@ -219,7 +221,7 @@ class DeterminingLastFridaysDateTest(TestCase):
         """Hint: this uses a 3rd party package."""
         d = datetime(2017, 9, 16, 10, 0, 0, 0)
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
         self.assertEqual(last_friday, datetime(2017, 9, 15, 10, 0, 0, 0))
 
@@ -227,7 +229,7 @@ class DeterminingLastFridaysDateTest(TestCase):
         """Hint: this uses a 3rd party package."""
         d = datetime(2017, 9, 16, 10, 0, 0, 0)
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
         self.assertEqual(next_friday, datetime(2017, 9, 22, 10, 0, 0, 0))
 
@@ -261,9 +263,9 @@ class FindingTheDateRangeForTheCurrentMonthTest(TestCase):
 class ConvertingStringsIntoDatetimesTest(TestCase):
 
     def test_parse_datetime(self):
-        text = '2017-09-20 13:09:23'
+        text = "2017-09-20 13:09:23"
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
         self.assertEqual(d.year, 2017)
         self.assertEqual(d.month, 9)
@@ -275,9 +277,9 @@ class ConvertingStringsIntoDatetimesTest(TestCase):
     def test_format_datetime(self):
         d = datetime(2017, 9, 20, 13, 9, 23)
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertEqual(text, 'Wednesday September 20, 2017 13:09:23')
+        self.assertEqual(text, "Wednesday September 20, 2017 13:09:23")
 
 
 class ManipulatingDatesUsingTimeZonesTest(TestCase):
@@ -290,7 +292,7 @@ class ManipulatingDatesUsingTimeZonesTest(TestCase):
         """
         d = datetime(2017, 9, 10, 9, 30, 0)
 
-        self.fail('Do datetime conversion')
+        self.fail("Do datetime conversion")
 
         self.assertEqual(c.year, 2017)
         self.assertEqual(c.month, 9)

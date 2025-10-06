@@ -1,13 +1,11 @@
 """Chapter 7: Functions."""
 
+# flake8: noqa
 import math
 from unittest import TestCase
 from urllib.request import urlopen
 
-from pythoncookbook.code.chapter7 import (add,
-                                          recv,
-                                          sample,
-                                          spam)
+from pythoncookbook.code.chapter7 import add, recv, sample, spam
 
 
 class WritingFunctionsThatAcceptOnlyKeywordArgumentsTest(TestCase):
@@ -26,9 +24,10 @@ class AttachingInformationalMetadataToFunctionArgumentsTest(TestCase):
 
     def test_annotate_function(self):
         """Annotate the add() function."""
-        self.assertEqual(add.__annotations__, {
-            'y': int().__class__, 'return': int().__class__, 'x': int().__class__
-        })
+        self.assertEqual(
+            add.__annotations__,
+            {"y": int().__class__, "return": int().__class__, "x": int().__class__},
+        )
 
 
 class DefiningFunctionsWithDefaultArgumentsTest(TestCase):
@@ -38,7 +37,7 @@ class DefiningFunctionsWithDefaultArgumentsTest(TestCase):
         Pay attention to what the default value should be.
         Remember: defaut values should *never* be mutable objects.
         """
-        self.fail('Implement the spam() function')
+        self.fail("Implement the spam() function")
 
         self.assertEqual(spam(1), 1)
         self.assertEqual(spam(1, 2), (1, 2))
@@ -52,7 +51,7 @@ class CapturingVariablesInAnonymousFunctionsTest(TestCase):
         function for 3 iterations and each function will sum its
         iteration number with the value passed to it.
         """
-        self.fail('Create the list comprehension')
+        self.fail("Create the list comprehension")
 
         self.assertEqual(len(funcs), 3)
         self.assertEqual(funcs[0](2), 2)
@@ -72,10 +71,12 @@ class MakingAnNArgumentCallableWorkTest(TestCase):
 
         fixed_point = (4, 3)
 
-        self.fail('Define the function that will sort each point according '
-                  'to distance from fixed_point. Note that using distance() '
-                  'will not be suitable - because its signature is not '
-                  'compatible with key=')
+        self.fail(
+            "Define the function that will sort each point according "
+            "to distance from fixed_point. Note that using distance() "
+            "will not be suitable - because its signature is not "
+            "compatible with key="
+        )
 
         sorted_points = sorted(points, key=None)
 
@@ -86,6 +87,7 @@ class ReplacingSingleMethodClassesWithFunctionsTest(TestCase):
 
     def test_replace_class_with_function(self):
         """Hint: fairly open-ended this one..."""
+
         class UrlTemplate:
             def __init__(self, template):
                 self.template = template
@@ -93,12 +95,13 @@ class ReplacingSingleMethodClassesWithFunctionsTest(TestCase):
             def open(self, **kwargs):
                 return urlopen(self.template.format_map(kwargs))
 
-        self.fail('Simplify the above by using functions')
+        self.fail("Simplify the above by using functions")
 
-        yahoo = urltemplate('http://finance.yahoo.com/d/quotes.csv?s={names}'
-                            '&f={fields}')
-        for line in yahoo(names='IBM,AAPL,FB', fields='sl1c1v'):
-            print(line.decode('utf-8'))
+        yahoo = urltemplate(
+            "http://finance.yahoo.com/d/quotes.csv?s={names}" "&f={fields}"
+        )
+        for line in yahoo(names="IBM,AAPL,FB", fields="sl1c1v"):
+            print(line.decode("utf-8"))
 
 
 class CarryingExtraStateWithCallbackFunctionsTest(TestCase):
@@ -107,6 +110,7 @@ class CarryingExtraStateWithCallbackFunctionsTest(TestCase):
         """Hint: there are a number of ways to carry the sequence
         number through into the callback. Write a few.
         """
+
         def apply_async(func, args, *, callback):
             # Compute the result
             result = func(*args)
@@ -116,16 +120,18 @@ class CarryingExtraStateWithCallbackFunctionsTest(TestCase):
         # Here is how the code gets used *without* printing a sequence number.
         # Rework this function.
         def print_result(result):
-            print('Got:', result)
+            print("Got:", result)
 
         def add(x, y):
             return x + y
 
         apply_async(add, (2, 3), callback=print_result)
-        apply_async(add, ('hello', 'world'), callback=print_result)
+        apply_async(add, ("hello", "world"), callback=print_result)
 
-        self.fail('Call apply_async and maintain a sequence number for '
-                  'each call, using different techniques to achieve it')
+        self.fail(
+            "Call apply_async and maintain a sequence number for "
+            "each call, using different techniques to achieve it"
+        )
 
 
 class AccessingVariablesDefinedInsideAClosureTest(TestCase):
@@ -135,9 +141,7 @@ class AccessingVariablesDefinedInsideAClosureTest(TestCase):
         when you can just use a callable object to achieve the same thing.
         """
         f = sample()
-        self.assertEqual(f(), 'n=0')
+        self.assertEqual(f(), "n=0")
         f.set_n(10)
-        self.assertEqual(f(), 'n=10')
+        self.assertEqual(f(), "n=10")
         self.assertEqual(f.get_n(), 10)
-
-

@@ -1,30 +1,33 @@
 """Chapter 4: Iterators and Generators."""
 
-from collections import defaultdict
+# flake8: noqa
 import io
+from collections import defaultdict
 from unittest import TestCase
 
-from pythoncookbook.code.chapter4 import (Countdown,
-                                          flatten,
-                                          frange,
-                                          LineHistory,
-                                          Node,
-                                          skip_initial_lines)
+from pythoncookbook.code.chapter4 import (
+    Countdown,
+    LineHistory,
+    Node,
+    flatten,
+    frange,
+    skip_initial_lines,
+)
 
 
 class ManuallyConsumingAnIteratorTest(TestCase):
 
     def test_iterate_file_without_using_for_loop(self):
         """Hint: load the contents of data/file1.txt"""
-        self.fail('Write code to iterate file without using for loop')
+        self.fail("Write code to iterate file without using for loop")
 
-        self.assertListEqual(lines, ['hello', 'world', 'foo', 'bar', 'baz'])
+        self.assertListEqual(lines, ["hello", "world", "foo", "bar", "baz"])
 
     def test_iterate_file_without_using_for_loop_without_using_stopiteration(self):
         """Hint: don't catch StopIteration on this one."""
-        self.fail('Write code to iterate file without using for loop')
+        self.fail("Write code to iterate file without using for loop")
 
-        self.assertListEqual(lines, ['hello', 'world', 'foo', 'bar', 'baz'])
+        self.assertListEqual(lines, ["hello", "world", "foo", "bar", "baz"])
 
 
 class CreatingNewIterationPatternsWithGeneratorsTest(TestCase):
@@ -57,14 +60,13 @@ class ImplementingTheIteratorProtocolTest(TestCase):
 
         nodes = list(root.depth_first())
 
-        self.assertListEqual(nodes, [root, child1, child3, child4, child2,
-                                     child5])
+        self.assertListEqual(nodes, [root, child1, child3, child4, child2, child5])
 
 
 class IteratingInReverseTest(TestCase):
 
     def test_reverse_file_contents(self):
-        self.fail('Reverse the contents of data/file2.txt')
+        self.fail("Reverse the contents of data/file2.txt")
 
         self.assertListEqual(list(file2), [9, 8, 7, 6, 5, 4, 3, 2, 1])
 
@@ -83,17 +85,19 @@ class DefiningGeneratorsWithExtraStateTest(TestCase):
         but different in how it iterates the lines and accesses the history.
         """
         found = {}
-        with open('data/find_lines_with_history.txt') as f:
+        with open("data/find_lines_with_history.txt") as f:
             lines = LineHistory(f)
             for line in lines:
-                if 'python' in line:
+                if "python" in line:
                     found[line] = list(lines.history)
 
         self.assertEqual(len(found), 2)
-        self.assertEqual(found['line8 python'],
-                         [(5, 'line5'), (6, 'line6'), (7, 'line7')])
-        self.assertEqual(found['line14 python'],
-                         [(11, 'line11'), (12, 'line12'), (13, 'line13')])
+        self.assertEqual(
+            found["line8 python"], [(5, "line5"), (6, "line6"), (7, "line7")]
+        )
+        self.assertEqual(
+            found["line14 python"], [(11, "line11"), (12, "line12"), (13, "line13")]
+        )
 
 
 class TakingASliceOfAnIteratorTest(TestCase):
@@ -103,7 +107,7 @@ class TakingASliceOfAnIteratorTest(TestCase):
             for i in range(100):
                 yield i
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
         self.assertListEqual(list(sliced), [5, 6, 7, 8, 9, 10])
 
@@ -114,13 +118,16 @@ class SkippingTheFirstPartOfAnIterableTest(TestCase):
         """Hint: assume you don't know how many initial comments there are
         and the number of them might vary.
         """
-        lines = skip_initial_lines('data/initial_comments.txt')
+        lines = skip_initial_lines("data/initial_comments.txt")
 
-        self.assertListEqual(lines, [
-            'nobody:*:-2:-2:Unprivileged User:/var/empty:/usr/bin/false\n',
-            'root:*:0:0:System Administrator:/var/root:/bin/sh\n',
-            '# Some other comment'
-        ])
+        self.assertListEqual(
+            lines,
+            [
+                "nobody:*:-2:-2:Unprivileged User:/var/empty:/usr/bin/false\n",
+                "root:*:0:0:System Administrator:/var/root:/bin/sh\n",
+                "# Some other comment",
+            ],
+        )
 
 
 class IteratingOverAllPossibleCombinationsOrPermutationsTest(TestCase):
@@ -129,60 +136,51 @@ class IteratingOverAllPossibleCombinationsOrPermutationsTest(TestCase):
         """Hint: shuffle the items of the list into all possible
         combinations.
         """
-        items = ['a', 'b', 'c']
+        items = ["a", "b", "c"]
 
-        self.fail('Create permutations of the list of items')
+        self.fail("Create permutations of the list of items")
 
-        self.assertListEqual(list(p), [
-            ('a', 'b', 'c'),
-            ('a', 'c', 'b'),
-            ('b', 'a', 'c'),
-            ('b', 'c', 'a'),
-            ('c', 'a', 'b'),
-            ('c', 'b', 'a')
-        ])
+        self.assertListEqual(
+            list(p),
+            [
+                ("a", "b", "c"),
+                ("a", "c", "b"),
+                ("b", "a", "c"),
+                ("b", "c", "a"),
+                ("c", "a", "b"),
+                ("c", "b", "a"),
+            ],
+        )
 
     def test_rearrange_into_permutations_smaller_length(self):
-        items = ['a', 'b', 'c']
+        items = ["a", "b", "c"]
 
-        self.fail('Create permutations of the list of items')
+        self.fail("Create permutations of the list of items")
 
-        self.assertListEqual(list(p), [
-            ('a', 'b'),
-            ('a', 'c'),
-            ('b', 'a'),
-            ('b', 'c'),
-            ('c', 'a'),
-            ('c', 'b')
-        ])
+        self.assertListEqual(
+            list(p),
+            [("a", "b"), ("a", "c"), ("b", "a"), ("b", "c"), ("c", "a"), ("c", "b")],
+        )
 
     def test_produce_combinations(self):
         """Hint: with combinations, the order is not considered. That means
         that (a, b) is the same as (b, a) which is not produced.
         """
-        items = ['a', 'b', 'c']
+        items = ["a", "b", "c"]
 
-        self.fail('Produce combinations of items')
+        self.fail("Produce combinations of items")
 
-        self.assertListEqual(list(c), [
-            ('a', 'b'),
-            ('a', 'c'),
-            ('b', 'c')
-        ])
+        self.assertListEqual(list(c), [("a", "b"), ("a", "c"), ("b", "c")])
 
     def test_produce_combinations_using_duplicate_items(self):
-        items = ['a', 'b', 'c']
+        items = ["a", "b", "c"]
 
-        self.fail('Produce combinations of items')
+        self.fail("Produce combinations of items")
 
-        self.assertListEqual(list(c), [
-            ('a', 'a'),
-            ('a', 'b'),
-            ('a', 'c'),
-            ('b', 'b'),
-            ('b', 'c'),
-            ('c', 'c')
-        ])
+        self.assertListEqual(
+            list(c),
+            [("a", "a"), ("a", "b"), ("a", "c"), ("b", "b"), ("b", "c"), ("c", "c")],
+        )
 
 
 class IteratingOverTheIndexPairsOfASequenceTest(TestCase):
@@ -190,30 +188,29 @@ class IteratingOverTheIndexPairsOfASequenceTest(TestCase):
     def test_find_lines_words_occurred_on(self):
         word_summary = defaultdict(list)
 
-        with open('data/words_on_lines.txt', 'r') as f:
+        with open("data/words_on_lines.txt", "r") as f:
             lines = f.readlines()
 
-        self.fail('Populate word_summary. The key should be the word, '
-                  'and the value should be a list of the line numbers '
-                  'that contain that word')
+        self.fail(
+            "Populate word_summary. The key should be the word, "
+            "and the value should be a list of the line numbers "
+            "that contain that word"
+        )
 
-        self.assertListEqual(word_summary['in'], [1, 4, 5, 6])
+        self.assertListEqual(word_summary["in"], [1, 4, 5, 6])
 
     def test_iterate_sequence_of_tuples(self):
         data = [(1, 2), (2, 4), (3, 6), (4, 8)]
         output = {}
 
-        self.fail('Iterate the sequence of data and add to the output'
-                  'dictionary. The key should be the index of the '
-                  'tuple in the list, and the value the second tuple'
-                  'element divided by the first.')
+        self.fail(
+            "Iterate the sequence of data and add to the output"
+            "dictionary. The key should be the index of the "
+            "tuple in the list, and the value the second tuple"
+            "element divided by the first."
+        )
 
-        self.assertEqual(output, {
-            0: 2,
-            1: 2,
-            2: 2,
-            3: 2
-        })
+        self.assertEqual(output, {0: 2, 1: 2, 2: 2, 3: 2})
 
 
 class IteratingOverMultipleSequencesSimultaneouslyTest(TestCase):
@@ -222,53 +219,46 @@ class IteratingOverMultipleSequencesSimultaneouslyTest(TestCase):
         xpts = [1, 5, 4, 2, 10, 7]
         ypts = [101, 78, 37, 15, 62, 99]
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertListEqual(list(result),
-                             [(1, 101), (5, 78), (4, 37), (2, 15),
-                              (10, 62), (7, 99)])
+        self.assertListEqual(
+            list(result), [(1, 101), (5, 78), (4, 37), (2, 15), (10, 62), (7, 99)]
+        )
 
     def test_iterate_two_sequences_different_lengths(self):
         a = [1, 2, 3]
-        b = ['w', 'x', 'y', 'z']
+        b = ["w", "x", "y", "z"]
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertListEqual(list(result), [(1, 'w'), (2, 'x'), (3, 'y'),
-                                            (None, 'z')])
+        self.assertListEqual(list(result), [(1, "w"), (2, "x"), (3, "y"), (None, "z")])
 
     def test_iterate_two_sequences_different_lengths_fill_blanks(self):
         a = [1, 2, 3]
-        b = ['w', 'x', 'y', 'z']
+        b = ["w", "x", "y", "z"]
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertListEqual(list(result), [(1, 'w'), (2, 'x'), (3, 'y'),
-                                            (0, 'z')])
+        self.assertListEqual(list(result), [(1, "w"), (2, "x"), (3, "y"), (0, "z")])
 
     def test_create_dict_from_two_sequences(self):
-        headers = ['name', 'shares', 'price']
-        values = ['ACME', 100, 490.1]
+        headers = ["name", "shares", "price"]
+        values = ["ACME", 100, 490.1]
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertEqual(result, {
-            'name': 'ACME',
-            'shares': 100,
-            'price': 490.1
-        })
+        self.assertEqual(result, {"name": "ACME", "shares": 100, "price": 490.1})
 
     def test_create_output_from_two_sequences(self):
         """Hint: notice that the types of values in the sequences are mixed."""
-        headers = ['name', 'shares', 'price']
-        values = ['ACME', 100, 490.1]
+        headers = ["name", "shares", "price"]
+        values = ["ACME", 100, 490.1]
 
         output = io.StringIO()
 
-        self.fail('Build the output to satisfy the assertion')
+        self.fail("Build the output to satisfy the assertion")
 
-        self.assertEqual(output.getvalue(),
-                         'name=ACME\nshares=100\nprice=490.1\n')
+        self.assertEqual(output.getvalue(), "name=ACME\nshares=100\nprice=490.1\n")
 
 
 class IteratingOnItemsInSeparateContainersTest(TestCase):
@@ -277,10 +267,9 @@ class IteratingOnItemsInSeparateContainersTest(TestCase):
         a = [1, 2, 3, 4, 5]
         b = {6, 7, 8, 9, 10}
 
-        self.fail('Iterate over the iterables in a single loop')
+        self.fail("Iterate over the iterables in a single loop")
 
-        self.assertListEqual(sorted(list(result)),
-                             [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+        self.assertListEqual(sorted(list(result)), [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 
     def test_iterate_over_iterables_combine(self):
         """Hint: do this differently from above by combining the lists.
@@ -290,7 +279,7 @@ class IteratingOnItemsInSeparateContainersTest(TestCase):
         a = [1, 2, 3, 4, 5]
         b = [6, 7, 8, 9, 10]
 
-        self.fail('Iterate over the iterables in a single loop')
+        self.fail("Iterate over the iterables in a single loop")
 
         self.assertListEqual(result, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 
@@ -309,17 +298,20 @@ class CreatingDataProcessingPipelinesTest(TestCase):
             gen_concatenate(files)
             gen_grep('.*Chelsea.*', lines)
         """
-        self.fail('Write the generator expressions and stack them.')
+        self.fail("Write the generator expressions and stack them.")
 
-        found = gen_grep('Chelsea', lines)
+        found = gen_grep("Chelsea", lines)
 
-        self.assertEqual(list(found), [
-            'A Brazil 3 4 Defender 27 36 Chelsea David Luiz 0',
-            'A Brazil 3 11 Midfielder 22 31 Chelsea Oscar 0',
-            'A Brazil 3 16 Midfielder 27 42 Chelsea Ramires 0',
-            'A Brazil 3 19 Midfielder 25 7 Chelsea Willian 0',
-            "A Cameroon 56 9 Forward 33 117 Chelsea Samuel Eto'o c 0"
-        ])
+        self.assertEqual(
+            list(found),
+            [
+                "A Brazil 3 4 Defender 27 36 Chelsea David Luiz 0",
+                "A Brazil 3 11 Midfielder 22 31 Chelsea Oscar 0",
+                "A Brazil 3 16 Midfielder 27 42 Chelsea Ramires 0",
+                "A Brazil 3 19 Midfielder 25 7 Chelsea Willian 0",
+                "A Cameroon 56 9 Forward 33 117 Chelsea Samuel Eto'o c 0",
+            ],
+        )
 
 
 class FlatteningANestSequenceTest(TestCase):
@@ -341,7 +333,7 @@ class IteratingInSortedOrderOverMergedSortedIterablesTest(TestCase):
         a = [1, 4, 7, 10]
         b = [2, 5, 6, 11]
 
-        self.fail('Use a single for loop to iterate over the lists together.')
+        self.fail("Use a single for loop to iterate over the lists together.")
 
         self.assertEqual(c, [1, 2, 4, 5, 6, 7, 10, 11])
 
@@ -353,9 +345,8 @@ class ReplacingInfiniteWhileLoopsWithAnIteratorTest(TestCase):
         second form of iter().
         """
         chunk = 5
-        result = ''
+        result = ""
 
         self.fail("Write loop that reads data/file1.txt 5 chars at a time.")
 
-        self.assertEqual(result, 'hello\nworld\nfoo\nbar\nbaz')
-
+        self.assertEqual(result, "hello\nworld\nfoo\nbar\nbaz")

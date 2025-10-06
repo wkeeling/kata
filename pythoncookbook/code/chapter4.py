@@ -9,7 +9,7 @@ class Node:
         self._children = []
 
     def __repr__(self):
-        return 'Node({!r})'.format(self._value)
+        return "Node({!r})".format(self._value)
 
     def add_child(self, node):
         self._children.append(node)
@@ -59,4 +59,3 @@ def gen_concatenate(files):
 
 def gen_grep(pattern, lines):
     pass
-

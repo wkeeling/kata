@@ -1,0 +1,55 @@
+################################################################################
+# SPDX-FileCopyrightText: Restricted (c) Siemens 2022
+# All Rights Reserved
+#
+# THIS WORK CONTAINS TRADE SECRET AND CONFIDENTIAL INFORMATION WHICH ARE THE
+# PROPERTY OF SIEMENS INDUSTRIES SOFTWARE, INC., OR ITS LICENSORS AND IS
+# SUBJECT TO LICENSE TERMS.
+#
+# Project  :  Tealeaf
+# Module   :  Tealeaf API
+#
+
+repos:
+  - repo: https://github.com/ambv/black
+    rev: 25.9.0
+    hooks:
+      - id: black
+        exclude: ^.*\b(migrations)\b.*$
+  - repo: https://github.com/pycqa/isort
+    rev: 6.1.0
+    hooks:
+      - id: isort
+  - repo: https://github.com/hakancelikdev/unimport
+    rev: 1.3.0
+    hooks:
+      - id: unimport
+        args:
+          - --include-star-import
+          - --ignore-init
+          - --gitignore
+  - repo: https://github.com/pycqa/flake8
+    rev: 7.3.0
+    hooks:
+      - id: flake8
+        exclude: ^.*\b(migrations)\b.*
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+        args: [ "--markdown-linebreak-ext=md,markdown" ]
+      - id: end-of-file-fixer
+      - id: check-docstring-first
+      - id: check-executables-have-shebangs
+      - id: check-shebang-scripts-are-executable
+      - id: check-yaml
+      - id: check-toml
+      - id: check-xml
+      - id: check-ast
+      - id: check-symlinks
+      - id: fix-byte-order-marker
+      - id: check-merge-conflict
+      - id: debug-statements
+      - id: detect-private-key
+      - id: detect-aws-credentials
+        args: [ "--allow-missing-credentials" ]

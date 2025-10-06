@@ -1,5 +1,6 @@
 """Chapter 2: Strings and Text."""
 
+# flake8: noqa
 from unittest import TestCase
 
 
@@ -10,12 +11,11 @@ class SplitStringOnMultipleDelimetersTest(TestCase):
 
         Use an alternative split()
         """
-        line = 'asdf fjdk; afed, fjek,asdf, foo'
+        line = "asdf fjdk; afed, fjek,asdf, foo"
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertListEqual(split, ['asdf', 'fjdk', 'afed', 'fjek', 'asdf',
-                                     'foo'])
+        self.assertListEqual(split, ["asdf", "fjdk", "afed", "fjek", "asdf", "foo"])
 
 
 class MatchingTextAtStartAndEndOfStringTest(TestCase):
@@ -23,75 +23,75 @@ class MatchingTextAtStartAndEndOfStringTest(TestCase):
     def test_filter_filenames_with_multiple_extensions(self):
         """Hint: filter the list but don't use more than one conditional
         expression."""
-        filenames = ['Makefile', 'foo.c', 'bar.py', 'spam.c', 'spam.h']
+        filenames = ["Makefile", "foo.c", "bar.py", "spam.c", "spam.h"]
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertListEqual(filtered, ['foo.c', 'spam.c', 'spam.h'])
+        self.assertListEqual(filtered, ["foo.c", "spam.c", "spam.h"])
 
 
 class MatchingStringsUsingShellWildcardPatternsTest(TestCase):
 
     def test_match_filename_string(self):
         """Hint: use a wildcard for the match."""
-        names = ['Dat1.csv', 'Dat2.CSV', 'config.ini', 'foo.py']
+        names = ["Dat1.csv", "Dat2.CSV", "config.ini", "foo.py"]
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertListEqual(matched, ['Dat1.csv', 'Dat2.csv'])
+        self.assertListEqual(matched, ["Dat1.csv", "Dat2.csv"])
 
     def test_match_streets(self):
         """Hint: use wildcard and simple shell expressions."""
         addresses = [
-            '5412 N CLARK ST',
-            '1060 W ADDISON ST',
-            '1039 W GRANVILLE AVE',
-            '2122 N CLARK ST',
-            '4802 N BROADWAY',
+            "5412 N CLARK ST",
+            "1060 W ADDISON ST",
+            "1039 W GRANVILLE AVE",
+            "2122 N CLARK ST",
+            "4802 N BROADWAY",
         ]
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertListEqual(streets, ['5412 N CLARK ST', '1060 W ADDISON ST',
-                                       '2122 N CLARK ST'])
+        self.assertListEqual(
+            streets, ["5412 N CLARK ST", "1060 W ADDISON ST", "2122 N CLARK ST"]
+        )
 
     def test_match_streets_2(self):
         """Hint: only use one wildcard *"""
         addresses = [
-            '5412 N CLARK ST',
-            '5423 N CLARK ST',
-            '1060 W ADDISON ST',
-            '1039 W GRANVILLE AVE',
-            '2122 N CLARK ST',
-            '4802 N BROADWAY',
+            "5412 N CLARK ST",
+            "5423 N CLARK ST",
+            "1060 W ADDISON ST",
+            "1039 W GRANVILLE AVE",
+            "2122 N CLARK ST",
+            "4802 N BROADWAY",
         ]
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertListEqual(streets, ['5412 N CLARK ST', '5423 N CLARK ST'])
+        self.assertListEqual(streets, ["5412 N CLARK ST", "5423 N CLARK ST"])
 
 
 class SearchingAndReplacingTextTest(TestCase):
 
     def test_replace_substrings(self):
         """Hint: don't use str.replace()."""
-        text = 'Today is 11/27/2012. PyCon starts 3/13/2013.'
+        text = "Today is 11/27/2012. PyCon starts 3/13/2013."
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertEqual(new_text,
-                         'Today is 2012-11-27. PyCon starts 2013-3-13.')
+        self.assertEqual(new_text, "Today is 2012-11-27. PyCon starts 2013-3-13.")
 
 
 class StripUnwantedCharactersFromStringsTest(TestCase):
 
     def test_strip_characters_from_ends(self):
         """Hint: don't use more than one function call."""
-        t = '-----hello====='
+        t = "-----hello====="
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertEqual(stripped, 'hello')
+        self.assertEqual(stripped, "hello")
 
 
 class AligningTextStringsTest(TestCase):
@@ -99,66 +99,66 @@ class AligningTextStringsTest(TestCase):
     def test_align_string_left(self):
         """Hint: two ways to do this. Try both.
         Max width is 20 chars."""
-        text = 'Hello World'
+        text = "Hello World"
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertEqual(aligned, 'Hello World         ')
+        self.assertEqual(aligned, "Hello World         ")
 
     def test_align_string_right(self):
         """Hint: two ways to do this. Try both."""
-        text = 'Hello World'
+        text = "Hello World"
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertEqual(aligned, '         Hello World')
+        self.assertEqual(aligned, "         Hello World")
 
     def test_align_string_center(self):
         """Hint: two ways to do this. Try both."""
-        text = 'Hello World'
+        text = "Hello World"
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertEqual(aligned, '    Hello World     ')
+        self.assertEqual(aligned, "    Hello World     ")
 
     def test_align_non_string(self):
         x = 1.2345
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertEqual(aligned, '    1.2345')
+        self.assertEqual(aligned, "    1.2345")
 
     def test_align_non_string_decimal_places(self):
         x = 1.2345
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertEqual(aligned, '   1.23   ')
+        self.assertEqual(aligned, "   1.23   ")
 
 
 class CombiningAndConcatenatingStringsTest(TestCase):
 
     def test_build_output_from_generator(self):
         def sample():
-            yield 'Is'
-            yield 'Chicago'
-            yield 'Not'
-            yield 'Chicago?'
+            yield "Is"
+            yield "Chicago"
+            yield "Not"
+            yield "Chicago?"
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertEqual(built, 'Is Chicago Not Chicago?')
+        self.assertEqual(built, "Is Chicago Not Chicago?")
 
 
 class InterpolatingVariablesInStringsTest(TestCase):
 
     def test_format_local_vars(self):
-        name = 'Guido'
+        name = "Guido"
         n = 37
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertEqual(formatted, 'Guido has 37 messages.')
+        self.assertEqual(formatted, "Guido has 37 messages.")
 
     def test_format_vars_from_object(self):
         class Info:
@@ -166,11 +166,11 @@ class InterpolatingVariablesInStringsTest(TestCase):
                 self.name = name
                 self.n = n
 
-        a = Info('Guido', 37)
+        a = Info("Guido", 37)
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertEqual(formatted, 'Guido has 37 messages.')
+        self.assertEqual(formatted, "Guido has 37 messages.")
 
 
 class HandlingHtmlAndXmlEntitiesInTextTest(TestCase):
@@ -178,55 +178,58 @@ class HandlingHtmlAndXmlEntitiesInTextTest(TestCase):
     def test_escape_text(self):
         s = 'Elements are written as "<tag>text</tag>".'
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertEqual(escaped, 'Elements are written as &quot;&lt;tag&gt;'
-                                  'text&lt;/tag&gt;&quot;.')
+        self.assertEqual(
+            escaped,
+            "Elements are written as &quot;&lt;tag&gt;" "text&lt;/tag&gt;&quot;.",
+        )
 
     def test_escape_text_not_quotes(self):
         s = 'Elements are written as "<tag>text</tag>".'
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertEqual(escaped, 'Elements are written as "&lt;tag&gt;text'
-                                  '&lt;/tag&gt;".')
+        self.assertEqual(
+            escaped, 'Elements are written as "&lt;tag&gt;text' '&lt;/tag&gt;".'
+        )
 
     def test_unescape_text(self):
         """Hint: look to xml.sax"""
-        t = 'The prompt is &gt;&gt;&gt;'
+        t = "The prompt is &gt;&gt;&gt;"
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertEqual(unescaped, 'The prompt is >>>')
+        self.assertEqual(unescaped, "The prompt is >>>")
 
 
 class PerformingTextOperationsOnByteStringsTest(TestCase):
 
     def test_slice_byte_string(self):
-        data = b'Hello World'
+        data = b"Hello World"
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertEqual(hello, b'Hello')
+        self.assertEqual(hello, b"Hello")
 
     def test_slice_byte_array(self):
-        data = bytearray(b'Hello World')
+        data = bytearray(b"Hello World")
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertEqual(hello, bytearray(b'Hello'))
+        self.assertEqual(hello, bytearray(b"Hello"))
 
     def test_split_byte_array(self):
-        data = bytearray(b'Hello World')
+        data = bytearray(b"Hello World")
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
-        self.assertEqual(parts, [bytearray(b'Hello'), bytearray(b'World')])
+        self.assertEqual(parts, [bytearray(b"Hello"), bytearray(b"World")])
 
     def test_index_byte_string(self):
         """Index the first letter of the string."""
-        b = b'Hello World'
+        b = b"Hello World"
 
-        self.fail('Write a single line expression')
+        self.fail("Write a single line expression")
 
         self.assertEqual(h, 72)
