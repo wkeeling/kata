@@ -4,7 +4,12 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "pytest>=8.3.3",
+    "black>=25.9.0",
+    "flake8>=7.3.0",
+    "isort>=6.1.0",
+]
 
 [tool.isort]
 profile = "black"
